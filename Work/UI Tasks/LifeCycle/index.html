@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TCS-index</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel='stylesheet' href="assets/css/aos.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="bg-image">
+            <div class="page-align">
+                <h1 class="index-title" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                    Payment Re-imagination
+                </h1>
+                <ul class="list-page m-auto d-block text-center">
+                    <li>
+                        <a href="life.html" class="">
+                            <div class="icon-bg" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="800" data-aos-easing="ease-in-out">
+                            <img src="assets/images/icon1.png" alt="ic_home1" class="img-fluid">
+                            </div>
+                            <p data-aos="flip-left" data-aos-delay="1500" data-aos-duration="1000" data-aos-easing="ease-in-out">Merchant Acquiring</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <div class="icon-bg" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="800" data-aos-easing="ease-in-out">
+                            <img src="assets/images/icon2.png"  alt="ic_home2" class="img-fluid">
+                            </div>
+                            <p data-aos="flip-right" data-aos-delay="2100" data-aos-duration="1000" data-aos-easing="ease-in-out">International & Trade Payments</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <div class="icon-bg" data-aos="fade-left" data-aos-delay="2600" data-aos-duration="800" data-aos-easing="ease-in-out">
+                            <img src="assets/images/icon3.png" alt="ic_home3" class="img-fluid">
+                            </div>
+                            <p data-aos="flip-left" data-aos-delay="2900" data-aos-duration="1000" data-aos-easing="ease-in-out">Domestic Payments</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="bottom-sec">
+                &copy;2019 <a href="#">Tata Consultancy Service Limited</a>.All Rights Reserved.
+            </p>
+        </div>
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/aos.js"></script>
+        <script>
+           
+            AOS.init({
+                duration: 1200,
+                })
+                window.onload = function() {
+                if(!window.location.hash) {
+                    window.location = window.location + '#loaded';
+                    window.location.reload();
+                }
+            }
+        // $(document).ready(function(){
+        //     // setTimeout(function() { location.reload() },1500);
+        //     location.reload().delay(100);
+        // })
+        </script>
+    </body>
+</html>
