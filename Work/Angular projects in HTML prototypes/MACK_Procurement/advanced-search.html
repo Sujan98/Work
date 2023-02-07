@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MACK | Procurement | Advanced Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css">
+        <link rel="stylesheet" href="assets/css/datepicker.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+    <!-- sidebar section -->
+    <div id="main">
+         
+        <div id="mySidebar" class="sidebar">
+               <!--  -->
+             <img src="assets/images/bg-img.jpg" class="img-fluid" alt="bg img">
+             <p class="svm">SVM Singapore</p>
+                <div class="form-group has-search">
+                    <input type="search" class="form-control" placeholder="Module Search">
+                    <span class="form-control-feedback"><img src="assets/images/search.png" class="img-fluid" alt="search"></span>
+                </div>
+           
+            <!--  -->
+        <div class="sidebar-pd">
+            <div class="activity-full">
+                <div class="supply-title clearfix">
+                   <h1>Activity Log  <p class="f-right m-0"> &nbsp;<span><img src="assets/images/more.png" class="more-3" alt="more"></span></p></h1>
+                   
+                    <ul class="collapse-3 m-0">
+                        <li class="collap-2">Collapse</li>
+                        <li>Export to pdf</li>
+                        <li>Export to excel</li>
+                        <li>Remove Widget</li>
+                        <!-- <li class="expand-2">Expand</li> -->
+                    </ul> 
+                </div>
+                <div class="activity-log">
+                    <table width="95%" class="activity-table m-auto">
+                      <tr>
+                          <td><h1>MEA/02/R0/0001/2020</h1><p>Requisition Approved for London Spirit by Aravind Saxena</p><p><span>2020-07-30</span><span> 00:12:56</span></p></td>
+                    </tr>
+                    <tr>
+                            <td><h1>NKS1/V1/R0/0001/2020</h1><p>Invoice raised for Galvon Spirit with the budget approval of 3M</p><p><span>2020-07-30</span><span> 00:12:56</span></p></td>
+                    </tr>
+                    <tr>
+                        <td><h1>NKS1/V1/R0/0001/2020</h1><p>Requisition Approved for London Spirit by Aravind Saxena</p><p><span>2020-07-30</span><span> 00:12:56</span></p></td>
+                    </tr>
+                    <tr>
+                        <td><h1>NKS1/V1/R0/0001/2020</h1><p>Requisition Approved for London Spirit by Aravind Saxena</p><p><span>2020-07-30</span><span> 00:12:56</span></p></td>
+                    </tr>
+                        <tr>
+                            <td><h1>MEA/02/R0/0001/2020</h1><p class="red">Budget not Approved</p><p><span>2020-07-30</span><span> 00:12:56</span></p></td>
+                      </tr>
+                    </table>
+                </div>
+           </div>
+            <!--  -->
+    </div>
+</div>
+  
+
+<!-- header -->
+<div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="assets/images/menu.png" class="img-fluid" alt="menu"></a>
+        <img src="assets/images/expand.png" class="img-fluid openbtn ml-2" alt="expand">
+        <a href="#"><img src="assets/images/logo.png" alt="logo" class="img-fluid ml-4"></a>
+        <div class="ml-auto" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                  <p class="name mb-0">Aravind Saxena</p>
+                  <p class="place mb-0">Vessel Manager</p>
+                  <p class="place mb-0">SVMVM07</p>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/images/profile.png" class="user-img" alt="user-img"> &nbsp;
+                    <img src="assets/images/drop-down.png" class="dropdown" alt="dropdown">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </nav>
+</div>
+<!-- end -->
+<!-- Dashboard -->
+    <div class="dashboard">
+        <form id="Advance-search">
+        <div class="dashboard-header w-100">
+            <h1 class="ml-4">Procurement Dashboard</h1>
+           
+        
+        <div class="advanced-search">
+            <h1 class="title">Advanced Search</h1>
+            <a href="dashboard.html" class="close-ic">X</a>
+            <div class="d-flex m-auto">
+                 <!--  -->
+                
+                <!--  -->
+               
+               
+                <select class="selectpicker2">
+                    <option value="All Vessels">All Vessels (5)</option>
+                    <option value="My Vessels">My Vessels (3)</option>
+                    <option value="My Backup Vessels">My Backup Vessels(1)</option>
+                    <option value="Other Vessels">Other Vessels (1)</option>
+                </select>
+           
+
+                <!--  -->
+              
+                <select class="selectpicker1">
+                    <option value="All">All</option>
+                    <option value="CHENNAI KING">CHENNAI KING</option>
+                    <option value="KOLKATTA RIDER">KOLKATTA RIDER </option>
+                    <option value="TUTICORIN QUEEN">TUTICORIN QUEEN</option>
+                    <option value="MUMBAI MASTER">BARCELENA SPIRIT </option>
+                    <option value="VIZAG VOLUNTEER">VIZAG VOLUNTEER </option>
+                </select>
+               
+                <!--  -->
+                <!--  -->
+              
+                <select class="selectpicker3">
+                    <option value="All">All</option>
+                    <option value="CHENNAI KING">CHENNAI KING</option>
+                    <option value="KOLKATTA RIDER">KOLKATTA RIDER </option>
+                    <option value="TUTICORIN QUEEN">TUTICORIN QUEEN</option>
+                </select>
+               
+                <!--  -->
+
+                <select class="selectpicker4">
+                    <option value="MUMBAI MASTER">MUMBAI MASTER </option>
+                </select>
+               
+                <!--  -->
+                  <!--  -->
+
+                  <select class="selectpicker5">
+                    <option value="VIZAG VOLUNTEER">VIZAG VOLUNTEER </option>
+                </select>
+               
+                <!--  -->
+              
+                <!--  -->
+                <div id="reportrange">
+                    <i class="fa fa-calendar"></i>&nbsp;
+                    <span></span> <i class="fa fa-caret-down"></i>
+                </div>
+                <!--  -->
+               </div>
+                <!--  -->
+
+    
+
+            <!-- select category -->
+            <div class="category">
+                <p>Select Category</p>
+                <div class="category-list category-text">
+                    <label for="selectall">
+                        <input type="checkbox" id="selectall" name="selectedId[]" value="All">
+                        All
+                    </label>
+                    <label for="material-categ">
+                        <input type="checkbox" class="selectedId" name="selectedId[]" id="material-categ" value="Materials"/>
+                        Materials
+                    </label>
+                    <label for="service-categ">
+                        <input type="checkbox" class="selectedId" name="selectedId[]" id="service-categ" value="Services"/>
+                        Services
+                    </label>
+                    <label for="tools-categ">
+                        <input type="checkbox" class="selectedId" name="selectedId[]" id="tools-categ" value="Tools"/>
+                        Tools
+                    </label>
+                    <label for="on-categ">
+                        <input type="checkbox" class="selectedId" name="selectedId[]" id="on-categ" value="on-site"/>
+                        On-site contractor
+                    </label>
+                    <label for="other-categ">
+                        <input type="checkbox" class="selectedId" name="selectedId[]" id="other-categ" value="Others"/>
+                        Others
+                    </label>
+                </div>
+            </div>
+
+            <!--  -->
+            <!-- <input type="checkbox" id="selectall">Select all</input>
+            <input type="checkbox" class="selectedId" name="selectedId" />1
+            <input type="checkbox" class="selectedId" name="selectedId" />2
+            <input type="checkbox" class="selectedId" name="selectedId" />3 -->
+
+            <!-- select satges -->
+             <!-- select category -->
+             <div class="category">
+                <p>Select Stages</p>
+                <div class="category-list category-tab-list">
+                    <label for="categ-1">
+                        <input type="checkbox" id="categ-1" name="stages[]" value="All">
+                        All
+                    </label>
+                    <label for="categ-2">
+                        <input type="checkbox" id="categ-2" name="stages[]" value="Requisition">
+                        Requisition
+                    </label>
+                    <label for="categ-3">
+                        <input type="checkbox" id="categ-3" name="stages[]" value="Analysing">
+                        Analysing
+                    </label>
+                    <label for="categ-4">
+                        <input type="checkbox" id="categ-4" name="stages[]" value="RFQ">
+                        RFQ
+                    </label>
+                    <label for="categ-5">
+                        <input type="checkbox" id="categ-5" name="stages[]" value="Vendor Identification">
+                        Vendor Identification
+                    </label>
+                    <label for="categ-6">
+                        <input type="checkbox" id="categ-6" name="stages[]" value="PO">
+                        PO
+                    </label>
+                    <label for="categ-7">
+                        <input type="checkbox" id="categ-7" name="stages[]" value="Delivery">
+                        Delivery
+                    </label>
+                    <label for="categ-8">
+                        <input type="checkbox" id="categ-8" name="stages[]" value="Invoicing">
+                        Invoicing
+                    </label>
+                </div>
+            </div>
+            <!--  -->
+
+            <!-- Tab -->
+            <div class="advance-tab mt-3">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="tab-1" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true" data-category="categ-1">All</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="tab-2" data-toggle="tab" href="#request" role="tab" aria-controls="request" aria-selected="false" data-category="categ-2">Requisition</a>
+                    </li>
+                      <li class="nav-item"> 
+                        <a class="nav-link" id="tab-6" data-toggle="tab" href="#rfq" role="tab" aria-controls="rfq" aria-selected="false" data-category="categ-4">RFQ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="tab-7" data-toggle="tab" href="#vendor" role="tab" aria-controls="vendor" aria-selected="false" data-category="categ-5">Vendor</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="tab-8" data-toggle="tab" href="#po" role="tab" aria-controls="submisson" aria-selected="false" data-category="categ-6">PO</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="tab-3" data-toggle="tab" href="#delivery" role="tab" aria-controls="invoice" aria-selected="false" data-category="categ-7">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-4" data-toggle="tab" href="#invoice" role="tab" aria-controls="shipment" aria-selected="false" data-category="categ-8">Invoicing</a>
+                      </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="tab-1">
+                        <div class="category-list mt-3">
+                            <label for="all-tab1">
+                                <input type="checkbox" id="all-tab1" name="tab">
+                                All
+                            </label>
+                            <label for="spare-tab1">
+                                <input type="checkbox" id="spare-tab1" name="tab">
+                                Spares
+                            </label>
+                            <label for="consumables-tab1">
+                                <input type="checkbox" id="consumables-tab1" name="tab">
+                                Consumables
+                            </label>
+                            <label for="lube-tab1">
+                                <input type="checkbox" id="lube-tab1" name="tab">
+                                Lube,Oil,Gas etc
+                            </label>
+                            <label for="service-tab1">
+                                <input type="checkbox" id="service-tab1" name="tab">
+                                Services
+                            </label>
+                        </div>
+                        <div class="select-status w-100 clearfix">
+                            <p class="select-count">Select Status <span></span></p>
+                            <div class="w-30 f-left">
+                                <div class="category-list status-checkbox">
+                                    <label for="draft-tab">
+                                        <input type="checkbox" id="draft-tab" name="tab[]" value="Pending Acknowledge">
+                                        Pending Acknowledge
+                                    </label>
+                                    <label for="hold-tab">
+                                        <input type="checkbox" id="hold-tab" name="tab[]" value="Pending Approval">
+                                        Pending Approval
+                                    </label>
+                                    <label for="complete-tab">
+                                        <input type="checkbox" id="complete-tab" name="tab[]" value="Pending Escalated Approval">
+                                        Pending Escalated Approval
+                                    </label>
+                                    <label for="reject-tab">
+                                        <input type="checkbox" id="reject-tab" name="tab[]" value="On Hold">
+                                        On Hold
+                                    </label>
+                                    <label for="review-tab">
+                                        <input type="checkbox" id="review-tab" name="tab[]" value="Rejected">
+                                        Rejected
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="w-70 f-left">
+                                <div class="purchase-item clearfix">
+                                <div class="form-sec">
+                                <input type="text" placeholder="Purchase Title*">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Purchase Transaction No">
+                                </div>
+                                <div class="form-sec">
+                                <input type="text" placeholder="Item Name">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Item Code">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="request" role="tabpanel" aria-labelledby="tab-2">
+                        <div class="category-list mt-3">
+                            <label for="all-tab2">
+                                <input type="checkbox" id="all-tab2" name="tab">
+                                All
+                            </label>
+                            <label for="spare-tab2">
+                                <input type="checkbox" id="spare-tab2" name="tab">
+                                Spares
+                            </label>
+                            <label for="consumables-tab2">
+                                <input type="checkbox" id="consumables-tab2" name="tab">
+                                Consumables
+                            </label>
+                            <label for="lube-tab2">
+                                <input type="checkbox" id="lube-tab2" name="tab">
+                                Lube,Oil,Gas etc
+                            </label>
+                            <label for="service-tab2">
+                                <input type="checkbox" id="service-tab2" name="tab">
+                                Services
+                            </label>
+                        </div>
+                        <div class="select-status w-100 clearfix">
+                            <p class="select-count">Select Status <span></span></p>
+                            <div class="w-30 f-left">
+                                <div class="category-list status-checkbox">
+                                    <label for="draft-tab2">
+                                        <input type="checkbox" id="draft-tab2" name="tab[]" value="Pending Acknowledge">
+                                        Pending Acknowledge
+                                    </label>
+                                    <label for="hold-tab2">
+                                        <input type="checkbox" id="hold-tab2" name="tab[]" value="Pending Approval">
+                                        Pending Approval
+                                    </label>
+                                    <label for="complete-tab2">
+                                        <input type="checkbox" id="complete-tab2" name="tab[]" value="Pending Escalated Approval">
+                                        Pending Escalated Approval
+                                    </label>
+                                    <label for="reject-tab2">
+                                        <input type="checkbox" id="reject-tab2" name="tab[]" value="On Hold">
+                                        On Hold
+                                    </label>
+                                    <label for="review-tab2">
+                                        <input type="checkbox" id="review-tab2" name="tab[]" value="Rejected">
+                                        Rejected
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="w-70 f-left">
+                                <div class="purchase-item clearfix">
+                                <div class="form-sec">
+                                <input type="text" placeholder="Purchase Title*">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Search Purchase Transaction No">
+                                </div>
+                                <div class="form-sec">
+                                <input type="text" placeholder="Item Name">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Item Code">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="rfq" role="tabpanel" aria-labelledby="tab-3">
+                        <div class="category-list mt-3">
+                            <label for="all-tab3">
+                                <input type="checkbox" id="all-tab3" name="tab">
+                                All
+                            </label>
+                            <label for="spare-tab3">
+                                <input type="checkbox" id="spare-tab3" name="tab">
+                                Spares
+                            </label>
+                            <label for="consumables-tab3">
+                                <input type="checkbox" id="consumables-tab3" name="tab">
+                                Consumables
+                            </label>
+                            <label for="lube-tab3">
+                                <input type="checkbox" id="lube-tab3" name="tab">
+                                Lube,Oil,Gas etc
+                            </label>
+                            <label for="service-tab3">
+                                <input type="checkbox" id="service-tab3" name="tab">
+                                Services
+                            </label>
+                        </div>
+                        <div class="select-status w-100 clearfix">
+                            <p class="select-count">Select Status <span></span></p>
+                            <div class="w-30 f-left">
+                                <div class="category-list status-checkbox">
+                                    <label for="draft-tab3">
+                                        <input type="checkbox" id="draft-tab3" name="tab[]" value=" Ready For Comparision">
+                                        Ready For Comparision
+                                    </label>
+                                    <label for="hold-tab3">
+                                        <input type="checkbox" id="hold-tab3" name="tab[]" value="RFQ Partially Sent">
+                                        RFQ Partially Sent
+                                    </label>
+                                    <label for="complete-tab3">
+                                        <input type="checkbox" id="complete-tab3" name="tab[]" value="RFQ Fully Sent">
+                                        RFQ Fully Sent
+                                    </label>
+                                    <label for="reject-tab3">
+                                        <input type="checkbox" id="reject-tab3" name="tab[]" value="Quote Partially Received">
+                                        Quote Partially Received
+                                    </label>
+                                    <label for="fully-tab3">
+                                        <input type="checkbox" id="fully-tab3" name="tab[]" value="Quote Fully Received">
+                                        Quote Fully Received
+                                    </label>
+                                    <label for="hold-tab3">
+                                        <input type="checkbox" id="hold-tab3" name="tab[]" value="On Hold">
+                                        On Hold
+                                    </label>
+                                    <label for="rejected-tab3">
+                                        <input type="checkbox" id="rejected-tab3" name="tab[]" value="Rejected">
+                                        Rejected
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="w-70 f-left">
+                                <div class="purchase-item clearfix">
+                                <div class="form-sec">
+                                <input type="text" placeholder="Purchase Title*">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Search Purchase Transaction No">
+                                </div>
+                                <div class="form-sec">
+                                <input type="text" placeholder="Item Name">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Item Code">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="vendor" role="tabpanel" aria-labelledby="tab-4">
+                        <div class="category-list mt-3">
+                            <label for="all-tab4">
+                                <input type="checkbox" id="all-tab4" name="tab">
+                                All
+                            </label>
+                            <label for="spare-tab4">
+                                <input type="checkbox" id="spare-tab4" name="tab">
+                                Spares
+                            </label>
+                            <label for="consumables-tab4">
+                                <input type="checkbox" id="consumables-tab4" name="tab">
+                                Consumables
+                            </label>
+                            <label for="lube-tab4">
+                                <input type="checkbox" id="lube-tab4" name="tab">
+                                Lube,Oil,Gas etc
+                            </label>
+                            <label for="service-tab4">
+                                <input type="checkbox" id="service-tab4" name="tab">
+                                Services
+                            </label>
+                        </div>
+                        <div class="select-status w-100 clearfix">
+                            <p class="select-count">Select Status <span></span></p>
+                            <div class="w-30 f-left">
+                                <div class="category-list status-checkbox"> 
+                                    <label for="hold-tab4">
+                                        <input type="checkbox" id="hold-tab4" name="tab[]" value="Pending Approval">
+                                        Pending Approval
+                                    </label>
+                                    <label for="complete-tab4">
+                                        <input type="checkbox" id="complete-tab4" name="tab[]" value="Pending Escalated Approval">
+                                        Pending Escalated Approval
+                                    </label>
+                                    <label for="reject-tab4">
+                                        <input type="checkbox" id="reject-tab4" name="tab[]" value="On Hold">
+                                        On Hold
+                                    </label>
+                                    <label for="review-tab4">
+                                        <input type="checkbox" id="review-tab4" name="tab[]" value="Rejected">
+                                        Rejected
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="w-70 f-left">
+                                <div class="purchase-item clearfix">
+                                <div class="form-sec">
+                                <input type="text" placeholder="Purchase Title*">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Search Purchase Transaction No">
+                                </div>
+                                <div class="form-sec">
+                                <input type="text" placeholder="Item Name">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Item Code">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="po" role="tabpanel" aria-labelledby="tab-5">
+                        <div class="category-list mt-3">
+                            <label for="all-tab5">
+                                <input type="checkbox" id="all-tab5" name="tab">
+                                All
+                            </label>
+                            <label for="spare-tab5">
+                                <input type="checkbox" id="spare-tab5" name="tab">
+                                Spares
+                            </label>
+                            <label for="consumables-tab5">
+                                <input type="checkbox" id="consumables-tab5" name="tab">
+                                Consumables
+                            </label>
+                            <label for="lube-tab5">
+                                <input type="checkbox" id="lube-tab5" name="tab">
+                                Lube,Oil,Gas etc
+                            </label>
+                            <label for="service-tab5">
+                                <input type="checkbox" id="service-tab5" name="tab">
+                                Services
+                            </label>
+                        </div>
+                        <div class="select-status w-100 clearfix">
+                            <p class="select-count">Select Status <span></span></p>
+                            <div class="w-30 f-left">
+                                <div class="category-list status-checkbox">
+                                    <label for="draft-tab5">
+                                        <input type="checkbox" id="draft-tab5" name="tab[]" value="Po Creation">
+                                        Po Creation
+                                    </label>
+                                    <label for="hold-tab5">
+                                        <input type="checkbox" id="hold-tab5" name="tab[]" value="Ordered">
+                                        Ordered
+                                    </label>
+                                    <label for="complete-tab5">
+                                        <input type="checkbox" id="complete-tab5" name="tab[]" value="Partially Ordered">
+                                        Partially Ordered
+                                    </label>
+                                    <label for="reject-tab5">
+                                        <input type="checkbox" id="reject-tab5" name="tab[]" value="Po Confirmation">
+                                        Po Confirmation
+                                    </label>
+                                    <label for="review-tab5">
+                                        <input type="checkbox" id="review-tab5" name="tab[]" value="Po Cancellation">
+                                        Po Cancellation
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="w-70 f-left">
+                                <div class="purchase-item clearfix">
+                                <div class="form-sec">
+                                <input type="text" placeholder="Purchase Title*">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Search Purchase Transaction No">
+                                </div>
+                                <div class="form-sec">
+                                <input type="text" placeholder="Item Name">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Item Code">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="delivery" role="tabpanel" aria-labelledby="tab-6">
+                        <div class="category-list mt-3">
+                            <label for="all-tab6">
+                                <input type="checkbox" id="all-tab6" name="tab">
+                                All
+                            </label>
+                            <label for="spare-tab6">
+                                <input type="checkbox" id="spare-tab6" name="tab">
+                                Spares
+                            </label>
+                            <label for="consumables-tab6">
+                                <input type="checkbox" id="consumables-tab6" name="tab">
+                                Consumables
+                            </label>
+                            <label for="lube-tab6">
+                                <input type="checkbox" id="lube-tab6" name="tab">
+                                Lube,Oil,Gas etc
+                            </label>
+                            <label for="service-tab6">
+                                <input type="checkbox" id="service-tab6" name="tab">
+                                Services
+                            </label>
+                        </div>
+                        <div class="select-status w-100 clearfix">
+                            <p class="select-count">Select Status <span></span></p>
+                            <div class="w-30 f-left">
+                                <div class="category-list status-checkbox">
+                                    <label for="draft-tab6">
+                                        <input type="checkbox" id="draft-tab6" name="tab[]" value="In-Transit">
+                                        In-Transit
+                                    </label>
+                                    <label for="hold-tab6">
+                                        <input type="checkbox" id="hold-tab6" name="tab[]" value="Partially Delivered">
+                                        Partially Delivered
+                                    </label>
+                                    <label for="complete-tab6">
+                                        <input type="checkbox" id="complete-tab6" name="tab[]" value="Fully Delivered">
+                                        Fully Delivered
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="w-70 f-left">
+                                <div class="purchase-item clearfix">
+                                <div class="form-sec">
+                                <input type="text" placeholder="Purchase Title*">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Search Purchase Transaction No">
+                                </div>
+                                <div class="form-sec">
+                                <input type="text" placeholder="Item Name">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Item Code">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="invoice" role="tabpanel" aria-labelledby="tab-7">
+                        <div class="category-list mt-3">
+                            <label for="all-tab7">
+                                <input type="checkbox" id="all-tab7" name="tab">
+                                All
+                            </label>
+                            <label for="spare-tab7">
+                                <input type="checkbox" id="spare-tab7" name="tab">
+                                Spares
+                            </label>
+                            <label for="consumables-tab7">
+                                <input type="checkbox" id="consumables-tab7" name="tab">
+                                Consumables
+                            </label>
+                            <label for="lube-tab7">
+                                <input type="checkbox" id="lube-tab7" name="tab">
+                                Lube,Oil,Gas etc
+                            </label>
+                            <label for="service-tab7">
+                                <input type="checkbox" id="service-tab7" name="tab">
+                                Services
+                            </label>
+                        </div>
+                        <div class="select-status w-100 clearfix">
+                            <p class="select-count">Select Status <span></span></p>
+                            <div class="w-30 f-left">
+                                <div class="category-list status-checkbox">
+                                    <label for="red-tab7">
+                                        <input type="checkbox" id="red-tab7" name="tab[]" value="Received">
+                                        Received
+                                    </label>
+                                    <label for="draft-tab7">
+                                        <input type="checkbox" id="draft-tab7" name="tab[]" value="Pending Verification">
+                                        Pending Verification
+                                    </label>
+                                    <label for="hold-tab7">
+                                        <input type="checkbox" id="hold-tab7" name="tab[]" value="Pending Approval">
+                                        Pending Approval
+                                    </label>
+                                    <label for="complete-tab7">
+                                        <input type="checkbox" id="complete-tab7" name="tab[]" value="Pending Escalated Approval">
+                                        Pending Escalated Approval
+                                    </label>
+                                    <label for="reject-tab7">
+                                        <input type="checkbox" id="reject-tab7" name="tab[]" value="On Hold">
+                                        On Hold
+                                    </label>
+                                    <label for="review-tab7">
+                                        <input type="checkbox" id="review-tab7" name="tab[]" value="Rejected">
+                                        Rejected
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="w-70 f-left">
+                                <div class="purchase-item clearfix">
+                                <div class="form-sec">
+                                <input type="text" placeholder="Purchase Title*">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Search Purchase Transaction No">
+                                </div>
+                                <div class="form-sec">
+                                <input type="text" placeholder="Item Name">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Item Code">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="analyse" role="tabpanel" aria-labelledby="tab-8">
+                        <div class="category-list mt-3">
+                            <label for="all-tab8">
+                                <input type="checkbox" id="all-tab8" name="tab">
+                                All
+                            </label>
+                            <label for="spare-tab8">
+                                <input type="checkbox" id="spare-tab8" name="tab">
+                                Spares
+                            </label>
+                            <label for="consumables-tab8">
+                                <input type="checkbox" id="consumables-tab8" name="tab">
+                                Consumables
+                            </label>
+                            <label for="lube-tab8">
+                                <input type="checkbox" id="lube-tab8" name="tab">
+                                Lube,Oil,Gas etc
+                            </label>
+                            <label for="service-tab8">
+                                <input type="checkbox" id="service-tab8" name="tab">
+                                Services
+                            </label>
+                        </div>
+                        <div class="select-status w-100 clearfix">
+                            <p class="select-count">Select Status <span></span></p>
+                            <div class="w-30 f-left">
+                                <div class="category-list status-checkbox">
+                                    <label for="draft-tab8">
+                                        <input type="checkbox" id="draft-tab8" name="tab[]" value="Pending Acknowledge">
+                                        Pending Acknowledge
+                                    </label>
+                                    <label for="hold-tab8">
+                                        <input type="checkbox" id="hold-tab8" name="tab[]" value="Pending Approval">
+                                        Pending Approval
+                                    </label>
+                                    <label for="complete-tab8">
+                                        <input type="checkbox" id="complete-tab8" name="tab[]" value="Pending Escalated Approval">
+                                        Pending Escalated Approval
+                                    </label>
+                                    <label for="reject-tab8">
+                                        <input type="checkbox" id="reject-tab8" name="tab[]" value="On Hold">
+                                        On Hold
+                                    </label>
+                                    <label for="review-tab8">
+                                        <input type="checkbox" id="review-tab8" name="tab[]" value="Rejected">
+                                        Rejected
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="w-70 f-left">
+                                <div class="purchase-item clearfix">
+                                <div class="form-sec">
+                                <input type="text" placeholder="Purchase Title*">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Search Purchase Transaction No">
+                                </div>
+                                <div class="form-sec">
+                                <input type="text" placeholder="Item Name">
+                                </div>
+                                <div class="form-sec search-form">
+                                <input type="search" placeholder="Item Code">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <!--  -->
+
+            <div class="form-btn">
+                <button class="search-btn">Search</button>
+                <button type="button" class="reset-btn">Reset</button>
+            </div>
+            <!--  -->
+
+            <div class="summary">
+                <h1>Select Summary</h1>
+                <p id="category-list-text">Category: <span></span></p>
+                <p id="stages-list"><span></span></p>
+                <p id="status-list"><span></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+<div class="create" data-toggle="modal" data-target="#exampleModal">
+    <img src="assets/images/create.png" alt="create">
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="assets/js/popper.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
+<script src="assets/js/donutchart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script>
+    $(document).ready(function(){
+        // select image
+        var main = $('div.mm-dropdown .textfirst')
+        var li = $('div.mm-dropdown > ul > li.input-option')
+        var inputoption = $("div.mm-dropdown .option")
+        var default_text = '<img src="assets/images/vessel.png" width="20" height="20" class="down" />';
+
+        // Animation
+        main.click(function() {
+            main.html(default_text);
+            li.toggle('fast');
+        });
+
+        // Insert Data
+        li.click(function() {
+            // hide
+            li.toggle('fast');
+            var livalue = $(this).data('value');
+            var lihtml = $(this).html();
+            main.html(lihtml);
+            inputoption.val(livalue);
+        });
+
+        //  progress tracker
+
+        // $('.album-trigger').click(function() {
+        //     var tid = $(this).data('album-id-trigger');
+        //     $('.album-trigger.selection').not(this).removeClass('selection');
+        //      $(this).toggleClass('selection');
+        //     var $current = $('.album-list[data-album-id="' + tid + '"]').toggle();
+        //     $('.album-list').not($current).hide()
+        // })
+
+        // 
+        $('.reset-btn').click(function(){
+            $('#Advance-search')[0].reset();
+        });
+
+        // 
+        $('#submenu').hide();
+        $('#dropdown').click(function() {
+            $('#submenu').slideToggle(500);
+        });
+
+        $('.collap-2').on('click', function(){
+            if ($('.collap-2').text().indexOf('Expand') > -1){
+                $('.activity-log').slideDown(500);
+                $(this).text('Collapse');
+            } else{
+                $('.activity-log').slideUp(500);
+                $(this).text('Expand');
+            }
+        });
+    
+        $('.more-3').click(function(){
+            $('.collapse-3').show();
+            setTimeout(() => {
+                $('.collapse-3').hide();
+            }, 3000);
+        })
+
+
+        // scrollbar
+        $(".activity-log").mCustomScrollbar({
+            theme: "dark",
+            scrollButtons: {enable:false}
+            });
+
+
+
+        $(".js-select2").select2({
+            placeholder: "My Vessels (5)",
+            theme: "material"
+        });
+        // 
+
+        $(".check-in").datepicker({
+            dateFormat: "d MM yy",
+            duration: "medium"
+        });
+        
+        $(".check-out").datepicker({
+            dateFormat: "d MM yy",
+            duration: "medium"
+        });
+
+        // 
+        $('.category-tab-list input[type="checkbox"]').click(function() {
+            var checkValue = $('.category-tab-list input[type="checkbox"]:checked').map(function(i, e) {return e.value}).toArray();
+              $('#stages-list span').html("<span id='stage-header'> Stages : <span>" + checkValue.join(','));
+            if ($('.category-tab-list input[type="checkbox"]:checked').length > 0) {
+                $('.nav >li > a').css("display", "none");
+                $('.category-tab-list input[type="checkbox"]:checked').each(function() {
+                    $('.nav >li > a[data-category=' + this.id + ']').css("display", "block");
+                });
+            } else {
+                $('.nav >li > a').css("display", "block");
+
+            }
+        });
+
+        // 
+        // $('.category-text input[type="checkbox"]').click(function() {
+        //  var checkValue = $('.category-text input[type="checkbox"]:checked').map(function(i, e) {return e.value}).toArray();
+        //  $('#category-list-text span').html("<span id='category-header'> Category : <span>" + checkValue.join(','));
+        // });
+
+        // 
+        $('.status-checkbox input[type="checkbox"]').click(function() {
+         var len = $('.status-checkbox input[type="checkbox"]:checked').length;
+         $('.select-count span').html('(' + len + ')');
+         var checkValue = $('.status-checkbox input[type="checkbox"]:checked').map(function(i, e) {return e.value}).toArray();
+         $('#status-list span').html("<span id='status-header'> Status : <span>" + checkValue.join(','));
+        });
+
+        //
+
+        // 
+        // $('.category-text #selectall').click(function() {
+        //     var checkedStatus = this.checked;
+        //     var checkValue = $('.category-text input[type="checkbox"]:checked').map(function(i, e) {return e.value}).toArray();
+        //     $('.category-text .selectedId').each(function() {
+        //         $(this).prop('checked', checkedStatus);
+        //     });
+        //     $('#category-list-text span').html("<span id='category-header'> Category : <span>" + checkValue.join(','));
+               
+        //     });
+
+            // 
+      var allCheck = document.querySelector('#selectall');
+      var tests = document.querySelectorAll('.selectedId');
+      var output = document.querySelector('#category-list-text span');
+      var textCategory = document.querySelector('#category-list-text');
+      var selectedTests = [];
+      textCategory.style.display = 'none';
+      allCheck.addEventListener('click', () => {
+        if (allCheck.checked) {
+          tests.forEach((selectedId) => {
+            selectedId.checked = true;
+            if (!selectedTests.includes(selectedId.value)) {
+              selectedTests.push(selectedId.value);
+            }
+          });
+          updateOutput();
+        } else {
+          tests.forEach((selectedId) => {
+            selectedId.checked = false;
+          });
+          selectedTests.length = 0;
+          updateOutput();
+        }
+      });
+
+      tests.forEach((selectedId) => {
+        selectedId.addEventListener('click', setTest);
+      });
+
+      function setTest() {
+        if (selectedTests.includes(this.value)) {
+          selectedTests.splice(selectedTests.indexOf(this.value), 1);
+          updateOutput();
+        } else {
+          selectedTests.push(this.value);
+          updateOutput();
+        }
+      }
+
+      function updateOutput() {
+        if (selectedTests.length == tests.length) {
+          output.innerHTML = 'All';
+          allCheck.checked = true;
+        } else {
+          output.innerHTML = selectedTests.reduce((outStr, testStr, i, arr) => {
+            outStr += testStr + (i != arr.length - 1 ? ', ' : '');
+            return outStr;
+          }, '');
+          allCheck.checked = false;
+        }
+        if(selectedTests.length == 0){
+            textCategory.style.display = 'none';
+        }
+        else{
+            textCategory.style.display = 'block';
+        }
+      }
+    
+});
+</script>
+    
+    </body>
+</html>

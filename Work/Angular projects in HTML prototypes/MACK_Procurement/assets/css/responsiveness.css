@@ -1,0 +1,88 @@
+/* @media (max-width: 1400px){
+    .sidebar{
+        width: 210px;
+    }
+    #main{
+        margin-left: 200px;
+    }
+    .has-search .form-control{
+        font-size: 13px;
+    }
+    .supply-title h1, .activity-table h1{
+        font-size: 15px;
+    }
+    .activity-table p{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 1250px){
+    .select2-container, .selectpicker1, select.add-date{
+        width: 160px !important;
+    }
+    .dashboard-header h1{
+        font-size: 18px;
+    }
+    .advance-search {
+        font-size: 12.5px;
+        margin-left: 8px;
+    }
+    .add-widget{
+        font-size: 12px;
+    }
+    .donutchart-list li {
+        width: 80px;
+        height: 140px;
+    }
+    .donutchart-list, #donutchart, .procurment-list{
+        height: auto;
+    }
+    .vessel-chart{
+        display: block !important;
+    }
+    .all-procurement{
+        width: 100%;
+        display: inline-block;
+    }
+    .procurment-list li, .procurment-list li:nth-child(2){
+        width: 25%;
+        margin: auto;
+        float: left;
+    }
+    .procurment-list li.first{
+        display: inline-block;
+        width: 25%;
+    }
+    .procurment-list li a{
+        display: inline-grid;
+    }
+    .progress-section ul li a {
+        margin-right: 11px;
+    }
+    .progress-section ul li a.burn-rate{
+        font-size: 12px;
+    }
+    .piechart-list .w-65{
+        width: 60%;
+    }
+    .piechart-list .w-35{
+        width: 40%;
+    }
+    .piechart-list ul li a, .piechart-list ul li a:focus, .piechart-list ul li a:hover{
+        padding: 3px 5px;
+        margin: 5px;
+        font-size: 10px;
+    }
+    .piechart-list .w-35 ul li a span:first-child{
+        font-size: 16px;
+    }
+    .mytab .nav-link{
+        font-size: 13.5px;
+    }
+    .supply-title select{
+        font-size: 14px;
+    }
+    .quick-link div{
+        font-size: 10px;
+    }
+} */
