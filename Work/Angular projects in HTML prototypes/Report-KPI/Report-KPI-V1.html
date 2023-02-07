@@ -1,0 +1,2255 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MACK | REPORTING KPI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" /> -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.css"> -->
+        <!-- <link rel="stylesheet" href="https://www.jqueryscript.net/demo/Bootstrap-4-Dropdown-Select-Plugin-jQuery/dist/css/bootstrap-select.css"> -->
+        <link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="stylesheet" href="assets/css/responsiveness.css">
+    </head>
+    <body id="main-body">
+    
+    <div id="main">
+
+     <!-- sidebar section -->    
+        <div id="mySidebar" class="sidebar sidebar-mbl">
+          <button type="button" onclick="sideBar()" class="close close-sidebar" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+           <div class="sidebar-pd">
+            
+            <div class="top-header d-flex">
+            <div class="dropdown mb-4">
+                <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/images/page1/profile.png" class="user-img" alt="user-img"> &nbsp;
+                    <div>
+                    <p class="name mb-0">John Smith</p>
+                    <p class="place mb-0">Chief Executive</p>
+                    </div>
+                    <img src="assets/images/page1/drop-down-top.png" class="dropdown-ic" alt="dropdown">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </div>
+            </div>
+            <div class=" d-flex modes">
+              <img style="height: 16px!important;" src="assets/images/page1/day-mode.png" class="img-fluid day-mode" alt="day">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch">
+                <label class="custom-control-label" for="darkSwitch"><img src="assets/images/page1/dark-mode.png" class="img-fluid" alt="dark"></label>
+              </div>
+            </div>
+            </div>
+
+            <ul class="nav-menu p-0">
+                <li class="nav-item navitem">
+                    <a class="nav-link" href="#">
+                        <img src="assets/images/page1/message.png" class="message" alt="message">
+                    </a>
+                  </li>
+                  <li class="nav-item navitem">
+                    <a class="nav-link" href="#">
+                        <img src="assets/images/page1/mail.png" class="mail" alt="mail">
+                    </a>
+                  </li>
+                  <li class="nav-item navitem">
+                    <a class="nav-link" href="#">
+                        <img src="assets/images/page1/download.png" class="download" alt="download">
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="assets/images/page1/notifications.png" class="notification" alt="notification">
+                    </a>
+                  </li>
+                </ul>
+
+            <a id="dashboard-a" class="sidebar-a drop-a cursor-pointer links link-1" aria-haspopup="true" aria-expanded="false"><img class=" mr-3" src="assets/images/page1/dashboard.png">Dashboard<div class="sidebar-drop dis-none dashboard-drop list-group">
+              <a href="#" class="sidebar-drop-a list-group-item list-group-item-action">
+                Cras justo odio
+              </a>
+              <a href="#" class="sidebar-drop-a list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+              <a href="#" class="sidebar-drop-a list-group-item list-group-item-action" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+            </div></a>
+            <a id="vessel-a" class="sidebar-a cursor-pointer links link-2"><img src="assets/images/page1/vessel.png"> &nbsp; Vessel Score</a>
+            <a id="officer-a" class="sidebar-a cursor-pointer links link-3"><img src="assets/images/page1/officer.png"> &nbsp; Officer Score</a>
+            <a id="compare-a" class="sidebar-a cursor-pointer links link-4"><img src="assets/images/page1/compare.png"> &nbsp; Compare</a>
+            <a id="report-a" class="sidebar-a cursor-pointer links link-5 active"><img src="assets/images/page1/reporting-blue.png"> &nbsp; Reporting KPI</a>
+            <a id="analysis-a" class="sidebar-a cursor-pointer links link-6"><img src="assets/images/page1/analysis.png"> &nbsp; Analysis</a>
+            <a id="data-a" class="sidebar-a cursor-pointer links link-7"><img src="assets/images/page1/data-source.png"> &nbsp; Data Source</a>
+            <a id="download-a" class="sidebar-a cursor-pointer links link-8"><img src="assets/images/page1/download-kpi.png"> &nbsp;Download KPI File</a>
+          </div>
+
+          <div class="logo">
+              <img src="assets/images/page1/logo.png" class="img-fluid" alt="logo">
+          </div>
+        </div>
+    
+    <!-- End Sidebar -->
+
+    <!--  -->
+         <!-- sidebar section -->    
+         <div id="mySidebar" class="sidebar sidebar-tab">
+          <div class="sidebar-pd">
+
+           <div class="top-header d-flex">
+           <div class="dropdown mb-4">
+               <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <img src="assets/images/page1/profile.png" class="user-img" alt="user-img"> &nbsp;
+                   <div>
+                   <!-- <p class="name mb-0">John Smith</p>
+                   <p class="place mb-0">Chief Executive</p> -->
+                   </div>
+                   <img src="assets/images/page1/drop-down-top.png" class="dropdown-ic" alt="dropdown">
+               </a>
+               <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                 <a class="dropdown-item" href="#">Profile</a>
+                 <a class="dropdown-item" href="#">Logout</a>
+               </div> -->
+              </div>
+           </div>
+
+           <ul class="nav-menu p-0">
+               <li class="nav-item navitem">
+                   <a class="nav-link" href="#">
+                    <img src="assets/images/page1/notifications.png" class="notification" alt="notification">
+                   </a>
+                  </li>
+               </ul>
+
+           <a href="#" class="links link-1"><img src="assets/images/page1/dashboard.png"></a>
+           <a href="#" class="links link-2"><img src="assets/images/page1/vessel.png"></a>
+           <a href="#" class="links link-3"><img src="assets/images/page1/officer.png"></a>
+           <a href="#" class="links link-4"><img src="assets/images/page1/compare.png"></a>
+           <a href="" class="links link-5 active"><img src="assets/images/page1/reporting-blue.png"></a>
+           <a href="" class="links link-6"><img src="assets/images/page1/analysis.png"></a>
+           <a href="" class="links link-7"><img src="assets/images/page1/data-source.png"></a>
+           <a href="" class="links link-8"><img src="assets/images/page1/download-kpi.png"></a>
+         </div>
+
+         <div class="logo">
+             <img src="assets/images/page1/logo.png" class="img-fluid" alt="logo">
+         </div>
+         </div>
+    <!--  -->
+
+<!-- header -->
+<div class="header">
+    <nav style="justify-content: start;" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a onclick="sideBar()" class="navbar-brand openbtn" href="#"><img src="assets/images/page1/menu.png" class="img-fluid" alt="menu"></a>
+        <h3 class="title header-title">Reporting Kpi</h3>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="ml-auto navbar-right" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <!-- <select data-size="7" data-live-search="true" class="top-dropdown selectpicker btn-primary fill_selectbtn_in own_selectbox" data-title="All" id="select_list" data-width="100%">
+                    <option value="all">All</option>
+                    <option value="company">DIANA SHIPPING SERVICES S.A.</option>
+                    <option value="usertemp">SEJIN MARINE CO. LTD</option>
+                    <option>P&F MARINE CO., LTD.</option>
+                </select> -->
+                <!-- <select class="top-dropdown cursor-pointer custom-select">
+                  <option selected>All</option>
+                  <option value="1">DIANA SHIPPING SERVICES S.A.</option>
+                  <option value="2">SEJIN MARINE CO. LTD</option>
+                  <option value="3">P&F MARINE CO., LTD.</option>
+                </select> -->
+                <div style="width: 200px;" class="dropdown">
+                  <span onclick="toggleDrop()" class="custom-select top-srch form-control"><span id="top-selected">All</span></span>
+                  <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a>All</a>
+                    <a>DIANA SHIPPING SERVICES S.A.</a>
+                    <a>SEJIN MARINE CO. LTD</a>
+                    <a>P&F MARINE CO., LTD.</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link admin-a" href="#">
+                    <img src="assets/images/page1/admin.png" class="admin" alt="admin">
+                </a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+</div>
+<!-- end -->
+
+<!-- Section -->
+<div class="report-page mt-2">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link top-link active" id="monthly-tab" data-toggle="tab" href="#monthly" role="tab" aria-controls="monthly" aria-selected="true">Monthly</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link top-link" id="technical-tab" data-toggle="tab" href="#technical" role="tab" aria-controls="technical" aria-selected="false">Technical</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link top-link" id="crew-tab" data-toggle="tab" href="#crew" role="tab" aria-controls="crew" aria-selected="false">Crew Retension</a>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane top-pane fade monthly-tab show active" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+        <!--  -->
+        <div class="monthly-table clearfix">
+          <!-- Filter -->
+          <div class="filter clearfix">
+            <div class="filter-ic-select">
+             <ul class="filter-values">
+               
+             </ul>
+              <div class="clear d-flex">
+                <button id="clearf-btn" type="button" class="clearfilter btn btn-secondary top-btns" data-toggle="modal" data-target="#exampleModal">
+                  Clear Filter
+                </button>
+                <button style="margin: auto;" type="button" class="btn btn-secondary top-btns" data-toggle="modal" data-target="#templatesModal">
+                  Choose Templates
+                </button>
+              <button class=""><img src="assets/images/page1/filter.png" alt="filter-ic" id="filter-exp-btn" class="img-fluid"></button>
+              </div>
+            </div>
+            <div class="filter-expand clearfix">
+            
+              <form id="filterForm" method="POST">
+
+              <div class="filter-expand-header">
+                <h4>Filter</h4>
+                <p>Set
+                  <select onchange="primaryChange()" id="primarySelect">
+                    <option value="year">Year</option>
+                    <option value="halfyear">Half Yearly</option>
+                    <option value="quarter">Quarter</option>
+                    <option value="month">Month</option>
+                    <option value="company">Company</option>
+                    <option value="fleet">Fleet</option>
+                    <option value="vesseltype">Vessel Type</option>
+                    <option value="vessel">Vessel</option>
+                    <option value="vesselflag">Vessel Flag</option>
+                  </select>
+                  as primary
+                </p>
+              </div>
+
+              <div class="mb-3" id="period">
+                <p class="title">Period</p>
+                <ul class="period-radio mb-2">
+                  <li>
+                    <input type="radio" id="radio-year" name="period" value="year" checked>
+                    <label for="radio-year" class="radio-year">Year</label>
+                    <input type="radio" id="radio-halfyear" name="period" value="halfyear">
+                    <label for="radio-halfyear" class="radio-halfyear">Half Yearly</label>
+                    <input type="radio" id="radio-quarter" name="period" value="quarter">
+                    <label for="radio-quarter" class="radio-quarter">Quarter</label>
+                    <input type="radio" id="radio-month" name="period" value="month">
+                    <label for="radio-month" class="radio-month">Month</label>
+                  </li>
+                </ul>
+                <ul style="display: block;" class="period-ul period-year-checkbox box year">
+                  <label for="period-year2020" class="container-1">2020<input type="checkbox" class="input-filter" id="period-year2020" name="filtercheck" value="2020"><span class="checkmark"></span></label>
+                  <label for="period-year2019" class="container-1">2019<input type="checkbox" class="input-filter" id="period-year2019" name="filtercheck" value="2019"><span class="checkmark filter-input"></span></label>
+                  <label for="period-year2018" class="container-1">2018<input type="checkbox" class="input-filter" id="period-year2018" name="filtercheck" value="2018"><span class="checkmark filter-input"></span></label>
+                </ul>
+                <ul class="period-ul period-halfyear-checkbox box halfyear">
+                  <label for="period-halfyear2020h1" class="container-1">2020 H1<input type="checkbox" class="input-filter" id="period-halfyear2020h1" name="filtercheck" value="2020h1"><span class="checkmark filter-input"></span></label>
+                  <label for="period-halfyear2020h2" class="container-1">2020 H2<input type="checkbox" class="input-filter" id="period-halfyear2020h2" name="filtercheck" value="2020h2"><span class="checkmark filter-input"></span></label>
+                </ul>
+                <ul class="period-ul period-quarter-checkbox box quarter">
+                  <label for="period-quarter2020q1" class="container-1">2020 Q1<input type="checkbox" class="input-filter" id="period-quarter2020q1" name="filtercheck" value="2020q1"><span class="checkmark filter-input"></span></label>
+                  <label for="period-quarter2020q2" class="container-1">2020 Q2<input type="checkbox" class="input-filter" id="period-quarter2020q2" name="filtercheck" value="2020q2"><span class="checkmark filter-input"></span></label>
+                  <label for="period-quarter2020q3" class="container-1">2020 Q3<input type="checkbox" class="input-filter" id="period-quarter2020q3" name="filtercheck" value="2020q3"><span class="checkmark filter-input"></span></label>
+                  <label for="period-quarter2020q4" class="container-1">2020 Q4<input type="checkbox" class="input-filter" id="period-quarter2020q4" name="filtercheck" value="2020q4"><span class="checkmark filter-input"></span></label>
+                </ul>
+                <ul class="period-ul period-month-checkbox box month">
+                  <label for="period-month2020jan" class="container-1">2020 Jan<input type="checkbox" class="input-filter" id="period-month2020jan" name="filtercheck" value="2020jan"><span class="checkmark filter-input"></span></label>
+                  <label for="period-month2020feb" class="container-1">2020 Feb<input type="checkbox" class="input-filter" id="period-month2020feb" name="filtercheck" value="2020feb"><span class="checkmark filter-input"></span></label>
+                  <label for="period-month2020mar" class="container-1">2020 Mar<input type="checkbox" class="input-filter" id="period-month2020mar" name="filtercheck" value="2020mar"><span class="checkmark filter-input"></span></label>
+                  <label for="period-month2020apr" class="container-1">2020 Apr<input type="checkbox" class="input-filter" id="period-month2020apr" name="filtercheck" value="2020apr"><span class="checkmark filter-input"></span></label>
+                  <label for="period-month2020may" class="container-1">2020 May<input type="checkbox" class="input-filter" id="period-month2020may" name="filtercheck" value="2020may"><span class="checkmark filter-input"></span></label>
+                  <label for="period-month2020jun" class="container-1">2020 Jun<input type="checkbox" class="input-filter" id="period-month2020jun" name="filtercheck" value="2020jun"><span class="checkmark filter-input"></span></label>
+                  <label for="period-month2020jul" class="container-1">2020 Jul<input type="checkbox" class="input-filter" id="period-month2020jul" name="filtercheck" value="2020jul"><span class="checkmark filter-input"></span></label>
+                  <label for="period-month2020aug" class="container-1">2020 Aug<input type="checkbox" class="input-filter" id="period-month2020aug" name="filtercheck" value="2020aug"><span class="checkmark filter-input"></span></label>
+                  <label for="period-month2020sep" class="container-1">2020 Sep<input type="checkbox" class="input-filter" id="period-month2020sep" name="filtercheck" value="2020sep"><span class="checkmark filter-input"></span></label>
+                  <label for="period-month2020oct" class="container-1">2020 Oct<input type="checkbox" class="input-filter" id="period-month2020oct" name="filtercheck" value="2020oct"><span class="checkmark filter-input"></span></label>
+                  <label for="period-month2020nov" class="container-1">2020 Nov<input type="checkbox" class="input-filter" id="period-month2020nov" name="filtercheck" value="2020nov"><span class="checkmark filter-input"></span></label>
+                  <label for="period-month2020dec" class="container-1">2020 Dec<input type="checkbox" class="input-filter" id="period-month2020dec" name="filtercheck" value="2018"><span class="checkmark filter-input"></span></label>
+                </ul>
+              </div>
+
+              <div class="mb-3" id="organization">
+                <p class="title">Organization</p>
+                <ul class="m-0">
+                  <li class="organization-company">
+                    <p>Company</p>
+                    <ul>
+                      <label for="company-all" class="container-1 all-checkbox">All<input type="checkbox" class="input-filter" id="company-all" name="" value="All"><span class="checkmark filter-input"></span></label><br>
+                      <label for="company-sun" class="container-1">SEJIN MARINE CO. LTD<input type="checkbox" class="input-filter" id="company-sun" class="selectedId filter-input" name="selectedId[]" value="SEJIN"><span class="checkmark"></span></label><br>
+                      <label for="company-shine" class="container-1">YAMAMARU KISEN CO LTD<input type="checkbox" id="company-shine" class="input-filter selectedId filter-input" name="selectedId[]" value="YAMAMARU"><span class="checkmark"></span></label><br>
+                      <label for="company-shine" class="container-1">DIANA SHIPPING SERVICES S.A.<input type="checkbox" id="company-shine" class="input-filter selectedId filter-input" name="selectedId[]" value="DIANA"><span class="checkmark"></span></label><br>
+                      <label for="company-shine" class="container-1">MITSUBISHI ORE TRANSPORT CO., LTD.<input type="checkbox" id="company-shine" class="input-filter selectedId filter-input" name="selectedId[]" value="MITSUBISHI"><span class="checkmark"></span></label><br>
+                      <label for="company-shine" class="container-1">P&F MARINE CO., LTD.<input type="checkbox" id="company-shine" class="input-filter selectedId filter-input" name="selectedId[]" value="P&F MARINE"><span class="checkmark"></span></label><br>
+                      <label for="company-shine" class="container-1">M.O.SHIP MANAGEMENT CO. LTD.,<input type="checkbox" id="company-shine" class="input-filter selectedId filter-input" name="selectedId[]" value="M.O.SHIP"><span class="checkmark"></span></label><br>
+                      <label for="company-shine" class="container-1">ANGLO-EASTERN SHIP MANAGEMENT(UK) LTD<input type="checkbox" id="company-shine" class="input-filter selectedId filter-input" name="selectedId[]" value="ANGLO-EASTERN"><span class="checkmark"></span></label>
+                    </ul>
+                  </li>
+                  <li class="organization-fleet">
+                    <p>Fleet</p>
+                    <ul>
+                      <label for="fleet-all" class="container-1 all-checkbox">All<input type="checkbox" class="input-filter" id="fleet-all" name="" value="Fleet All"><span class="checkmark"></span></label>
+                      <label for="fleet-1" class="container-1">Container Ships<input type="checkbox" class="input-filter" id="fleet-1" class="fleetId filter-input" name="fleetId[]" value="Container Ships"><span class="checkmark"></span></label>
+                      <label for="fleet-2" class="container-1">Bulk Carriers<input type="checkbox" class="input-filter" id="fleet-2" class="fleetId filter-input" name="fleetId[]" value="Bulk Carriers"><span class="checkmark"></span></label>
+                      <label for="fleet-3" class="container-1">Car Carriers<input type="checkbox" class="input-filter" id="fleet-3" class="fleetId filter-input" name="fleetId[]" value="Car Carriers"><span class="checkmark"></span></label>
+                      <label for="fleet-4" class="container-1">Multi-purpose Carriers<input type="checkbox" class="input-filter" id="fleet-4" class="fleetId filter-input" name="fleetId[]" value="Tankers"><span class="checkmark"></span></label>
+                      <label for="fleet-4" class="container-1">Tankers<input type="checkbox" class="input-filter" id="fleet-4" class="fleetId filter-input" name="fleetId[]" value="Tankers"><span class="checkmark"></span></label>
+                    </ul>
+                  </li>
+                  <li class="vessel-flag">
+                    <p>Vessel Flags</p>
+                    <ul>
+                      <label for="flag-lib" class="container-1">LIB<input type="checkbox" value="LIB" class="input-filter" id="flag-lib"><span class="checkmark filter-input"></span></label>
+                      <label for="flag-mlt" class="container-1">MLT<input type="checkbox" value="MLT" class="input-filter" id="flag-mlt"><span class="checkmark filter-input"></span></label>
+                      <label for="flag-sin" class="container-1">SIN<input type="checkbox" value="SIN" class="input-filter" id="flag-sin"><span class="checkmark filter-input"></span></label>
+                      <label for="flag-mi" class="container-1">MI<input type="checkbox" value="MI" class="input-filter" id="flag-mi"><span class="checkmark filter-input"></span></label>
+                      <label for="flag-pan" class="container-1">PAN<input type="checkbox" value="PAN" class="input-filter" id="flag-pan"><span class="checkmark filter-input"></span></label>
+                    </ul>
+                  </li>
+                  <li class="vessel-type mt-3">
+                    <p>Vessel Type</p>
+                    <ul style="background: #607189;">
+                      <label for="type-all" class="container-1 all-checkbox">All<input type="checkbox" class="input-filter" id="type-all" name=""><span class="checkmark filter-input"></span></label>
+                      <label for="type-dry" class="container-1">Dry Cargo<input type="checkbox" id="type-dry" class="input-filter vesselId filter-input" name="vesselId[]" value="Dry Cargo"><span class="checkmark"></span></label>
+                      <label for="type-tanker" class="container-1">Tanker<input type="checkbox" id="type-tanker" class="input-filter vesselId filter-input" name="vesselId[]" value="Tanker"><span class="checkmark"></span></label>
+                    </ul>
+                  </li>
+                  <li class="vessels mt-3">
+                    <p>Vessels</p>
+                      <ul style="background: #607189;">
+                        <label for="vessel-mikawa" class="container-1">MIKAWA<input type="checkbox" id="vessel-mikawa" class="input-filter vesselId filter-input" name="vesselId[]" value="Dry Cargo"><span class="checkmark"></span></label>
+                        <label for="vessel-sun" class="container-1">RISING SUN<input type="checkbox" id="vessel-sun" class="input-filter vesselId filter-input" name="vesselId[]" value="Tanker"><span class="checkmark"></span></label>
+                      </ul>
+                  </li>
+                  <li class="ship-yard-country mt-3">
+                    <p>Ship yard Country</p>
+                    <ul style="background: #607189; z-index: 111;">
+                      <label for="country-korea" class="container-1">Korea<input type="checkbox" class="input-filter" id="country-korea"><span class="checkmark filter-input"></span></label>
+                      <label for="country-india" class="container-1">India<input type="checkbox" class="input-filter" id="country-india"><span class="checkmark filter-input"></span></label>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="filter-btn mt-2">
+                <p style="font-size: 14px;font-weight: 550;" class="text-danger error-txt dis-none">No records found for the filter criteria.</p>
+                <button type="button" class="apply" id="applybtn">Apply</button>
+                <button type="button" class="buttonstyle" id="resetButton">Reset</button>
+                <button type="button" class="buttonstyle" id="savefile" data-toggle="modal" data-target="#saveTemplate">Save As Template</button>
+                <button id="cancel-btn" type="button" class="cancel" id="cancelbtn">Cancel</button>
+              </div>
+
+            </form>
+             
+
+            </div>
+
+          </div>
+          <!-- Filter End -->
+          <div class="" id="accordion">
+            <div class="table-section">
+              <div class="table-menu">
+                <p onclick="expandedAll()" class="expand-all expanded plus accordion-expand-collapse parent" id="rowMain" title="Click to expand/collapse" style="cursor: pointer;"><a id="expand-txt" href="#">Collapse All</a></p>
+                <ul class="list-menus clearfix">
+                  <li><input type="search" id="searchright"><label for="searchright" class="searchbtn"><img src="assets/images/page1/search.png" class="img-fluid" alt="search"></label></li>
+                  <li><a href="" download=""><img src="assets/images/page1/download.png" class="img-fluid" alt="download" title="Download excel"></a></li>
+                </ul>
+              </div>
+
+              <div class="expand-table table-scroll" id="table-scroll"> 
+                <div class="table-wrap">
+                  <table width="100%" class="exp-table">
+                    <thead>
+                      <tr>
+                        <th class="fixed-col freeze-col-1" rowspan="2">
+                          <div class="table-select">
+                          <select>
+                            <option>Performance Measuring Indicators</option>
+                            <option>Performance Measuring Indicators</option>
+                          </select>
+                          </div>
+                      </th>
+                      <th rowspan="2">Target</th>
+                      <th rowspan="2" colspan="4" id="table-performance">Performance</th>
+                      <th class="primary-txt" colspan="3">2020</th>
+                      <!-- <th colspan="3">2020
+                        <table width="100%">
+                          <tr><td>Fleet 1</td><td>Fleet 2</td><td>Fleet 3</td></tr>
+                        </table>
+                      </th>
+                      <th colspan="3">
+                        2019
+                        <table width="100%">
+                          <tr><td>Fleet 1</td><td>Fleet 2</td><td>Fleet 3</td></tr>
+                        </table>
+                      </th>
+                      <th colspan="3">
+                        2018
+                        <table width="100%">
+                          <tr><td>Fleet 1</td><td>Fleet 2</td><td>Fleet 3</td></tr>
+                        </table>
+                      </th> -->
+                      
+                      </tr>
+                      <tr class="secondary-row">
+                        <th>Fleet 1</th>
+                        <th>Fleet 2</th>
+                        <th>Fleet 3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="parent expand-button clearfix" id="row1" title="Click to expand/collapse" style="cursor: pointer;">
+                        <td class="freeze-col-1" width="100%" colspan="10"><h3 class="accordion-header freeze-h3">Safety Culture</h3></td>
+                      </tr>
+                        <tr class="remarks accordian-exp child-row1 child-rowMain" style="display: table-row;">
+                          <td class="freeze-col-1"><span>Best Practices </span><div><span>Y&nbsp;&nbsp;&nbsp;&nbsp; <b>M&nbsp;&nbsp;&nbsp;&nbsp;</b> D &nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp; &nbsp; &nbsp;<a><img src="assets/images/page1/anzlyze-mode.png" class="analyse-btn"></a></div></td>
+                          <td>&lt;= 2</td>
+                          <td><img src="assets/images/page1/reduce.png" alt="reduce"> 5</td>
+                          <td colspan="3" class="table-graph"><div id="graph1" style="width: 115px; height: 40px;"></div></td>
+                          <td class="filtertexttd"><img src="assets/images/page1/caution.png"> &nbsp; 1.11</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                          <!-- <td class=""><img src="assets/images/page1/caution.png"> &nbsp; 1.11</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td> -->
+                        </tr>
+                        <tr class="remarks accordian-exp child-row1 child-rowMain" style="display: table-row;">
+                          <td class="freeze-col-1"><i>LOST TIME INJUIRY - ON BOARD <img src="assets/images/page1/global.png" class="img-fluid global-ic"></i><div><span>Y&nbsp;&nbsp;&nbsp;&nbsp; <b>M&nbsp;&nbsp;&nbsp;&nbsp;</b> D &nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp; &nbsp; &nbsp;<a><img src="assets/images/page1/anzlyze-mode.png" class="analyse-btn"></a></div></td>
+                          <td>&lt;= 3</td>
+                          <td><img src="assets/images/page1/green.png" alt="green"> 0</td>
+                          <td colspan="3" class="table-graph"><div id="graph2" style="width: 115px; height: 40px;"></div></td>
+                          <td class="filtertexttd"><img src="assets/images/page1/caution.png"> &nbsp; 1.11</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                          <!-- <td class=""><img src="assets/images/page1/caution.png"> &nbsp;0.417</td>
+                          <td>0</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td> -->
+                        </tr>
+                        <tr  class="remarks accordian-exp child-row1 child-rowMain" style="display: table-row;">
+                          <td class="freeze-col-1"><span>Near Misses Safety </span><div><span>Y&nbsp;&nbsp;&nbsp;&nbsp; <b>M&nbsp;&nbsp;&nbsp;&nbsp;</b> D &nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp; &nbsp; &nbsp;<a><img src="assets/images/page1/anzlyze-mode.png" class="analyse-btn"></a></div></td>
+                          <td>&lt; = 3</td>
+                          <td><img src="assets/images/page1/green.png" alt="green"> 2.438</td>
+                          <td colspan="3" class="table-graph"><div id="graph3" style="width: 115px; height: 40px;"></div></td>
+                          <td class="filtertexttd"><img src="assets/images/page1/caution.png"> &nbsp; 1.11</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                          <!-- <td class=""> <img src="assets/images/page1/caution.png"> &nbsp;0.417</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 0.413</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td> -->
+                        </tr>
+
+                            <!--  -->
+                        <tr class="parent expand-button clearfix" id="row2" title="Click to expand/collapse" style="cursor: pointer;">
+                          <td class="freeze-col-1" width="100%" colspan="13"><h3 class="freeze-h3 accordion-header">Reputation Management</h3></td>
+                          </tr>
+                          <tr class="remarks accordian-exp child-row2 parent expand-button child-rowMain" id="row3" title="Click to expand/collapse" style="cursor: pointer;">
+                            <td class="freeze-col-1"><span class="ex-btn-td">Vetting Vessel Rejected</span><div><span>Y&nbsp;&nbsp;&nbsp;&nbsp; <b>M&nbsp;&nbsp;&nbsp;&nbsp;</b> D &nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp; &nbsp; &nbsp;<a><img src="assets/images/page1/anzlyze-mode.png" class="analyse-btn"></a></div></td>
+                            <td>&lt;= 2</td>
+                            <td><img src="assets/images/page1/reduce.png" alt="reduce"> 5</td>
+                            <td colspan="3" class="table-graph"><div id="graph4" style="width: 115px; height: 40px;"></div></td>
+                            <td class="filtertexttd"><img src="assets/images/page1/caution.png"> &nbsp; 1.11</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <!-- <td class=""><img src="assets/images/page1/caution.png"> &nbsp; 1.11</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td> -->
+                            
+                          </tr>
+                          <tr class="remarks accordian-exp child-row3 child-row2 child-rowMain" style="display: table-row;">
+                            <td class="freeze-col-1"><span>Safety Area </span><div><span>Y&nbsp;&nbsp;&nbsp;&nbsp; <b>M&nbsp;&nbsp;&nbsp;&nbsp;</b> D &nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp; &nbsp; &nbsp;<a><img src="assets/images/page1/anzlyze-mode.png" class="analyse-btn"></a></div></td>
+                            <td>&lt;= 2</td>
+                            <td><img src="assets/images/page1/reduce.png" alt="reduce"> 5</td>
+                            <td colspan="3" class="table-graph"><div id="graph7" style="width: 115px; height: 40px;"></div></td>
+                            <td class="filtertexttd"><img src="assets/images/page1/caution.png"> &nbsp; 1.11</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <!-- <td class=""><img src="assets/images/page1/caution.png"> &nbsp; 1.11</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td> -->
+                          </tr>
+                          <tr class="remarks accordian-exp child-row3 child-row2 child-rowMain" style="display: table-row;">
+                            <td class="freeze-col-1"><span>Environment Area </span><div><span>Y&nbsp;&nbsp;&nbsp;&nbsp; <b>M&nbsp;&nbsp;&nbsp;&nbsp;</b> D &nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp; &nbsp; &nbsp;<a><img src="assets/images/page1/anzlyze-mode.png" class="analyse-btn"></a></div></td>
+                            <td>&lt;= 2</td>
+                            <td><img src="assets/images/page1/reduce.png" alt="reduce"> 5</td>
+                            <td colspan="3" class="table-graph"><div id="graph8" style="width: 115px; height: 40px;"></div></td>
+                            <td class="filtertexttd"><img src="assets/images/page1/caution.png"> &nbsp; 1.11</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <!-- <td class=""><img src="assets/images/page1/caution.png"> &nbsp; 1.11</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td> -->
+                          </tr>
+                          <tr class="remarks accordian-exp child-row2 parent expand-button child-rowMain" id="row4" title="Click to expand/collapse" style="cursor: pointer;">
+                              <td class="freeze-col-1"><span class="ex-btn-td"><i> Vetting Remarks Per Inspection </span><img src="assets/images/page1/global.png" class="img-fluid global-ic"></i><div><span>Y&nbsp;&nbsp;&nbsp;&nbsp; <b>M&nbsp;&nbsp;&nbsp;&nbsp;</b> D &nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp; &nbsp; &nbsp;<a><img src="assets/images/page1/anzlyze-mode.png" class="analyse-btn"></a></div></td>
+                              <td>&lt;= 2</td>
+                            <td><img src="assets/images/page1/green.png" alt="green"> 0</td>
+                            <td colspan="3" class="table-graph"><div id="graph5" style="width: 115px; height: 40px;"></div></td>
+                            <td class="filtertexttd"><img src="assets/images/page1/caution.png"> &nbsp; 1.11</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <!-- <td class=""><img src="assets/images/page1/caution.png"> &nbsp;0.417</td>
+                            <td>0</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td> -->
+                          </tr>
+                          <tr class="remarks accordian-exp child-row2 child-row4 child-rowMain">
+                            <td class="freeze-col-1"><span>Navigation Area</span> <div><a><img src="assets/images/page1/anzlyze-mode.png" class="analyse-btn"></a></div></td>
+                            <td>&lt; = 3</td>
+                            <td><img src="assets/images/page1/green.png" alt="green"> 2.438</td>
+                            <td colspan="3" class="table-graph"><div id="graph6" style="width: 115px; height: 40px;"></div></td>
+                            <td class="filtertexttd"><img src="assets/images/page1/caution.png"> &nbsp; 1.11</td>
+                          <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                          <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <!-- <td class=""> <img src="assets/images/page1/caution.png"> &nbsp;0.417</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 0.413</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td>
+                            <td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td> -->
+                          </tr>
+                       
+                    </tbody>
+                  </table>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <div class="tab-pane top-pane technical-tab fade" id="technical" role="tabpanel" aria-labelledby="technical-tab">...</div>
+      <div class="tab-pane top-pane crew-tab fade" id="crew" role="tabpanel" aria-labelledby="crew-tab">...</div>
+    </div>
+ </div>
+<!--  -->
+<!-- dashboard vetting -->
+<div class="dashboard-vetting v-none clearfix">
+
+  <ul class="menu-icon px-4 pt-3">
+    <li class="menu-ic1"><img style="max-width: 75%;"  src="assets/images/page1/observe.png" alt="observe" class="img-fluid observe-ic" title="observations"><span>12</span></li>
+    <li><img id="downloaddrop" src="assets/images/page1/export.png" alt="export" class="img-fluid export cursor-pointer" title="Export" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="downloaddrop">
+        <a class="dropdown-item" href="#">Download as pdf</a>
+        <a class="dropdown-item" href="#">Download as excel</a>
+      </div>
+    </li>
+    <li><img src="assets/images/page1/print.png" class="img-fluid print cursor-pointer" alt="print" title="Print"></li>
+    <li><img src="assets/images/page1/max.png" class="img-fluid maximize cursor-pointer" alt="maximize" onclick="vettingFull()" title="Fullscreen"></li>
+    <li><a id="vet-close" onclick="vetting()" href="#"><img src="assets/images/page1/close-ic.png" class="img-fluid backmain" alt="close-ic" title="close"></a></li>
+  </ul>
+
+  <div class="vetting-head px-4">
+    <p><img id="vet-imag" src="assets/images/page1/analyze-popscreen-icon.png" alt="analyze"> &nbsp; Dashboard &nbsp;<img src="assets/images/page1/left-arrow.png" alt="left"> &nbsp;<b>Vetting Remarks Per Inspection</b></p>
+  </div>
+
+<div class="vetting-height">
+  <div class="observe-action  px-4">
+    <div class="row">
+      <div class="col-7">
+          <div class="observations bg-white">
+            <h4>Observations (12)</h4>
+            <div class="mesg-collection">
+               
+                <div class="chat">
+                  <div class="messages-box clearfix" id="messages-box">
+                    <div class="message">
+                      <i class="fa fa-close"></i>
+                      <p><span>Fleet Observation details</span><span class="f-right">08-09-2020 03:38:12</span>
+                    </div>
+                    <div class="message">
+                      <i class="fa fa-close"></i>
+                      <p><span>Environmental Area Observation details</span><span class="f-right">08-09-2020 03:38:12</span>
+                    </div>
+                    
+                  </div>
+
+                  <div class="create-massage">
+                    <form id="chatForm" class="clearfix">
+                        <input id="observationInput" type="text"  placeholder="Enter Details">
+                        <button onclick="observations()" onsubmit="event.preventDefault();" type="submit" class="f-right submit1"><img src="assets/images/page1/send.png" alt="send"></button>
+                    </form>
+                   </div>
+                  
+                </div>
+                
+                <!--  -->
+            </div>
+          </div>
+      </div>
+      <div class="col-5">
+        <div class="observations bg-white">
+          <h4>Actions</h4>
+          <div class="mesg-collection">
+             
+              <div class="chat">
+                <div class="messages-box clearfix" id="messages-box1">
+                  <!-- <div class="message">
+                    <i class="fa fa-close"></i>
+                    <p><span>Fleet Observation details</span><span class="f-right">08-09-2020 03:38:12</span>
+                  </div>
+                  <div class="message">
+                    <i class="fa fa-close"></i>
+                    <p><span>Environmental Area Observation details</span><span class="f-right">08-09-2020 03:38:12</span>
+                  </div> -->
+                </div>
+
+                <div class="create-massage">
+                  <form id="chatForm1" class="clearfix">
+                      <input id="actionInput" type="text"  placeholder="Enter Details">
+                      <button onclick="actions()" onsubmit="event.preventDefault();" type="submit" class="f-right submit2"><img src="assets/images/page1/send.png" alt="send"></button>
+                  </form>
+                 </div>
+                
+              </div>
+              
+              <!--  -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vetting-graph-dashboard mb-3 px-4 pt-3">
+    <div class="row">
+      <div class="col-6">
+        <div id="curve-graph" style="height: 230px; border: 1px solid #ddd"></div>
+      </div>
+      <div class="col-5 col-md-6">
+        <div id="stackColumn" style="height: 230px; border: 1px solid #ddd"></div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-6">
+        <div id="curve-graph1" style="height: 230px; border: 1px solid #ddd"></div>
+      </div>
+      <div class="col-5 col-md-6">
+        <div id="stackColumn1" style="height: 230px; border: 1px solid #ddd"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vetting-table mt-5 px-4">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link vetting-link active" id="company-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Company</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link vetting-link" id="fleet-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Fleet</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link vetting-link" id="vessel-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Vessel</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane vetting-pane fade company-tab show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <table width="100%">
+          <thead>
+            <th>Company</th>
+            <th>Target</th>
+            <th>Value</th>
+          </thead>
+          <tbody>
+            <tr  data-toggle="modal" data-target="#vettingModal1"></tr>
+              <td>YAMAMARU KISEN CO LTD</td>
+              <td>&le;=3</td>
+              <td>0.25</td>
+            </tr>
+            <tr data-toggle="modal" data-target="#vettingModal">
+              <td>P&F MARINE CO., LTD.</td>
+              <td>&le;=3</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>M.O.SHIP MANAGEMENT CO. LTD.,</td>
+              <td>&le;=3</td>
+              <td>0.25</td>
+            </tr>
+            <tr>
+              <td>SEJIN MARINE CO. LTD</td>
+              <td>&le;=4</td>
+              <td>0.25</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text-center">
+        <div class="pagination py-3">
+          <a href="#">&laquo;</a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">&raquo;</a>
+        </div>
+        </div>
+        
+      </div>
+      <div class="tab-pane vetting-pane fleet-tab fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <table width="100%">
+          <thead>
+            <th>Fleet</th>
+            <th>Target</th>
+            <th>Value</th>
+            <th>Company</th>
+          </thead>
+          <tbody>
+            <tr  data-toggle="modal" data-target="#vettingModal1">
+              <td>Bulk Carriers</td>
+              <td>&le;=3</td>
+              <td>0.25</td>
+              <td>P&F MARINE CO., LTD.</td>
+            </tr>
+            <tr data-toggle="modal" data-target="#vettingModal">
+              <td>Car Carriers</td>
+              <td>&le;=3</td>
+              <td>2</td>
+              <td>YAMAMARU KISEN CO LTD</td>
+            </tr>
+            <tr>
+              <td>Container Ships</td>
+              <td>&le;=3</td>
+              <td>0.25</td>
+              <td>M.O.SHIP MANAGEMENT CO. LTD.,</td>
+            </tr>
+            <tr>
+              <td>Tankers, LNG Carriers</td>
+              <td>&le;=4</td>
+              <td>0.25</td>
+              <td>SEJIN MARINE CO. LTD</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text-center">
+          <div class="pagination py-3">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+          </div>
+      </div>
+      <div class="tab-pane vetting-pane vessel-tab fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <table width="100%">
+          <thead>
+            <th>Fleet</th>
+            <th>Vessel Name</th>
+            <th>Target</th>
+            <th>Value</th>
+            <th>Company</th>
+          </thead>
+          <tbody>
+            <tr  data-toggle="modal" data-target="#vettingModal">
+              <td>Container Ships</td>
+              <td>SHIN SANYO MARU</td>
+              <td>&le;=3</td>
+              <td>4</td>
+              <td>YAMAMARU KISEN CO LTD</td>
+            </tr>
+            <tr data-toggle="modal" data-target="#vettingModal">
+              <td>Bulk Carriers</td>
+              <td>MIKAWA</td>
+              <td>&le;=3</td>
+              <td>2</td>
+              <td>MITSUBISHI ORE TRANSPORT CO., LTD.</td>
+            </tr>
+            <tr>
+              <td>Car Carriers</td>
+              <td>GRAND DAHLIA</td>
+              <td>&le;=3</td>
+              <td>2</td>
+              <td>SEJIN MARINE CO. LTD</td>
+            </tr>
+            <tr>
+              <td>Tankers, LNG Carriers</td>
+              <td>RISING SUN</td>
+              <td>&le;=4</td>
+              <td>3</td>
+              <td>DIANA SHIPPING SERVICES S.A.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text-center">
+          <div class="pagination py-3">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+    
+<!-- vetting remarks per inspection -->
+<div class="remark-per v-none clearfix">
+    <a href="#" class="clearfix"><img src="assets/images/page1/close.png" class="close-div" alt="close"></a>
+    <h1 class="clearfix">Vetting - Remarks per inspection</h1>
+    <div class="performance-count">
+      <h2><img src="assets/images/page1/green.png" alt="green"> 2.438</h2>
+      <p>Performance</p>
+      <h6>Target &le; =  3</h6>
+    </div>
+    <div>
+     
+      <!-- <div id="container-speed" style="height: 220px;"></div> -->
+      <div id="container-rpm" style="height: 180px; vertical-align: top;"></div>
+
+      <div class="performance-sec">
+
+        <div class="d-flex header">
+          <h1>Performance</h1>
+        </div>
+
+        <!--  -->
+        <div class="container-fluid px-0 py-4">
+        <div class="row">
+          <div class="col-md-2 mb-3">
+              <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link remark-link active" id="2020-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">2020</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link remark-link" id="2019-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">2019</a>
+                  </li>
+               </ul>
+          </div>
+          <!-- /.col-md-4 -->
+          <div style="padding-left: 5 px;" class="col-md-10">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane remark-pane 2020-tab fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div id="vetting-graph1" style="height: 300px"></div>
+                </div>
+                <div class="tab-pane remark-pane 2020-tab fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div id="vetting-graph2" style="height: 300px"></div>
+                </div>
+           </div>
+          </div>
+          <!-- /.col-md-8 -->
+        </div>
+        
+        
+        
+      </div>
+        <!--  -->
+      </div>
+      
+  </div>
+</div>
+<!--  -->
+
+</div>
+
+
+<!-- Save template -->
+<!-- Modal -->
+<div class="modal fade" id="saveTemplate" tabindex="-1" role="dialog" aria-labelledby="saveTemplate" aria-hidden="true">
+  <div style="max-width: 400px;" class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header pl-4">
+        <h5 class="modal-title" id="exampleModalLabel">Save As Template</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pl-4 pt-0">
+            <div class="levels pb-2">
+                    <input type="radio" class="modal-radio" id="company-level" name="level" checked>
+                    <label style="margin-right: 30px;" for="company-level">Company Level</label> &nbsp; &nbsp;
+                    <input type="radio" class="modal-radio" id="user-level" name="level">
+                    <label for="user-level">User Level</label>
+
+              </div>      
+                      <input id="template-inp" style="padding: .375rem .75rem;width: 70%;" type="text" name="template" placeholder="Template">
+                      <p class="text-danger error-temp mt-3 mb-0 dis-none">Error saving template.</p>
+                  
+      </div>
+      <div class="modal-footer pl-4">
+        <button type="button" id="templateBtn" onclick="saveTemplate()" class="save">Save</button>
+        <button type="button" data-dismiss="modal" class="cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  -->
+<!-- Modal -->
+<div class="modal fade vettingmodal" id="vettingModal" tabindex="-1" role="dialog" aria-labelledby="vettingModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="vettingModalLabel">Bhava Bhuti</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table width="100%" class="vettingModal-table">
+          <thead>
+            <th>PSC</th>
+            <th>Date of Inspection</th>
+            <th>No of Observation</th>
+            <th>No of Inspection</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Singapore</td>
+              <td>11/09/2020</td>
+              <td>5</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Kolkata</td>
+              <td>17/09/2020</td>
+              <td>5</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Mumbai</td>
+              <td>22/09/2020</td>
+              <td>5</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+                  
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade vettingmodal" id="vettingModal1" tabindex="-1" role="dialog" aria-labelledby="vettingModal1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="vettingModalLabel">Bertha Ann</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table width="100%" class="vettingModal-table">
+          <thead>
+            <th>PSC</th>
+            <th>Date of Inspection</th>
+            <th>No of Observation</th>
+            <th>No of Inspection</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Singapore</td>
+              <td>11/09/2020</td>
+              <td>5</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Kolkata</td>
+              <td>17/09/2020</td>
+              <td>5</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Mumbai</td>
+              <td>22/09/2020</td>
+              <td>5</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+                  
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade more-modal" id="more-modal" tabindex="-1" aria-labelledby="moreModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Filters</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush filter-group">
+        </ul>
+      </div>
+      <div class="modal-footer d-block text-center">
+        <button type="button" class="clearfilter top-btn btn btn-secondary top-btns" data-dismiss="modal">
+          Clear Filter
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade templates-modal" id="templatesModal" tabindex="-1" aria-labelledby="templatesModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Templates</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="list-group">
+          <button data-dismiss="modal" type="button" class="list-group-item list-group-item-action">Template 1</button>
+          <button data-dismiss="modal" type="button" class="list-group-item list-group-item-action">Template 2</button>
+          <button data-dismiss="modal" type="button" class="list-group-item list-group-item-action">Template 3</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button style="background-color: #1D3557;" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div style="max-width: 400px;" class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body d-block text-center p-4">
+        <img style="vertical-align: text-bottom;width: 30px;" src="assets/images/page1/tick.png" class="close-div" alt="close">
+        <h5>Template Successfully Saved!</h5>
+      </div>
+      <div class="modal-footer text-center d-block">
+        <button style="padding: 6px 18px!important;" type="button" class="btn btn-secondary top-btns" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script> -->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/series-label.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+        <!-- <script src="assets/js/speedmeter.js"></script> -->
+        <script src="assets/js/table-chart.js"></script>
+        <script src="assets/js/vetting-graph.js"></script>
+        <!-- <script src="assets/js/swap.js"></script> -->
+        <!-- <script src="https://www.jqueryscript.net/demo/Bootstrap-4-Dropdown-Select-Plugin-jQuery/dist/js/bootstrap-select.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js"></script> -->
+        <script src="assets/js/dark-mode-switch.js"></script>
+       
+        <script>
+          var modal = document.querySelector(".modal");
+var container = modal.querySelector(".container");
+
+document.querySelector("button").addEventListener("click", function (e) {
+  modal.classList.remove("hidden")
+});
+
+document.querySelector(".modal").addEventListener("click", function (e) {
+  if (e.target !== modal && e.target !== container) return;     
+  modal.classList.add("hidden");
+});
+          var sidebarV = true;
+          var vettingV = false;
+          var observeV = false;
+          var filterV = false;
+          var fullV = false;
+          var dashboardDrop = false;
+          var sidebar = document.getElementById("mySidebar");
+          var analyseBtns = document.getElementsByClassName("analyse-btn");
+          var containers = document.getElementsByClassName("container-1");
+          var inputs = document.getElementsByClassName("input-filter");
+
+          
+          for(i=0; i<analyseBtns.length;i++) {
+            analyseBtns[i].addEventListener("click", vetting); 
+          }
+          var navBar = document.getElementsByClassName("nav-menu")[0].getElementsByClassName('navitem');
+        
+        //save template popup
+          function saveTemplate() {
+            if(document.getElementById("template-inp").value == "") {
+              document.getElementsByClassName("error-temp")[0].classList.remove("dis-none");
+              document.getElementById("templateBtn").setAttribute("data-dismiss", "");
+              document.getElementById("templateBtn").setAttribute("data-toggle", "");
+              document.getElementById("templateBtn").setAttribute("data-target", "");
+              
+            }
+            else {
+              document.getElementsByClassName("error-temp")[0].classList.add("dis-none");
+              document.getElementById("templateBtn").setAttribute("data-dismiss", "modal");
+              document.getElementById("templateBtn").setAttribute("data-toggle", "modal");
+              document.getElementById("templateBtn").setAttribute("data-target", "#successModal");
+            }
+          }
+
+          //toggle sidebar
+          function sideBar() {
+            let x = document.getElementsByClassName("dropdown")[0].getElementsByTagName('p');
+            let links = document.getElementsByClassName("sidebar")[0].getElementsByClassName('links')
+            if(sidebarV === true) {
+              console.log(navBar);
+              sidebar.classList.add("sidebar-show");
+              document.getElementById("main").classList.add("main-space");
+              for(i=0;i<x.length;i++) {
+                x[i].classList.add("dis-none");
+                
+              }
+              for(i=0;i<navBar.length;i++) {
+                navBar[i].classList.add("dis-none");
+              }
+              for(i=0;i<links.length;i++) { 
+                links[i].classList.add("linksfont");
+              }
+              document.getElementsByClassName("nav-menu")[0].getElementsByTagName('li')[3].classList.add("liwidth");
+              document.getElementsByClassName("dropdown-ic")[0].classList.add("dis-none");;
+              document.getElementsByClassName("modes")[0].classList.add("dis-none");
+              sidebarDrop = document.getElementsByClassName("sidebar-drop");
+              for(i=0;i<sidebarDrop.length;i++) {
+                sidebarDrop[i].classList.add("dis-none");
+              }
+              dashboardDrop = false;
+              sidebarV = false;
+            }
+            else {
+              sidebar.classList.remove("sidebar-show");
+              document.getElementById("main").classList.remove("main-space");
+              for(i=0;i<x.length;i++) {
+                x[i].classList.remove("dis-none");;
+                
+              }
+              for(i=0;i<navBar.length;i++) {
+                navBar[i].classList.remove("dis-none");;
+              }
+              for(i=0;i<links.length;i++) { 
+                links[i].classList.remove("linksfont");
+              }
+              document.getElementsByClassName("nav-menu")[0].getElementsByTagName('li')[3].classList.remove("liwidth");
+              document.getElementsByClassName("dropdown-ic")[0].classList.remove("dis-none");;
+              document.getElementsByClassName("modes")[0].classList.remove("dis-none");
+              sidebarV = true;
+            }
+          }
+          
+          //toggle vetting component
+          function vetting() {
+            if(vettingV == false) {
+              document.getElementsByClassName("dashboard-vetting")[0].classList.remove("v-none");
+              vettingV = true;
+            }
+            else {
+              document.getElementsByClassName("dashboard-vetting")[0].classList.add("v-none");
+              vettingV = false;
+            }
+          }
+
+          //observations and actions dropdown in vetting component
+          document.getElementsByClassName("menu-ic1")[0].addEventListener("click", function() {
+            if(observeV) {
+              document.getElementsByClassName("menu-ic1")[0].classList.remove("expanded-ic");
+              document.getElementsByClassName("observe-action")[0].classList.remove("open-down");
+              observeV = false;
+            }
+            else {
+              document.getElementsByClassName("menu-ic1")[0].classList.add("expanded-ic");
+              document.getElementsByClassName("observe-action")[0].classList.add("open-down");
+              observeV = true;
+            }
+          });
+
+          //filter-dropdown
+          document.getElementById("filter-exp-btn").addEventListener("click", function() {
+            if(filterV) {
+              document.getElementsByClassName("filter-expand")[0].classList.remove("expand-down");
+              document.getElementById("filter-exp-btn").classList.remove("filter-expand-button");
+              filterV = false;
+            }
+            else {
+              document.getElementsByClassName("filter-expand")[0].classList.add("expand-down");
+              document.getElementById("filter-exp-btn").classList.add("filter-expand-button");
+              filterV = true;
+            }
+            // $('.filter-expand').slideToggle('1000');
+          });
+
+          document.getElementById("cancel-btn").addEventListener("click", function() {
+            if(filterV) {
+              document.getElementsByClassName("filter-expand")[0].classList.remove("expand-down");
+              document.getElementById("filter-exp-btn").classList.remove("filter-expand-button");
+              filterV = false;
+            }
+            else {
+              document.getElementsByClassName("filter-expand")[0].classList.add("expand-down");
+              document.getElementById("filter-exp-btn").classList.add("filter-expand-button");
+              filterV = true;
+            }
+            // $('.filter-expand').slideToggle('1000');
+          });
+
+          //remove filter values on top
+          // document.getElementsByClassName("filter-values")[0].addEventListener("click", function(e) {
+          //   let x = e.target;
+          //   if(e.target.nodeName !== "SPAN") {
+          //   x.remove();
+          //   }
+          // });
+
+          //clear filter function
+          document.getElementsByClassName("clearfilter")[0].addEventListener("click", function(e) {
+            // let x = document.getElementsByClassName("filter-values")[0].children;
+            // for(i=0;i<x.length;i++) {
+            //   x[i].classList.add("dis-none");
+            // }
+            while (document.getElementsByClassName("filter-values")[0].firstChild) {
+              document.getElementsByClassName("filter-values")[0].removeChild(document.getElementsByClassName("filter-values")[0].firstChild);
+            }
+          });
+
+          document.getElementsByClassName("clearfilter")[1].addEventListener("click", function(e) {
+            // let x = document.getElementsByClassName("filter-values")[0].children;
+            // for(i=0;i<x.length;i++) {
+            //   x[i].classList.add("dis-none");
+            // }
+            while (document.getElementsByClassName("filter-values")[0].firstChild) {
+              document.getElementsByClassName("filter-values")[0].removeChild(document.getElementsByClassName("filter-values")[0].firstChild);
+            }
+          });
+
+          //toggle performance component 
+          var remarks = document.getElementsByClassName("remarks");
+          for(i=0;i<remarks.length;i++) {
+            remarks[i].addEventListener("click", remarksOpen);
+          }
+          function remarksOpen(e) {
+            console.log(e);
+            if(e.target.nodeName !== "IMG") {
+              document.getElementsByClassName("remark-per")[0].classList.remove("v-none");
+            }
+          }
+          document.getElementsByClassName("close-div")[0].addEventListener("click", function(e) {
+            document.getElementsByClassName("remark-per")[0].classList.add("v-none");
+          });
+
+          //display period in filter
+          document.getElementsByClassName("radio-year")[0].addEventListener("click", function(e) {
+            box = document.querySelectorAll(".box");
+            for(i=0;i<box.length;i++) {
+              box[i].style.display = "none"
+            }
+            document.getElementsByClassName("year")[0].style.display = "block";
+          });
+          document.getElementsByClassName("radio-halfyear")[0].addEventListener("click", function(e) {
+            box = document.querySelectorAll(".box");
+            for(i=0;i<box.length;i++) {
+              box[i].style.display = "none"
+            }
+            document.getElementsByClassName("halfyear")[0].style.display = "block";
+          });
+          document.getElementsByClassName("radio-quarter")[0].addEventListener("click", function(e) {
+            box = document.querySelectorAll(".box");
+            for(i=0;i<box.length;i++) {
+              box[i].style.display = "none"
+            }
+            document.getElementsByClassName("quarter")[0].style.display = "block";
+          });
+          document.getElementsByClassName("radio-month")[0].addEventListener("click", function(e) {
+            box = document.querySelectorAll(".box");
+            for(i=0;i<box.length;i++) {
+              box[i].style.display = "none"
+            }
+            document.getElementsByClassName("month")[0].style.display = "block";
+          });
+
+          //adding messages in observations and actions
+          function observations() {
+              var message = document.getElementById("observationInput").value;
+              var node = document.createElement("div");
+              node.classList.add("message");
+              var i = document.createElement("i");
+              i.classList.add("fa");
+              i.classList.add("fa-close");
+              node.appendChild(i);
+              var p = document.createElement("p");
+              var textnode = document.createTextNode(message);
+              p.appendChild(textnode);
+              node.appendChild(p);
+              document.getElementById("messages-box").appendChild(node);
+              document.getElementById("observationInput").value = "";
+            }
+            function actions() {
+              var message = document.getElementById("actionInput").value;
+              var node = document.createElement("div");
+              node.classList.add("message");
+              var i = document.createElement("i");
+              i.classList.add("fa");
+              i.classList.add("fa-close");
+              node.appendChild(i);
+              var p = document.createElement("p");
+              var textnode = document.createTextNode(message);
+              p.appendChild(textnode);
+              node.appendChild(p);
+              document.getElementById("messages-box1").appendChild(node);
+              document.getElementById("actionInput").value = "";
+            }
+
+
+            var filterValues = [];
+            // Applying values on apply filter
+            document.getElementById("applybtn").addEventListener("click", function(e) {
+              while (document.getElementsByClassName("filter-group")[0].firstChild) {
+                document.getElementsByClassName("filter-group")[0].removeChild(document.getElementsByClassName("filter-group")[0].firstChild);
+              }
+              while (document.getElementsByClassName("filter-values")[0].firstChild) {
+                document.getElementsByClassName("filter-values")[0].removeChild(document.getElementsByClassName("filter-values")[0].firstChild);
+              }
+              filterValues = [];
+              for(i=0;i<inputs.length;i++) {
+                if(inputs[i].checked) {
+                  filterValues.push(inputs[i].value)
+                }
+              }
+              if(filterValues.length == 0) {
+                document.getElementsByClassName("error-txt")[0].classList.remove("dis-none");  
+              }
+              else {
+                document.getElementsByClassName("error-txt")[0].classList.add("dis-none");
+                for(i=0;i<filterValues.length;i++) {
+                  console.log(document.getElementsByClassName("filter-group")[0]);
+                  if(i == 6) {
+                    var node = document.createElement("span");
+                    node.classList.add("text-primary");
+                    node.classList.add("f-more");
+                    node.setAttribute("data-toggle", "modal");
+                    node.setAttribute("data-target", "#more-modal");
+                    var textnode = document.createTextNode('more...');
+                    node.appendChild(textnode);
+                    document.getElementsByClassName("filter-values")[0].appendChild(node);
+                    var node2 = document.createElement("li");
+                    node2.classList.add("list-group-item");
+                    var textnode2 = document.createTextNode(filterValues[i]);
+                    node2.appendChild(textnode2);
+                    document.getElementsByClassName("filter-group")[0].appendChild(node2);
+                  }
+                  else if(i<6) {
+                    var node = document.createElement("li");
+                    var node2 = document.createElement("li");
+                    node2.classList.add("list-group-item");
+                    var textnode = document.createTextNode(filterValues[i]);
+                    var textnode2 = document.createTextNode(filterValues[i]);
+                    node.appendChild(textnode);
+                    node2.appendChild(textnode2);
+                    document.getElementsByClassName("filter-values")[0].appendChild(node);
+                    document.getElementsByClassName("filter-group")[0].appendChild(node2);
+                  }
+                  else {
+                    var node2 = document.createElement("li");
+                    node2.classList.add("list-group-item");
+                    var textnode2 = document.createTextNode(filterValues[i]);
+                    node2.appendChild(textnode2);
+                    document.getElementsByClassName("filter-group")[0].appendChild(node2);
+                  }
+                }
+              }
+             
+              
+              console.log(filterValues)
+            });
+
+            //reset form
+            document.getElementById("resetButton").addEventListener("click", function(e) {
+              document.getElementById("filterForm").reset();
+            });
+
+            //sidebar function
+            var sidebarLink = document.getElementsByClassName("sidebar-a");
+            for(i=0;i<sidebarLink.length;i++) {
+              sidebarLink[i].addEventListener("click", sidebarClick);
+            }
+            sidebarDrop = document.getElementsByClassName("sidebar-drop");
+            for(i=0;i<sidebarDrop.length;i++) {
+              sidebarDrop[i].firstChild.remove();
+            }
+            sidebarDropLink = document.getElementsByClassName("sidebar-drop-a");
+            for(i=0;i<sidebarDropLink.length;i++) {
+              sidebarDropLink[i].addEventListener("click", sidebarDropdown);
+            }
+            
+            function sidebarDropdown(e) {
+              document.getElementsByClassName("navbar-right")[0].classList.add("dis-none");
+              document.getElementsByClassName("header-title")[0].innerHTML = "Dashboard";
+              document.getElementsByClassName("report-page")[0].classList.add("dis-none");
+              console.log(e.target);
+              for(i=0;i<sidebarDropLink.length;i++) {
+                sidebarDropLink[i].classList.remove("active");
+              }
+              for(i=0;i<sidebarLink.length;i++) {
+                sidebarLink[i].classList.remove("active");
+              }
+              e.target.classList.add("active")
+            }
+            function sidebarClick(e) {
+              console.log(e.target);
+              
+              document.getElementById("dashboard-a").firstChild.setAttribute("src", "assets/images/page1/dashboard.png");
+              document.getElementById("vessel-a").firstChild.setAttribute("src", "assets/images/page1/vessel.png");
+              document.getElementById("officer-a").firstChild.setAttribute("src", "assets/images/page1/officer.png");
+              document.getElementById("compare-a").firstChild.setAttribute("src", "assets/images/page1/compare.png");
+              document.getElementById("report-a").firstChild.setAttribute("src", "assets/images/page1/reporting.png");
+              document.getElementById("analysis-a").firstChild.setAttribute("src", "assets/images/page1/analysis.png");
+              document.getElementById("data-a").firstChild.setAttribute("src", "assets/images/page1/data-source.png");
+              document.getElementById("download-a").firstChild.setAttribute("src", "assets/images/page1/download-kpi.png");
+              e.target.classList.add("active");    
+              if(e.target.id == "dashboard-a") {
+                // e.target.firstChild.setAttribute("src", "assets/images/page1/dashboard-blue.png")
+                e.target.classList.remove("active");
+                console.log();
+                if(dashboardDrop) {
+                  document.getElementsByClassName("dashboard-drop")[0].classList.add("dis-none");
+                  dashboardDrop = false;
+                }
+                else {
+                  document.getElementsByClassName("dashboard-drop")[0].classList.remove("dis-none");
+                  dashboardDrop = true;
+                }
+              }
+              if(e.target.id == "vessel-a") {
+                document.getElementsByClassName("navbar-right")[0].classList.add("dis-none");
+                document.getElementsByClassName("report-page")[0].classList.add("dis-none");
+                document.getElementsByClassName("header-title")[0].innerHTML = "Vessel Score";
+                e.target.firstChild.setAttribute("src", "assets/images/page1/vessel-blue.png")
+                for(i=0;i<sidebarLink.length;i++) {
+                sidebarLink[i].classList.remove("active");
+              }
+              for(i=0;i<sidebarDropLink.length;i++) {
+                sidebarDropLink[i].classList.remove("active");
+              }
+                e.target.classList.add("active");
+              }
+              if(e.target.id == "officer-a") {
+                document.getElementsByClassName("navbar-right")[0].classList.add("dis-none");
+                document.getElementsByClassName("report-page")[0].classList.add("dis-none");
+                document.getElementsByClassName("header-title")[0].innerHTML = "Officer Score";
+                e.target.firstChild.setAttribute("src", "assets/images/page1/officer-blue.png")
+                for(i=0;i<sidebarLink.length;i++) {
+                sidebarLink[i].classList.remove("active");
+              }
+              for(i=0;i<sidebarDropLink.length;i++) {
+                sidebarDropLink[i].classList.remove("active");
+              }
+                e.target.classList.add("active");
+              }
+              if(e.target.id == "compare-a") {
+                document.getElementsByClassName("navbar-right")[0].classList.add("dis-none");
+                document.getElementsByClassName("report-page")[0].classList.add("dis-none");
+                document.getElementsByClassName("header-title")[0].innerHTML = "Compare";
+                e.target.firstChild.setAttribute("src", "assets/images/page1/compare-blue.png")
+                for(i=0;i<sidebarLink.length;i++) {
+                sidebarLink[i].classList.remove("active");
+              }
+              for(i=0;i<sidebarDropLink.length;i++) {
+                sidebarDropLink[i].classList.remove("active");
+              }
+                e.target.classList.add("active");
+              }
+              if(e.target.id == "report-a") {
+                document.getElementsByClassName("navbar-right")[0].classList.remove("dis-none");
+                document.getElementsByClassName("header-title")[0].innerHTML = "REPORTING KPI";
+                document.getElementsByClassName("report-page")[0].classList.remove("dis-none");
+                e.target.firstChild.setAttribute("src", "assets/images/page1/reporting-blue.png")
+                for(i=0;i<sidebarLink.length;i++) {
+                sidebarLink[i].classList.remove("active");
+              }
+              for(i=0;i<sidebarDropLink.length;i++) {
+                sidebarDropLink[i].classList.remove("active");
+              }
+                e.target.classList.add("active");
+              }
+              if(e.target.id == "analysis-a") {
+                document.getElementsByClassName("navbar-right")[0].classList.add("dis-none");
+                document.getElementsByClassName("report-page")[0].classList.add("dis-none");
+                document.getElementsByClassName("header-title")[0].innerHTML = "Analysis";
+                e.target.firstChild.setAttribute("src", "assets/images/page1/analysis-blue.png")
+                for(i=0;i<sidebarLink.length;i++) {
+                sidebarLink[i].classList.remove("active");
+              }
+              for(i=0;i<sidebarDropLink.length;i++) {
+                sidebarDropLink[i].classList.remove("active");
+              }
+                e.target.classList.add("active");
+              }
+              if(e.target.id == "data-a") {
+                document.getElementsByClassName("navbar-right")[0].classList.add("dis-none");
+                document.getElementsByClassName("report-page")[0].classList.add("dis-none");
+                document.getElementsByClassName("header-title")[0].innerHTML = "Data Source";
+                e.target.firstChild.setAttribute("src", "assets/images/page1/data source-blue.png")
+                for(i=0;i<sidebarLink.length;i++) {
+                sidebarLink[i].classList.remove("active");
+              }
+              for(i=0;i<sidebarDropLink.length;i++) {
+                sidebarDropLink[i].classList.remove("active");
+              }
+                e.target.classList.add("active");
+              }
+              if(e.target.id == "download-a") {
+                document.getElementsByClassName("navbar-right")[0].classList.add("dis-none");
+                document.getElementsByClassName("report-page")[0].classList.add("dis-none");
+                document.getElementsByClassName("header-title")[0].innerHTML = "DOWNLOAD KPI FILE";
+                e.target.firstChild.setAttribute("src", "assets/images/page1/download-blue.png")
+                for(i=0;i<sidebarLink.length;i++) {
+                sidebarLink[i].classList.remove("active");
+              }
+              for(i=0;i<sidebarDropLink.length;i++) {
+                sidebarDropLink[i].classList.remove("active");
+              }
+                e.target.classList.add("active");
+              }
+            }
+           //Vetting dashboard fullscreen
+           function vettingFull() {
+             
+             if(fullV) {
+              document.getElementsByClassName("dashboard-vetting")[0].classList.remove("fullscreen");
+              document.getElementsByClassName("vetting-height")[0].classList.remove("fullscreen");
+              fullV = false;
+             }
+             else {
+              document.getElementsByClassName("dashboard-vetting")[0].classList.add("fullscreen");
+              document.getElementsByClassName("vetting-height")[0].classList.add("fullscreen");
+              fullV = true;
+             }
+           }
+
+           //Primary select dropdown onchange function
+           function primaryChange() {
+            var select = document.getElementById("primarySelect").value;
+              if(select !== "year" && select !== "halfyear" && select !== "quarter" && select !== "month") {
+                  var referenceNode = document.getElementById("organization");
+                  var newNode = document.getElementById("period");
+                  document.getElementById("period").remove();
+                  referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+              }
+              else {
+                  var referenceNode = document.getElementById("period");
+                  var newNode = document.getElementById("organization");
+                  document.getElementById("organization").remove();
+                  referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+              }
+           }
+
+           //All checkbox function
+           
+           allChecks = document.getElementsByClassName("all-checkbox");
+           for(i=0;i<allChecks.length;i++) {
+            allChecks[i].addEventListener("click", allCheck);
+           }
+           function allCheck(e) {
+             if(e.target.nodeName == "LABEL") {
+              var checks = e.target.parentElement.getElementsByTagName("input");
+              console.log(checks[0].checked)
+                if(checks[0].checked == true) {
+                  for(i=1;i<checks.length;i++) {
+                    
+                      checks[i].checked = false;
+                    }
+                }
+                else {
+                  for(i=1;i<checks.length;i++) {
+                    
+                      checks[i].checked = true;
+                    }
+                }
+             }
+             console.log(e.target.nodeName)
+             if(e.target.nodeName == "INPUT") {
+              var checks = e.target.parentElement.parentElement.getElementsByTagName("input");
+              console.log(checks[0].checked)
+                if(checks[0].checked == true) {
+                  for(i=1;i<checks.length;i++) {
+                    
+                      checks[i].checked = true;
+                    }
+                }
+                else {
+                  for(i=1;i<checks.length;i++) {
+                    
+                      checks[i].checked = false;
+                    }
+                }
+                checked = false;
+             }
+            
+           }
+
+           //custom top dropdown
+           function toggleDrop() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+           var div = document.getElementById("myDropdown");
+            var a = div.getElementsByTagName("a");
+
+            for (i = 0; i < a.length; i++) {
+              console.log(a[i])
+                a[i].addEventListener("click", customSelOption);
+            }
+
+            function filterFunction() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              div = document.getElementById("myDropdown");
+              a = div.getElementsByTagName("a");
+              for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  a[i].style.display = "";
+                } else {
+                  a[i].style.display = "none";
+                }
+              }
+            }
+            function customSelOption(e) {
+              console.log(e)
+              document.getElementById("top-selected").innerHTML = e.target.innerHTML;              
+              document.getElementById("myDropdown").classList.toggle("show");
+            } 
+
+            //custom nav tabs
+              var topLink = document.getElementsByClassName("top-link");
+              var vetLink = document.getElementsByClassName("vetting-link");
+              var remarkLink = document.getElementsByClassName("remark-link");
+              
+              for(i=0;i<topLink.length;i++) {
+                topLink[i].addEventListener("click", topTab)
+              }
+
+              for(i=0;i<vetLink.length;i++) {
+                vetLink[i].addEventListener("click", vetTab)
+              }
+
+              for(i=0;i<remarkLink.length;i++) {
+                remarkLink[i].addEventListener("click", remarkTab)
+              }
+
+              function topTab(e) {
+                  for(i=0;i<topLink.length;i++) {
+                    topLink[i].classList.remove("show");
+                    topLink[i].classList.remove("active");
+                  }
+                  e.target.classList.add("show");
+                  e.target.classList.add("active");
+                  var tabid = e.target.id;
+                  tabPanes = document.getElementsByClassName("top-pane");
+                  for(i=0;i<tabPanes.length;i++) {
+                    tabPanes[i].classList.remove("show");
+                    tabPanes[i].classList.remove("active");
+                }
+                document.getElementsByClassName(tabid)[0].classList.add("show");
+                document.getElementsByClassName(tabid)[0].classList.add("active");
+              }
+              
+              function vetTab(e) {
+                  for(i=0;i<vetLink.length;i++) {
+                    vetLink[i].classList.remove("show");
+                    vetLink[i].classList.remove("active");
+                  }
+                  e.target.classList.add("show");
+                  e.target.classList.add("active");
+                  var tabid = e.target.id;
+                  tabPanes = document.getElementsByClassName("vetting-pane");
+                  for(i=0;i<tabPanes.length;i++) {
+                    tabPanes[i].classList.remove("show");
+                    tabPanes[i].classList.remove("active");
+                }
+                document.getElementsByClassName(tabid)[0].classList.add("show");
+                document.getElementsByClassName(tabid)[0].classList.add("active");
+              }
+
+              function remarkTab(e) {
+                  for(i=0;i<remarkLink.length;i++) {
+                    remarkLink[i].classList.remove("show");
+                    remarkLink[i].classList.remove("active");
+                  }
+                  e.target.classList.add("show");
+                  e.target.classList.add("active");
+                  var tabid = e.target.id;
+                  tabPanes = document.getElementsByClassName("remark-pane");
+                  for(i=0;i<tabPanes.length;i++) {
+                    tabPanes[i].classList.remove("show");
+                    tabPanes[i].classList.remove("active");
+                }
+                document.getElementsByClassName(tabid)[0].classList.add("show");
+                document.getElementsByClassName(tabid)[0].classList.add("active");
+              }
+
+          //  function saveTemp() {
+          //   $('#saveTemplate').modal('hide');
+          //  }
+
+            // $(document).ready(function(){
+
+             
+
+                // $('#table-performance').after('<th colspan="3" class="filtertext">2020<table width="100%"><tr><td>Fleet 1</td><td>Fleet 2</td><td>Fleet 3</td></tr></table></th>');
+                // $('.exp-table .table-graph').after('<td class="filtertexttd"><img src="assets/images/page1/caution.png"> &nbsp; 1.11</td><td class="growth"><img src="assets/images/page1/growth.png" alt="growth"> 1.223</td><td class="low"><img src="assets/images/page1/low.png" alt="growth"> 1.123</td>');
+                // 
+            // $('#dropdown').click(function() {
+            //     $('#submenu').slideToggle(200);
+            // });
+
+            // analyse popup
+            // $('.dashboard-vetting').hide();
+            // $('.analyse-btn').click(function(){
+            //   $('.dashboard-vetting').removeClass("v-none");
+            // })
+
+            // $('.backmain').click(function(){
+            //   $('.dashboard-vetting').hide(600);
+            // })
+
+            // 
+            // var $content = $(".vetting-graph-dashboard").show();
+            // var $content = $(".observe-action").hide();
+              // $(".menu-ic1").on("click", function(e){
+              //   $(this).toggleClass("expanded-ic");
+              //   $content.slideToggle();
+              // });
+
+                // 
+            // $('.openbtn').click(function(){
+              
+            //   var i;
+            //     for(i =0; i<sidebar.classList.length; i++) {
+            //       if(sidebar.classList[i] == "sidebar-show") {
+            //         sidebar.classList.removeClass("sidebar-show");
+            //         i = 0;
+            //         break;
+            //       }
+            //     }
+            //     if(i !== 0) {
+            //       sidebar.classList.removeClass("sidebar-show");
+            //     }
+            //     document.getElementById("mySidebar").classList.add("sidebar-show");
+            //     // $('#mySidebar').toggleClass('sidebar-show');
+            //     $('#main').toggleClass('main-space');
+            //     $('.dropdown a p, .nav-menu li.navitem').toggle();
+            //     $('.sidebar .links').toggleClass('linksfont');
+            //     $('.nav-menu li').toggleClass('liwidth');
+            // });
+
+            // 
+            // $('.filter-ic-select button').click(function(){
+            //   $('.filter-expand').slideToggle('1000');
+            // });
+
+            // chat form
+            
+
+
+            // 
+            
+
+            // 
+            // $(document).on('click', '.filter-values li', function(){
+            //   $(this).remove();
+            // }); 
+
+            //
+            // $('.clearfilter').click(function(){
+            //   $('.filter-values li').hide();
+            // });
+
+            // 
+            // $('.status-checkbox input[type="checkbox"]').click(function() {
+            // var len = $('.status-checkbox input[type="checkbox"]:checked').length;
+            // $('.select-count span').html('(' + len + ')');
+            // var checkValue = $('.status-checkbox input[type="checkbox"]:checked').map(function(i, e) {return e.value}).toArray();
+            // $('#status-list span').html("<span id='status-header'> Status : <span>" + checkValue.join(','));
+            // });
+
+            // 
+            
+
+            // 
+            
+
+            // 
+            // $(function() {
+            //   $("#accordion").accordion({
+            //     header: '.accordion-header'
+            //   });
+
+              
+            //   $('.accordion-expand-collapse a').click(function() {
+            //     $('#accordion .ui-accordion-header:not(.ui-state-active)').next().slideToggle();
+            //     $(this).text($(this).text() == 'Expand all' ? 'Collapse all' : 'Expand all');
+            //     $(this).toggleClass('collapse');
+            //     return false;
+            //   });
+            // });
+
+            // 
+           
+
+            // 
+             // swap functionality
+            //  var $period = $("#period");
+            //   var $organization = $("#organization");
+            //   $('.organization-fleet').hide();
+            //   $('.vessel-flag').hide();
+            //   $('.vessel-type').hide();
+            //   $('.vessels').hide();
+            //   $('.ship-yard-country').hide();
+            //   $('#radio-halfyear, .radio-halfyear, #radio-quarter, .radio-quarter, #radio-month, .radio-month').hide();
+            //   $('#primarySelect').change(function(){
+            //     if(this.value == 'year' || this.value == 'halfyear' || this.value == 'quarter' || this.value == 'month'){
+            //       $period.after($organization);
+            //       $('#radio-halfyear, .radio-halfyear, #radio-quarter, .radio-quarter, #radio-month, .radio-month').hide();
+            //       $('.organization-fleet, .vessel-flag, .vessel-type, .vessels, .ship-yard-country').hide();
+            //       if($('#select_list').val() != 'company'){
+            //       $('.organization-company').show();
+            //       }else{
+            //         $('.organization-fleet').show();
+            //       }
+            //     } 
+            //    else{
+            //       $period.before($organization);
+            //     }
+               
+            //     if(this.value == 'year'){
+            //       $('#radio-halfyear,.radio-halfyear, #radio-quarter, .radio-quarter, #radio-month, .radio-month').hide();
+            //       $('#radio-year, .radio-year').show();
+            //     }
+            //     if(this.value == 'halfyear'){
+            //       $('#radio-year,.radio-year, #radio-quarter, .radio-quarter, #radio-month, .radio-month').hide();
+            //       $('#radio-halfyear, .radio-halfyear').show();
+            //     }
+            //     if(this.value == 'quarter'){
+            //       $('#radio-year, .radio-year, #radio-halfyear, .radio-halfyear, #radio-month, .radio-month').hide();
+            //       $('#radio-quarter, .radio-quarter').show();
+            //     }
+            //     if(this.value == 'month'){
+            //       $('#radio-year, radio-year, #radio-halfyear, .radio-halfyear, #radio-quarter, .radio-quarter').hide();
+            //       $(' #radio-month, .radio-month').show();
+            //     }
+            //     if(this.value == 'company'){
+            //       $('.organization-fleet, .vessel-flag, .vessel-type, .vessels, .ship-yard-country').hide();
+            //       $('.organization-company').show();
+            //       $('#radio-year, radio-year, #radio-halfyear, .radio-halfyear, #radio-quarter, .radio-quarter, #radio-month, .radio-month').show();
+            //     }
+            //     if(this.value == 'fleet'){
+            //       $('.vessel-flag, .vessel-type, .vessels, .ship-yard-country').hide();
+            //       $('.organization-fleet').show();
+            //       $('#radio-year, radio-year, #radio-halfyear, .radio-halfyear, #radio-quarter, .radio-quarter, #radio-month, .radio-month').show();
+            //     }
+            //     if(this.value == 'vesseltype'){
+            //       $('.vessels, .ship-yard-country').hide();
+            //       $('.organization-fleet, .vessel-flag, .vessel-type').show();
+            //       $('#radio-year, radio-year, #radio-halfyear, .radio-halfyear, #radio-quarter, .radio-quarter, #radio-month, .radio-month').show();
+            //     }
+            //     if(this.value == 'vessel'){
+            //       $('.ship-yard-country').hide();
+            //       $('.vessel-flag, .organization-fleet, .vessel-type, .vessels').show();
+            //       $('#radio-year, radio-year, #radio-halfyear, .radio-halfyear, #radio-quarter, .radio-quarter, #radio-month, .radio-month').show();
+            //     }
+            //     if(this.value == 'vesselflag'){
+            //       $('.vessels, .vessel-type, .ship-yard-country').hide();
+            //       $('.vessel-flag, .organization-fleet').show();
+            //       $('#radio-year, radio-year, #radio-halfyear, .radio-halfyear, #radio-quarter, .radio-quarter, #radio-month, .radio-month').show();
+            //     }
+            //   });
+
+            // 
+           
+
+
+
+              // // top select
+              // $('#select_list').on('change', function() {
+              //   if(this.value == 'company'){
+              //     $('.organization-company').hide();
+              //   }else{
+              //     $('.organization-company').show();
+              //   }
+              //     $('option').prop('disabled', false);
+              //     $('option').css('display', 'block'); 
+              //     $('#select_list').each(function() { 
+              //       var val = this.value;
+              //       $('#primarySelect').not(this).find('option').filter(function() { 
+              //         return this.value === val;
+              //         console.log(val);
+              //       }).prop('disabled', true).css('display','none'); 
+              //     });
+              //   }).change();
+
+
+
+                // 
+              // $(".organization-company input[type='checkbox']").click(function(){
+              //   if($('#primarySelect').val() == "year" || $('#primarySelect').val() == "halfyear" || $('#primarySelect').val() == "quarter" || $('#primarySelect').val() == "month"){
+              //     $('.organization-fleet').show(500);
+              //   }
+              //   else{
+              //     $('.organization-fleet').hide();
+              //   }
+              // });
+
+              // // 
+              
+              // $(".organization-fleet input[type='checkbox']").click(function(){
+              //   if($('#primarySelect').val() == "year" || $('#primarySelect').val() == "halfyear" || $('#primarySelect').val() == "quarter" || $('#primarySelect').val() == "month"){
+              //     $('.vessel-flag ').show(500);
+              //   }
+              //   else{
+              //     $('.vessel-flag ').hide();
+              //   }
+              // });
+
+              // // 
+              // $(".vessel-flag input[type='checkbox']").click(function(){
+              //   if($('#primarySelect').val() == "year" || $('#primarySelect').val() == "halfyear" || $('#primarySelect').val() == "quarter" || $('#primarySelect').val() == "month"){
+              //     $('.vessel-type').show(500);
+              //   }
+              //   else{
+              //     $('.vessel-type').hide();
+              //   }
+              // });
+
+              // // 
+              // $(".vessel-type input[type='checkbox']").click(function(){
+              //   if($('#primarySelect').val() == "year" || $('#primarySelect').val() == "halfyear" || $('#primarySelect').val() == "quarter" || $('#primarySelect').val() == "month"){
+              //     $('.vessels').show(500);
+              //   }
+              //   else{
+              //     $('.vessels').hide();
+              //   }
+              // });
+          
+            // 
+           
+
+            // scrollbar
+            // $("#period .box, #organization ul li ul, .vetting-height").mCustomScrollbar({
+            //       theme: "",
+            //       scrollButtons: {enable:false}
+            //     });
+            // });
+        </script>
+
+        <script>
+          function myFunction(x) {
+                  if (x.matches) { // If media query matches
+                    sideBar();
+                  } else {
+                  }
+                }
+
+                var x = window.matchMedia("(max-width: 993px)")
+                myFunction(x) // Call listener function at run time
+                x.addListener(myFunction) // Attach listener function on state changes
+
+
+            // $(document).ready(function(){
+            //     $('tr.parent')  
+            //         .css("cursor", "pointer")  
+	          //       .attr("title", "Click to expand/collapse")  
+	          //       .click(function () {  
+            //             $(this).siblings('.child-' + this.id).toggle();
+            //             $(this).toggleClass('plus'); 
+	          //       });  
+            //     $('tr.child-').hide().children('td'); 
+            // });
+            // $(document).ready(function(){
+            //     $('p.parent')  
+            //         .css("cursor", "pointer")  
+	          //       .attr("title", "Click to expand/collapse")  
+	          //       .click(function () {  
+            //             $('table .child-' + this.id).show();
+	          //       });  
+            //     $('table tr.child-').hide().children('td'); 
+            // })
+
+            expandAll = true;
+            var expandBtns = document.getElementsByClassName("expand-button");
+            for(i=0;i<expandBtns.length;i++) {
+              expandBtns[i].addEventListener("click", expand);
+            }
+            function expand(e) {
+              var tr;
+              var id;
+              var rows;
+              var expanded = true;
+              if(e.target.parentNode.nodeName == "TR") {
+                tr = e.target.parentNode;
+              }
+              else {
+                tr = e.target.parentNode.parentNode;
+              }
+              console.log(tr)
+                id = tr.id
+                rows = document.getElementsByClassName("child-" + id);
+                console.log(rows);
+                for(i=0;i<tr.classList.length;i++) {
+                  console.log(tr.classList[i]);
+                  if(tr.classList[i] == "plus") {
+                    for(i=0;i<rows.length;i++) {
+                      rows[i].classList.remove("dis-none");
+                      expanded = false;
+                    }
+                    break;
+                  }
+                }
+                if(expanded) {
+                  for(i=0;i<rows.length;i++) {
+                      rows[i].classList.add("dis-none");
+                    }
+                    tr.classList.add("plus");
+                }
+                else {
+                  tr.classList.remove("plus");
+                }
+            }
+            function expandedAll() {
+              if(expandAll) {
+                document.getElementsByClassName("expand-all")[0].classList.remove("expanded");
+                document.getElementById("expand-txt").innerHTML = "Expand All";
+                expandAll = false;
+                var expandBtns = document.getElementsByClassName("expand-button");
+                for(i=0;i<expandBtns.length;i++) {
+                      expandBtns[i].classList.add("plus");
+                    }
+                var rows = document.getElementsByClassName("child-rowMain");
+                for(i=0;i<rows.length;i++) {
+                      rows[i].classList.add("dis-none");
+                    }
+              }
+              else {
+                document.getElementsByClassName("expand-all")[0].classList.add("expanded");
+                document.getElementById("expand-txt").innerHTML = "Collapse All";
+                expandAll = true;
+                var expandBtns = document.getElementsByClassName("expand-button");
+                for(i=0;i<expandBtns.length;i++) {
+                      expandBtns[i].classList.remove("plus");
+                    }
+                var rows = document.getElementsByClassName("child-rowMain");
+                for(i=0;i<rows.length;i++) {
+                      rows[i].classList.remove("dis-none");
+                    }
+              }
+            }
+            
+            var gaugeOptions = {
+
+            chart: {
+                type: 'solidgauge'
+            },
+
+            title: null,
+
+            pane: {
+                center: ['50%', '85%'],
+                size: '120%',
+                startAngle: -90,
+                endAngle: 90,
+                background: {
+                    backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'red',
+                    innerRadius: '60%',
+                    outerRadius: '100%',
+                    shape: 'arc'
+                }
+            },
+
+            exporting: { enabled: false },
+            credits: {
+                enabled: false
+            },
+
+            // tooltip: {
+            //     enabled: false
+            // },
+
+            // the value axis
+            yAxis: {
+                stops: [
+                    [0.1, '#55BF3B'], // green
+                    [0.5, '#DDDF0D'], // yellow
+                    [0.9, '#DF5353'] // red
+                ],
+                // lineWidth: 0,
+                // minorTickInterval: null,
+                tickPixelInterval: 400,
+                tickWidth: 0,
+                tickLength: 100,
+                title: {
+                    y: 100
+                },
+                labels: {
+                    y: 11
+                }
+            },
+
+            plotOptions: {
+                solidgauge: {
+                    dataLabels: {
+                        y: 5,
+                        borderWidth: 0,
+                        useHTML: true
+                    }
+                }
+            }
+            };
+
+              // The RPM gauge
+              var chartRpm = Highcharts.chart('container-rpm', Highcharts.merge(gaugeOptions, {
+        yAxis: {
+            min: 0,
+            max: 10,
+            title: {
+                text: 'COMPANY OVER ALL PERFORMANCE',
+                verticalAlign: 'bottom',
+                y: 80,
+                floating: true,
+                style: {
+                    color: '#111',
+                    fontWeight: '600',
+                },
+              
+            }
+        },
+
+
+        series: [{
+            name: 'RPM',
+            data: [1.15],
+            dataLabels: {
+                format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.1f}</span><br/>' +
+                       '<span style="font-size:12px;color:silver></span></div>'
+            },
+            tooltip: {
+                valueSuffix: ' '
+            }
+        }]
+
+    }));
+
+              // Bring life to the dials
+              setInterval(function () {
+                // Speed
+                var point,
+                  newVal,
+                  inc;
+
+                // if (chartSpeed) {
+                //   point = chartSpeed.series[0].points[0];
+                //   inc = Math.round((Math.random() - 0.5) * 100);
+                //   newVal = point.y + inc;
+
+                //   if (newVal < 0 || newVal > 200) {
+                //     newVal = point.y - inc;
+                //   }
+
+                //   point.update(newVal);
+                // }
+
+                // RPM
+                if (chartRpm) {
+                            point = chartRpm.series[0].points[0];
+                      inc = Math.random() - 0.5;
+                      newVal = point.y + inc;
+
+                      if (newVal < 0 || newVal > 11) {
+                          newVal = point.y - inc;
+                      }
+
+                      point.update(newVal);
+                }
+              }, 2000);
+
+            
+        </script>
+    </body>
+</html>
