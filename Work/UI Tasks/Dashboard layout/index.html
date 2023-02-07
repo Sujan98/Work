@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="body" class="body">
+    <div class="scroll-up">
+        <img src="assets/images/up.png" alt="up">
+    </div>
+    <div class="customize class">
+        <div class="cust-icon">
+                <i class="fa fa-sliders"></i>
+        </div>
+        <div class="border-b custom-head clearfix">
+            <div class="f-left clearfix">
+                <h1 class="t-l m-0">customize</h1>
+                <p class="t-l m-0">Customize Nifty's Layout sidebars and color schemes.</p>
+            </div>
+            <span class="close f-right">&#10005;</span>
+        </div>        
+        <div class="c-bars f-left">
+            <ul class="m-0 custom-ul clearfix">
+                <li class="border-b">
+                    <h2 class="custul-head">layout</h2>
+                    <p>boxed layout</p>
+                </li>
+                <li>
+                    <label class="container">
+                        <input type="checkbox" id="check">
+                        <span class="box-l checkmark check-2 check-3"></span></label>
+                    <h2 class="m-0">Boxed Layout</h2>
+                </li>
+                <li>
+                    <label class="container">
+                        <input type="checkbox" id="check">
+                        <span class="backg checkmark check-2 check-3"></span></label>
+                    <h2 class="m-0">Background Images</h2>
+                </li>
+                <li class="new-ul border-b">                    
+                    <p>Animations</p>
+                </li>
+                <li>
+                    <label class="container">
+                        <input type="checkbox" id="check" checked = "checked">
+                        <span class="checkmark check-2 check-3"></span></label>
+                    <h2 class="m-0">Enable Animations</h2>
+                </li>
+                <li style="margin-top: 22px;" class="clearfix">                
+                    <h2 class="f-left m-0">Transitions</h2>
+                    <select class="select f-right">
+                        <option>ease (Default)&nbsp;&nbsp;&nbsp;</option>
+                    </select>
+                </li>
+                <li class="new-ul border-b">                    
+                    <p>Header/Navbar</p>
+                </li>
+                <li>
+                    <label class="container">
+                        <input type="checkbox" class="fix" id="check">
+                        <span class="check-fix checkmark check-2 check-3"></span></label>
+                    <h2 class="m-0">Fixed Position</h2>
+                </li>
+                <li class="new-ul border-b">                    
+                    <p>Footer</p>
+                </li>
+                <li>
+                    <label class="container">
+                        <input type="checkbox" id="check">
+                        <span class="check-fix checkmark check-2 check-3"></span></label>
+                    <h2 class="m-0">Fixed Position</h2>
+                </li>
+            </ul>
+        </div>
+        <div style="background-color: #F8F9FA;" class="c-bars f-left">
+            <ul class="m-0 custom-ul clearfix">
+                <li class="border-b">
+                    <h2 class="custul-head">SideBars</h2>
+                    <p>Navigation</p>
+                </li>
+                <li>
+                    <label class="container">
+                        <input type="checkbox" id="check">
+                        <span class="check-fix checkmark check-2 check-3"></span></label>
+                    <h2 class="m-0">Fixed Position</h2>
+                </li>
+                <li>
+                    <label class="container">
+                        <input type="checkbox" id="check" checked = "checked">
+                        <span class="checkmark check-2 check-3"></span></label>
+                    <h2 class="m-0">Widget Profil</h2>
+                </li>
+                <li>
+                    <label class="container">
+                        <input type="checkbox" id="check">
+                        <span class="checkmark check-2 check-3"></span></label>
+                    <h2 class="m-0">Shortcut Buttons</h2>
+                </li>
+                <li>
+                    <label class="container">
+                        <input type="checkbox" id="check">
+                        <span class="coll checkmark check-2 check-3"></span></label>
+                    <h2 class="m-0">Collapsed Mode</h2>
+                </li>
+                <li style="margin-top: 22px;" class="clearfix">                
+                    <h2 class="f-left m-0">Off-Canvas</h2>
+                    <select class="select f-right">
+                        <option>--Select Mode--&nbsp;&nbsp;&nbsp;</option>
+                    </select>
+                </li>
+                <li style="margin-top: 55px;" class="new-ul border-b">                    
+                    <p>Aside</p>
+                </li>
+                <li>
+                    <label class="container">
+                        <input type="checkbox" id="check">
+                        <span class="checkmark check-2 check-3"></span></label>
+                    <h2 class="m-0">Visible</h2>
+                </li>
+                <li>
+                    <label class="container">
+                        <input type="checkbox" id="check">
+                        <span class="checkmark check-2 check-3"></span></label>
+                    <h2 class="m-0">Fixed Position</h2>
+                </li>
+                <li>
+                    <label class="container">
+                        <input type="checkbox" id="check" checked = "checked">
+                        <span class="checkmark check-2 check-3"></span></label>
+                    <h2 class="m-0">Floating</h2>
+                </li>
+                <li>
+                    <label class="container">
+                        <input type="checkbox" id="check">
+                        <span class="checkmark check-2 check-3"></span></label>
+                    <h2 class="m-0">Left Side</h2>
+                </li>
+                <li>
+                    <label class="container">
+                        <input type="checkbox" id="check">
+                        <span class="checkmark check-2 check-3"></span></label>
+                    <h2 class="m-0">Dark Version</h2>
+                </li>
+            </ul>
+        </div>
+        <div class="c-bars schemes f-left">
+            <ul class="m-0 custom-ul custom-ul-2 clearfix">
+                <li class="border-b">
+                    <h2 style="margin-top: 0px;" class="custul-head">Color Schemes</h2>                    
+                </li>
+                <li class="w-100 clearfix">
+                    <div class="themes f-left clearfix">
+                        <div class="white-theme theme f-left">&nbsp;</div>
+                        <div class="theme-desc f-left">
+                            <h2 class="custul-head">Light</h2>
+                            <p>Completely Light theme</p>
+                        </div>
+                    </div>          
+                    <div class="themes f-left clearfix">
+                        <div style="background-color: #3A444E;" class="dark-theme theme f-left">&nbsp;</div>
+                        <div class="theme-desc f-left">
+                            <h2 class="custul-head">Dark</h2>
+                            <p>Completely Dark theme</p>
+                        </div>
+                    </div>          
+                </li>
+                <li class="new-ul modes clearfix">   
+                    <div class="mode f-left clearfix">
+                            <p class="t-c m-0">Modern</p>
+                        <img class="f-left" src="assets/images/color-schemes-e.png" alt="scheme">
+                        <div class="mode-desc f-left">
+                            <h2 style="margin-bottom: 3px!important;" class="custul-head m-0 t-c">New Schemes Mode</h2>
+                            <p class="t-c m-0">Added in v2.9</p>
+                        </div>                        
+                    </div>
+                    <div class="mode f-left clearfix">
+                        <p class="t-c m-0">&nbsp;</p>          
+                        <div class="mode-desc w-100 f-left">
+                            <div style="background-color: #8F9EA6;" class="bg-color d-color div-1 f-left"></div>
+                            <div style="background-color: #526F8E;" class="bg-color d-color div-2 f-left"></div>
+                            <div style="background-color: #177BBB;" class="bg-color d-color div-3 f-left"></div>
+                            <div style="background-color: #80B343;" class="bg-color d-color div-4 f-left"></div>
+                            <div style="background-color: #8B5B9F;" class="bg-color d-color div-5 f-left"></div>
+                            <div style="background-color: #FD8943;" class="bg-color d-color div-6 f-left"></div>
+                            <div style="background-color: #26A69A;" class="bg-color d-color div-7 f-left"></div>
+                            <div style="background-color: #EFD45A;" class="bg-color d-color div-8 f-left"></div>
+                            <div style="background-color: #D23E3E;" class="bg-color d-color div-9 f-left"></div>
+                            <div style="background-color: #807362;" class="bg-color d-color div-10 f-left"></div>
+                            <div style="background-color: #AD5468;" class="bg-color d-color div-11 f-left"></div>
+                            <div style="background-color: #3A444E;" class="bg-color d-color div-12 f-left"></div>
+                        </div>                        
+                    </div>
+                </li>
+                <li class="new-ul modes brands clearfix">                
+                    <div class="mode brand f-left clearfix">
+                        <p class="t-c m-0">Header</p>
+                        <img class="f-left" src="assets/images/color-schemes-a.png" alt="scheme">
+                    </div>
+                    <div class="mode brand f-left clearfix">
+                        <p class="t-c m-0">Brand</p>
+                        <img class="f-left" src="assets/images/color-schemes-b.png" alt="scheme">
+                    </div>
+                    <div class="mode brand f-left clearfix">
+                        <p class="t-c m-0">Navigation</p>
+                        <img class="f-left" src="assets/images/color-schemes-c.png" alt="scheme">
+                    </div>
+                    <div class="mode brand f-left clearfix">
+                        <p class="t-c m-0">Full Top Bar</p>
+                        <img class="f-left" src="assets/images/color-schemes-d.png" alt="scheme">
+                    </div>
+                </li>
+                <li class="new-ul brands sections clearfix">
+                    <div class="section f-left clearfix">                                              
+                        <div class="section-pal w-100 f-left">
+                            <div style="background-color: #8F9EA6;" class="bg-color h-color div-1 f-left"></div>
+                            <div style="background-color: #526F8E;" class="bg-color h-color div-2 f-left"></div>
+                            <div style="background-color: #177BBB;" class="bg-color h-color div-3 f-left"></div>
+                            <div style="background-color: #80B343;" class="bg-color h-color div-4 f-left"></div>
+                            <div style="background-color: #8B5B9F;" class="bg-color h-color div-5 f-left"></div>
+                            <div style="background-color: #FD8943;" class="bg-color h-color div-6 f-left"></div>
+                            <div style="background-color: #26A69A;" class="bg-color h-color div-7 f-left"></div>
+                            <div style="background-color: #EFD45A;" class="bg-color h-color div-8 f-left"></div>
+                            <div style="background-color: #D23E3E;" class="bg-color h-color div-9 f-left"></div>
+                            <div style="background-color: #807362;" class="bg-color h-color div-10 f-left"></div>
+                            <div style="background-color: #AD5468;" class="bg-color h-color div-11 f-left"></div>
+                            <div style="background-color: #3A444E;" class="bg-color h-color div-12 f-left"></div>
+                        </div>                        
+                    </div>
+                    <div class="section f-left clearfix">                                              
+                        <div class="section-pal w-100 f-left">
+                            <div style="background-color: #8F9EA6;" class="bg-color b-color div-1 f-left"></div>
+                            <div style="background-color: #526F8E;" class="bg-color b-color div-2 f-left"></div>
+                            <div style="background-color: #177BBB;" class="bg-color b-color div-3 f-left"></div>
+                            <div style="background-color: #80B343;" class="bg-color b-color div-4 f-left"></div>
+                            <div style="background-color: #8B5B9F;" class="bg-color b-color div-5 f-left"></div>
+                            <div style="background-color: #FD8943;" class="bg-color b-color div-6 f-left"></div>
+                            <div style="background-color: #26A69A;" class="bg-color b-color div-7 f-left"></div>
+                            <div style="background-color: #EFD45A;" class="bg-color b-color div-8 f-left"></div>
+                            <div style="background-color: #D23E3E;" class="bg-color b-color div-9 f-left"></div>
+                            <div style="background-color: #807362;" class="bg-color b-color div-10 f-left"></div>
+                            <div style="background-color: #AD5468;" class="bg-color b-color div-11 f-left"></div>
+                            <div style="background-color: #3A444E;" class="bg-color b-color div-12 f-left"></div>
+                        </div>                        
+                    </div>
+                    <div class="section f-left clearfix">                                              
+                        <div class="section-pal w-100 f-left">
+                            <div style="background-color: #8F9EA6;" class="bg-color n-color div-1 f-left"></div>
+                            <div style="background-color: #526F8E;" class="bg-color n-color div-2 f-left"></div>
+                            <div style="background-color: #177BBB;" class="bg-color n-color div-3 f-left"></div>
+                            <div style="background-color: #80B343;" class="bg-color n-color div-4 f-left"></div>
+                            <div style="background-color: #8B5B9F;" class="bg-color n-color div-5 f-left"></div>
+                            <div style="background-color: #FD8943;" class="bg-color n-color div-6 f-left"></div>
+                            <div style="background-color: #26A69A;" class="bg-color n-color div-7 f-left"></div>
+                            <div style="background-color: #EFD45A;" class="bg-color n-color div-8 f-left"></div>
+                            <div style="background-color: #D23E3E;" class="bg-color n-color div-9 f-left"></div>
+                            <div style="background-color: #807362;" class="bg-color n-color div-10 f-left"></div>
+                            <div style="background-color: #AD5468;" class="bg-color n-color div-11 f-left"></div>
+                            <div style="background-color: #3A444E;" class="bg-color n-color div-12 f-left"></div>
+                        </div>                        
+                    </div>
+                    <div class="section f-left clearfix">                                              
+                        <div class="section-pal w-100 f-left">
+                            <div style="background-color: #8F9EA6;" class="bg-color f-color div-1 f-left"></div>
+                            <div style="background-color: #526F8E;" class="bg-color f-color div-2 f-left"></div>
+                            <div style="background-color: #177BBB;" class="bg-color f-color div-3 f-left"></div>
+                            <div style="background-color: #80B343;" class="bg-color f-color div-4 f-left"></div>
+                            <div style="background-color: #8B5B9F;" class="bg-color f-color div-5 f-left"></div>
+                            <div style="background-color: #FD8943;" class="bg-color f-color div-6 f-left"></div>
+                            <div style="background-color: #26A69A;" class="bg-color f-color div-7 f-left"></div>
+                            <div style="background-color: #EFD45A;" class="bg-color f-color div-8 f-left"></div>
+                            <div style="background-color: #D23E3E;" class="bg-color f-color div-9 f-left"></div>
+                            <div style="background-color: #807362;" class="bg-color f-color div-10 f-left"></div>
+                            <div style="background-color: #AD5468;" class="bg-color f-color div-11 f-left"></div>
+                            <div style="background-color: #3A444E;" class="bg-color f-color div-12 f-left"></div>
+                        </div>                        
+                    </div>
+                </li>
+            </ul>
+        </div>        
+    </div>    
+    <header class="header clearfix">
+        <div style="background-color: #25476A;" class="header-icon h-items f-left">
+            <img src="assets/images/logo.png" alt="header-logo">
+            <h2 id="nifty">Nifty</h2>
+        </div>        
+        <div class="header-search h-items f-left clearfix">
+            <div class="menu-drop clearfix">
+                <div class="menu-div f-left">
+                    <ul class="drop-ul">
+                        <h2 class="t-l"><i class="drop-icon fa fa-sticky-note-o"></i>Pages</h2>
+                        <li class="t-l">
+                            Profile
+                        </li>
+                        <li class="t-l">
+                            Search Result
+                            </li>
+                        <li class="t-l">
+                            FAQ
+                        </li>
+                        <li class="t-l">
+                            Screen Lock
+                        </li>
+                        <li class="t-l">
+                            Maintenance
+                        </li>
+                        <li class="t-l">
+                            Invoice
+                        </li>
+                        <li class="t-l">
+                            Disabled
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-div f-left">
+                    <ul class="drop-ul">
+                        <h2 class="t-l"><i class="drop-icon fa fa-sticky-note-o"></i>Mailbox</h2>
+                        <li class="t-l clearfix">
+                            Indox
+                            <span style="margin-right: 0px!important;" class="widgets best f-right">Hot</span>
+                        </li>
+                        <li class="t-l">
+                            Read Message
+                            </li>
+                        <li class="t-l">
+                            Compose
+                        </li>
+                        <li class="t-l">
+                            Template
+                        </li>
+                        <li class="t-l">
+                            <h2 class="news-h2 t-l border-b"><i class="news-icon drop-icon fa fa-bookmark"></i>News</h2>
+                        </li>
+                        <li class="t-l">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </li>
+                    </ul>                                                                        
+                </div>
+                <div class="menu-div f-left">
+                    <ul style="margin-top: 0px;padding: 0px 10px 0px 15px!important;" class="drop-ul">
+                        <li class="t-l clearfix">
+                            <h2 style="font-weight: normal!important;" class="t-l"><i style="font-size: 25px!important;vertical-align: middle;" class="drop-icon fa fa-sticky-note-o"></i>Data Backup<span style="background-color: #97C95D!important;" class="widgets f-right">90%</span></h2>
+                            <p style="margin: 0px 0px 12px 0px; padding-left: 18%;">This is the item description</p>
+                        </li>
+                        <li class="t-l">
+                            <h2 style="font-weight: normal!important;" class="t-l"><i style="font-size: 25px!important;vertical-align: middle;" class="drop-icon fa fa-bookmark"></i>Support</h2>
+                            <p style="margin: 0px 0px 12px 0px; padding-left: 18%;">This is the item description</p>
+                        </li>
+                        <li class="t-l">
+                            <h2 style="font-weight: normal!important;" class="t-l"><i style="font-size: 25px!important;vertical-align: middle;" class="drop-icon fa fa-sticky-note-o"></i>Security</h2>
+                            <p style="margin: 0px 0px 12px 0px; padding-left: 18%;">This is the item description</p>
+                        </li>
+                        <li class="t-l">
+                            <h2 style="font-weight: normal!important;" class="t-l"><i style="font-size: 25px!important;vertical-align: middle;" class="drop-icon fa fa-bookmark"></i>Location</h2>
+                            <p style="margin: 0px 0px 12px 0px; padding-left: 18%;">This is the item description</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-div f-left">
+                    <ul class="drop-ul  gallery-ul">
+                        <h2 class="t-l"><i class="drop-icon fa fa-sticky-note-o"></i>Gallery</h2>
+                        <li class="t-l">
+                            <div class="gallery clearfix">
+                                <div class="gallery-img f-left">
+                                    <img src="assets/images/img-1.jpg" alt="g-img">
+                                </div>
+                                <div class="gallery-img f-left">
+                                    <img src="assets/images/img-3.jpg" alt="g-img">
+                                </div>
+                                <div class="gallery-img f-left">
+                                    <img src="assets/images/img-2.jpg" alt="g-img">
+                                </div>
+                                <div class="gallery-img f-left">
+                                    <img src="assets/images/img-4.jpg" alt="g-img">
+                                </div>
+                                <div class="gallery-img f-left">
+                                    <img src="assets/images/img-6.jpg" alt="g-img">
+                                </div>
+                                <div class="gallery-img f-left">
+                                    <img src="assets/images/img-5.jpg" alt="g-img">
+                                </div>                                    
+                                <div class="g-browse f-left">
+                                    <h3 class="t-c m-0">Browse Gallery</h3>
+                                </div>
+                            </div>
+                            </li>                                                                    
+                        </ul>
+                    </div>
+                </div>
+                <div class="bell-drop clearfix">
+                    <ul>
+                        <li class="clearfix">
+                            <div class="bell-icon">
+                                <a class="fa fa-cloud"></a>                                
+                            </div>                        
+                            <div class="bell-desc clearfix">
+                                <h2 class="w-100">Comment Sorting<span class="f-right">New</span></h2>
+                                <p class="w-100">Last Update 8 hours ago</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="bell-icon">
+                                <a class="fa fa-cloud"></a>                                
+                            </div>                        
+                            <div class="bell-desc clearfix">
+                                <h2 class="w-100">New User Registered</h2>
+                                <p class="w-100">4 minutes ago</p>
+                            </div>
+                        </li>                
+                        <li class="clearfix">
+                            <div class="bell-icon">
+                                <img src="assets/images/9.png" alt="b-img">
+                            </div>                        
+                            <div style="vertical-align: super;" class="bell-desc clearfix">
+                                <h2 class="w-100">Lucy Sent you a message</h2>
+                                <p class="w-100">30 minutes ago</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="bell-icon">
+                                <img src="assets/images/3.png" alt="b-img">
+                            </div>                        
+                            <div style="vertical-align: super;" class="bell-desc clearfix">
+                                <h2 class="w-100">Jackson sent you a message</h2>
+                                <p class="w-100">40 minutes ago</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="bell-icon">
+                                <a class="fa fa-cloud"></a>                                
+                            </div>                        
+                            <div class="bell-desc clearfix">
+                                <h2 class="w-100">Comment Sorting<span class="f-right">New</span></h2>
+                                <p class="w-100">Last Update 8 hours ago</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="bell-icon">
+                                <a class="fa fa-cloud"></a>                                
+                            </div>                        
+                            <div class="bell-desc clearfix">
+                                <h2 class="w-100">New User Registered</h2>
+                                <p class="w-100">4 minutes ago</p>
+                            </div>
+                        </li>                
+                        <li class="clearfix">
+                            <div class="bell-icon">
+                                <img src="assets/images/9.png" alt="b-img">
+                            </div>                        
+                            <div style="vertical-align: super;" class="bell-desc clearfix">
+                                <h2 class="w-100">Lucy Sent you a message</h2>
+                                <p class="w-100">30 minutes ago</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="bell-icon">
+                                <img src="assets/images/3.png" alt="b-img">
+                            </div>                        
+                            <div style="vertical-align: super;" class="bell-desc clearfix">
+                                <h2 class="w-100">Jackson sent you a message</h2>
+                                <p class="w-100">40 minutes ago</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="bell-icon">
+                                <a class="fa fa-cloud"></a>                                
+                            </div>                        
+                            <div class="bell-desc clearfix">
+                                <h2 class="w-100">New User Registered</h2>
+                                <p class="w-100">4 minutes ago</p>
+                            </div>
+                        </li>                
+                        <li class="clearfix">
+                            <div class="bell-icon">
+                                <img src="assets/images/9.png" alt="b-img">
+                            </div>                        
+                            <div style="vertical-align: super;" class="bell-desc clearfix">
+                                <h2 class="w-100">Lucy Sent you a message</h2>
+                                <p class="w-100">30 minutes ago</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="bell-icon">
+                                <img src="assets/images/3.png" alt="b-img">
+                            </div>                        
+                            <div style="vertical-align: super;" class="bell-desc clearfix">
+                                <h2 class="w-100">Jackson sent you a message</h2>
+                                <p class="w-100">40 minutes ago</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="notif clearfix">
+                        <p>Show All Notifications<a style="color: #4b698f;font-size: 13px;" class="f-right fa fa-angle-right"></a></p>
+                    </div>
+                </div>
+                <div class="settings clearfix">
+                    <div class="settings-head clearfix">
+                        <div class="border-b f-left">
+                                <a style="padding: 3px 0px 0px 35px;" class="fa fa-cloud"></a>
+                        </div>                     
+                        <div style="padding: 11.5px 0px" class="border-b f-left">
+                                <h2><a class="fa fa-exclamation"></a>Report</h2>
+                        </div>
+                        <div style="border-bottom: 3px solid #0e3363;padding: 11px 0px;" class="f-left">
+                                <h2 class="setting-last"><a class="setting fa fa-exclamation"></a>Settings</h2>
+                        </div>                        
+                    </div>
+                    <ul class="border-b settings-ul clearfix">
+                        <li>
+                            <h1 class="m-0">Account Settings</h1>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input type="checkbox" id="check" checked="checked">
+                                <span class="checkmark check-2"></span></label>
+                            <h2 class="m-0 clearfix">Show my personal status</h2>
+                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input type="checkbox" id="check" checked="checked">
+                                <span class="checkmark check-2"></span></label>
+                            <h2 class="m-0 clearfix">Show offline contact</h2>
+                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input type="checkbox" id="check">
+                                <span class="checkmark check-2"></span></label>
+                            <h2 class="m-0 clearfix">Invisible mode</h2>
+                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </li>
+                    </ul>                    
+                    <ul class="border-b settings-ul clearfix">
+                        <li>
+                            <h1 class="m-0">Public Settings</h1>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input type="checkbox" id="check" checked="checked">
+                                <span class="checkmark check-2"></span></label>
+                            <h2 class="m-0 clearfix">Online Status</h2>                            
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input type="checkbox" id="check" checked="checked">
+                                <span class="checkmark check-2"></span></label>
+                            <h2 class="m-0 clearfix">Show offline contact</h2>                            
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input type="checkbox" id="check" checked="checked">
+                                <span class="checkmark check-2"></span></label>
+                            <h2 class="m-0 clearfix">Show device icon</h2>                            
+                        </li>
+                    </ul>
+                    <ul class="settings-ul clearfix">
+                        <li>
+                            <h1 class="m-0">Task progress</h1>
+                        </li>
+                        <li>
+                            <h2 class="m-0 clearfix">Upgrade Progress</h2>
+                            <div style="background-color: rgb(131, 197, 60)!important;" class="empty-div"></div>
+                        </li>
+                        <li>
+                            <h2 class="m-0 clearfix">Database</h2>
+                            <div style="background-color: #F44336;" class="empty-div"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="people clearfix">
+                    <div class="settings-head clearfix">
+                        <div style="border-bottom: 3px solid #0e3363;" class="f-left">
+                            <a style="padding: 3px 0px 0px 35px;" class="fa fa-cloud"></a>
+                        </div>                     
+                        <div style="padding: 12px 0px" class="border-b f-left">
+                            <h2><a class="fa fa-exclamation"></a>Report</h2>
+                        </div>
+                        <div style="padding: 12px 0px" class="border-b f-left">
+                                <h2 class="setting-last"><a class="setting fa fa-exclamation"></a>Settings</h2>
+                        </div>                        
+                    </div>
+                    <ul class="border-b people-ul settings-ul clearfix">
+                        <li>
+                            <h1 style="padding: 0px 0px 10px 20px!important;" class="p-h1 m-0 clearfix">Family<span class="widgets f-right">3</span></h1>
+                        </li>
+                        <li class="clearfix">
+                            <div class="p-icon bell-icon">
+                                <img src="assets/images/2.png" alt="b-img">
+                            </div>                        
+                            <div style="vertical-align: super;" class="p-desc bell-desc clearfix">
+                                <h2 class="m-0 w-100">Stephen Tran</h2>
+                                <p class="m-0 w-100">Available</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="p-icon bell-icon">
+                                <img src="assets/images/7.png" alt="b-img">
+                            </div>                        
+                            <div style="vertical-align: super;" class="p-desc bell-desc clearfix">
+                                <h2 class="m-0 w-100">Brittany Meyer</h2>
+                                <p class="m-0 w-100">I think so</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="jack p-icon bell-icon">
+                                <img src="assets/images/1.png" alt="b-img">
+                            </div>                        
+                            <div style="vertical-align: super;" class="p-desc bell-desc clearfix">
+                                <h2 class="m-0 w-100">Jack George</h2>
+                                <p class="m-0 w-100">Last Seen 2 hours ago</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="p-icon bell-icon">
+                                <img src="assets/images/4.png" alt="b-img">
+                            </div>                        
+                            <div style="vertical-align: super;" class="p-desc bell-desc clearfix">
+                                <h2 class="m-0 w-100">Donald Brown</h2>
+                                <p class="m-0 w-100">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="betty p-icon bell-icon">
+                                <img src="assets/images/8.png" alt="b-img">
+                            </div>                        
+                            <div style="vertical-align: super;" class="p-desc bell-desc clearfix">
+                                <h2 class="m-0 w-100">Betty Murphy</h2>
+                                <p class="m-0 w-100">Idle</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="samantha p-icon bell-icon">
+                                <img src="assets/images/9.png" alt="b-img">
+                            </div>                        
+                            <div style="vertical-align: super;" class="p-desc bell-desc clearfix">
+                                <h2 class="m-0 w-100">Samantha Reid</h2>
+                                <p class="m-0 w-100">Offline</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul style="margin-top: 20px!important;" class="border-b people-ul settings-ul clearfix">
+                        <li>
+                            <h1 style="padding: 0px 0px 10px 20px!important;" class="p-h1 m-0 clearfix">Friends<span style="background-color: #97C95D!important;" class="widgets f-right">OFFLINE</span></h1>
+                        </li>
+                        <li class="joey friends-li">
+                            <p class="m-0">Joey K. Greyson</p>                            
+                        </li>
+                        <li class="andrea friends-li">
+                            <p class="m-0">Andrea Branden</p>                            
+                        </li>
+                        <li class="johny friends-li">
+                            <p class="m-0">Johny Juan</p>                            
+                        </li>
+                        <li class="sun friends-li">
+                            <p class="m-0">Susan Sun</p>                            
+                        </li>
+                    </ul>
+                    <ul style="margin-top: 20px!important;" class="border-b people-ul settings-ul clearfix">
+                        <li>
+                            <h1 style="padding: 0px 0px 10px 20px!important;" class="p-h1 m-0 clearfix">News</h1>
+                            <p class="lorem-lp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ipsum dolor sid amet.</p>
+                            <p class="last-p">Last Update: Des 12,2014</p>
+                        </li>
+                </div>
+                <div id="menu-icon" class="menu-icon f-left">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            <div class="header-input">
+                <input type="text" class="type f-left" id="h-search" name="h-search" placeholder="Type for search...">
+            </div>
+        </div>        
+        <div class="header-menu h-items">
+            <ul class="ul-list clearfix">
+                <li>
+                    <div class="hover app-icon clearfix">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>                        
+                    </div>
+                </li>
+                <li>
+                    <div class="hover bell-div"><i class="bell fa fa-bell-o"></i></div>    
+                </li>
+                <li>
+                    <div class="hover person"><i class="person fa material-icons">person</i></div>
+                </li>
+                <li>
+                    <div class="hover account list-dots">
+                        <div class="div-dot"></div>
+                        <div class="div-dot"></div>
+                        <div class="div-dot"></div>                       
+                    </div>
+                </li>
+            </ul>                                
+        </div>        
+    </header>
+    <div class="main clearfix">
+        <div id="side-bar" class="side-bar clearfix f-left">
+        <div id="side-head" class="clearfix">
+            <img class="two-img one-img" src="assets/images/1.png">
+            <h2 class="dark t-c">Aaron Chavez<span class="f-right"><a class="triangle-1 tr-3"></a></span></h2>            
+            <p class="dark t-c m-0">aaron.cha@themeon.net</p>
+        </div>
+        <h2 class="dark nav-h2 t-l">Navigation</h2>        
+        <ul class="border-b side-list clearfix">
+            <li id="drop-li" class="drop-li side-li clearfix"><i class="dark first-i fa fa-home"></i><span class="dark li-text">Dashboard</span><span class="angle a-down f-right fa fa-angle-down"></span></li>
+            <li id="down" class="dark side-li down-first down-li clearfix"><span class="dark li-text">Dashboard 1</span></li>
+            <li class="dark side-li down-li clearfix"><span class="dark li-text">Dashboard 2</span></li>
+            <li class="dark side-li down-li clearfix"><span class="dark li-text">Dashboard 3</span></li>
+            <li class="side-li clearfix"><i class="dark side-icon fa fa-file-text-o"></i><span class="dark li-text">Layouts</span><span class="angle f-right fa fa-angle-right"></span></li>
+            <li class="last-li side-li clearfix"><i class="side-icon fa fa-crosshairs"></i><span class="dark li-text">Widgets</span><span class="angle widgets last-wid f-right">24</span></li>
+        </ul>
+        <h2 class="dark nav-h2 t-l dark">Components</h2>        
+        <ul class="border-b side-list side-list-two clearfix">
+            <li class="side-li clearfix"><i class="side-icon fa fa-bookmark"></i><span class="dark li-text">UI Elements</span><span class="angle f-right fa fa-angle-right"></span></li>
+            <li class="side-li clearfix"><i class="side-icon fa fa-pencil"></i><span class="dark li-text">Forms</span><span class="angle f-right fa fa-angle-right"></span></li>
+            <li class="side-li clearfix"><i class="side-icon fa fa fa-sticky-note-o"></i><span class="dark li-text">Tables</span><span class="angle f-right fa fa-angle-right"></span></li>
+            <li class="side-li clearfix"><i class="side-icon fa fa fa-bar-chart"></i><span class="dark li-text">Charts</span><span class="angle f-right fa fa-angle-right"></span></li>
+            <li class="side-li clearfix"><i class="side-icon fa fa-pencil"></i><span class="dark li-text">Miscellaneous</span><span class="angle f-right fa fa-angle-right"></span></li>
+            <li class="last-li side-li clearfix"><i class="side-icon fa fa fa fa-sticky-note-o"></i><span class="dark li-text">Grid System</span><span class="angle f-right fa fa-angle-right"></span></li>
+        </ul>
+        <h2 class="dark nav-h2 t-l">More</h2>        
+        <ul class="border-b side-list side-list-two clearfix">
+            <li class="side-li clearfix"><i class="side-icon fa fa fa-bookmark"></i><span class="dark li-text">App Views</span><span class="angle f-right fa fa-angle-right"></span></li>
+            <li class="side-li clearfix"><i class="side-icon fa fa-file-text"></i><span class="dark li-text">Blog Apps</span><span class="angle f-right fa fa-angle-right"></span></li>
+            <li class="side-li clearfix"><i class="side-icon fa fa-bookmark"></i><span class="dark li-text">Email</span><span class="angle f-right fa fa-angle-right"></span></li>
+            <li class="side-li clearfix"><i class="side-icon fa fa-sticky-note-o"></i><span class="dark li-text">Other Pages</span><span class="angle f-right fa fa-angle-right"></span></li>
+            <li class="side-li clearfix"><i class="side-icon fa fa-photo"></i><span class="dark li-text">Gallery</span><span class="angle f-right fa fa-angle-right"></span></li>
+            <li class="last-li side-li clearfix"><i class="side-icon fa fa fa-bookmark"></i><span class="dark li-text">Menu Level</span><span class="angle f-right fa fa-angle-right"></span></li>
+        </ul>
+        <h2 class="dark nav-h2 t-l">Extras</h2>
+        <ul class="border-b side-list side-list-two clearfix">
+                <li class="side-li clearfix"><i class="side-icon fa fa-smile-o"></i><span class="dark li-text">Icons Pack</span><span class="angle f-right fa fa-angle-right"></span></li>
+                <li class="premium side-li clearfix"><i class="side-icon fa fa-font-awesome"></i><span class="dark li-text">Premium icons</span><span class="angle best widgets last-wid f-right">BEST</span></li>
+                <li class="side-li clearfix"><i class="side-icon fa fa-bookmark"></i><span class="dark li-text">Helper Classes</span></li>
+        </ul>
+        <h2 class="dark nav-h2 t-l">Server Status</h2>        
+        <div class="empty-div empty-two"></div>
+        <button id="details" class="dark details-button details-two">View Details</button>
+        </div>
+        <div class="d-board f-left">
+        <div class="welcome f-left w-100">
+            <h1 class="t-c">Welcome back to the Dashboard.</h2>
+                <p class="t-c">Scroll down to see quick links and overviews of your Server, To do list, Order status or get some Help using lifty.</p>
+        </div>
+        <div class="d-items f-left p-x w-100 clearfix">            
+            <div class="network d-item f-left m-t clearfix">
+                <div class="clearfix">
+                    <h2 class="f-left">Network</h2>
+                <div class="network-settings">
+                    <i class="fa fa-refresh"></i>
+                    <i class="fa fa-ellipsis-v"></i>
+                </div>
+                </div>
+                <div class="clearfix">
+                    <ul class="speed-list f-left">
+                        <li class="speed-1"><span>Download Speed</span></li>
+                        <li class="speed-2"><span>Upload Speed</span> </li>
+                    </ul>
+                </div>
+                <div class="net-image">
+
+                </div>
+                <div class="cpu f-left clearfix">
+                    <h2 class="net-h2 t-l f-left">cpu temperature</h2>
+                    <div class="temperature border-b clearfix">
+                        <div class="temp-1 f-left">
+                            <h1 class="net-h1 m-0 f-left">43.7</h1>
+                            <span class="deg temp">
+                                <span>C</span>
+                            </span>
+                        </div>
+                        <div class="temp-values f-right">
+                            <h3>Min Values<span class="min-1">27</span><a class="triangle-1"></a><span class="min-2 m-0">-20</span></h3>
+                            <h3>Max Values<span class="min-1">69</span><a class="triangle-2"></a><span class="min-2 m-0">+57</span></h3>
+                        </div>
+                    </div>
+                    <h2 class="tips net-h2">today tips</h2>
+                    <p class="tips-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="bandwidth f-left clearfix">
+                    <h2 class=" net-h2">bandwidth usage</h2>
+                    <div class="band clearfix">
+                        <div class="band-1 f-left">
+                            <h1 class="bandwidth bandwidth-h2 net-h1 m-0 f-left">754.9</h1>                            
+                            <span class="f-left">Mbps</span>                                                        
+                        </div>                        
+                    </div>
+                    <div class="band-image"></div>                    
+                </div>
+            </div>            
+            <div class="usage d-item f-left m-t m-r clearfix">
+                <div class="stats hdd d-item f-left m-t">
+                    <h2><i class="fa fa-bookmark"></i> HDD Usage</h2>
+                    <div class="class space-size clearfix">
+                        <div class="space f-left">
+                            <p>Free Space</p>
+                            <p>Used Space</p>
+                        </div>
+                        <div class="size f-right">
+                            <p>132Gb</p>
+                            <p>1,45Gb</p>
+                        </div>
+                    </div>
+                </div>                
+                <div class="stats earning d-item f-left m-t m-r">
+                    <h2>Earning</h2>
+                    <div class="class space-size clearfix">
+                            <div class="space f-left">
+                                <p>Today</p>
+                                <p>Last 7 Day</p>
+                            </div>
+                            <div class="size f-right">
+                                    <p>$764</p>
+                                    <p>$1,332</p>
+                                </div>
+                        </div>
+                </div>
+                <div class="stats sales d-item f-left">
+                    <h2><i class="fa fa-bookmark"></i> Sales</h2>                
+                    <div class="class space-size clearfix">
+                            <div class="space f-left">
+                                <p>Today</p>
+                                <p>Last 7 Day</p>
+                            </div>
+                            <div class="size f-right">
+                                    <p>$764</p>
+                                    <p>$1,332</p>
+                                </div>
+                        </div>
+                </div>
+                <div class="stats task d-item f-left m-r">
+                    <h2>Task Progress</h2>
+                    <div class="class space-size clearfix">
+                        <div class="space f-left">
+                            <p>Completed</p>
+                            <p>Total</p>
+                        </div>
+                        <div class="size f-right">
+                            <p>34</p>
+                            <p>79</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-item f-left m-r clearfix">
+                    <div class="friends f-left">
+                        <h1 class="m-0">95</h1>
+                        <p class="m-0">new friends</p>
+                    </div>
+                    <div class="profile f-left">
+                        <div class="details border-b">
+                        <div><button class="details-button">View Details</button></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit amet.</p>
+                    </div>
+                        <div class="follows">
+                                <div class="follow">
+                                    <h4>1,345</h4>
+                                    <p>Following</p>
+                                </div>
+                                <div class="follow">
+                                    <h4>23K</h4>
+                                    <p>Followers</p>
+                                </div>
+                                <div class="follow">
+                                    <h4>278</h4>
+                                    <p>Post</p>
+                                </div>
+                            </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="docs clearfix">
+                <div class="file doc doc d-item f-left">
+                    <i class="f-left fa fa-folder-open"></i>
+                    <div>
+                        <h2> 241</h2>
+                        <p>Documents</p>
+                    </div>
+                </div>
+                <div class="zip doc d-item f-left">
+                    <i class="f-left fa fa-folder-open-o"></i>
+                    <div>
+                        <h2> 241</h2>
+                        <p>Zip Files</p>
+                    </div>
+                </div>
+                <div class="photos doc d-item f-left">
+                    <i class="f-left fa fa-camera-retro"></i>
+                    <div>
+                        <h2> 241</h2>
+                        <p>Photos</p>
+                    </div>
+                </div>
+                <div class="videos doc d-item f-left m-r">
+                    <i class="f-left fa fa-video-camera"></i>
+                    <div>
+                        <h2> 241</h2>
+                        <p>Videos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="manager clearfix">
+                <div class="to-do f-left">
+                    <h2 class="dark">To do list</h2>
+                    <ul class="list list-1">
+                        <li class="li-first"><label class="container">
+                                <input type="checkbox" id="check">
+                                <span class="checkmark"></span>
+                                <h4><label style="display: inline-block;" for="check">Find an Idea.</label></h4>
+                                <a>Important</a>
+                              </label></li>
+                              <li><label class="container">
+                                <input type="checkbox" id="check" checked="checked">
+                                <span class="checkmark"></span>
+                                <h4><label class="line-through" style="display: inline-block;" for="check">Do some work</label></h4>                                
+                              </label></li>
+                              <li><label class="container">
+                                <input type="checkbox" id="check">
+                                <span class="checkmark"></span>
+                                <h4><label style="display: inline-block;" for="check">Read the book</label></h4>                                
+                              </label></li>
+                              <li><label class="container">
+                                <input type="checkbox" id="check">
+                                <span class="checkmark"></span>
+                                <h4><label style="display: inline-block;" for="check">Upgrade server</label></h4>
+                                <a class="warning">Warining</a>
+                              </label></li>
+                              <li><label class="container">
+                                <input type="checkbox" id="check" checked="checked">
+                                <span class="checkmark"></span>
+                                <h4><label class="line-through" style="display: inline-block;" for="check">Redesign my logo</label></h4>
+                                <a class="mins line-through">2 mins</a>
+                              </label></li>
+                    </ul>
+                    <div class="text-div w-100 clearfix">
+                        <input type="text" class="text f-left" name="text" placeholder="New task">
+                        <div class="plus f-left"></div>
+                    </div>
+                </div>
+                <div class="services f-left">
+                        <h2 class="dark services-h2">Services<span><a class="div-dot div-dot-3"></a></span></h2>
+                        <ul class="list list-2">
+                            <li class="li-first"><label class="container">
+                                <input type="checkbox" id="check" checked="checked">
+                                <span class="checkmark check-2"></span>
+                                <h4><label style="display: inline-block;" for="check">Online status</label></h4>                                    
+                            </label></li>
+                            <li class="li-first"><label class="container">
+                                <input type="checkbox" id="check" checked="checked">
+                                <span class="checkmark check-2"></span>
+                                <h4><label style="display: inline-block;" for="check">Show offline contact</label></h4>                                    
+                            </label></li>
+                            <li class="li-first"><label class="container">
+                                <input type="checkbox" id="check">
+                                <span class="checkmark check-2"></span>
+                                <h4><label style="display: inline-block;" for="check">Show my device icon</label></h4>                                    
+                            </label></li>
+                        </ul>
+                        <h2 class="dark services-h2 Upgrade">Upgrade Progress</h2>
+                        <div class="empty-div"></div>
+                        <h2 class="dark services-h2  Upgrade">Database</h2>                        
+                        <div class="empty-div"></div>
+                </div>
+                <div class="project f-left clearfix">
+                    <div class="clearfix w-100">
+                        <img class="two-img f-left" src="assets/images/2.png" alt="2">
+                        <div class="ralph-div f-left clearfix">
+                            <h2 class="t-l">Ralph West</h2>                             
+                            <p class="t-l">Project manager</p>
+                        </div>
+                    </div>
+                    <div class="lorem w-100">
+                            <p><span>''</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<span>''</span></p>
+                        </div>
+                        <div class="ralph-media w-100 clearfix">
+                            <p class="t-l"><a href="#" class="fa fa-facebook"></a><span>Facebook</span></p>
+                            <p class="t-l"><a href="#" class="twit fa fa-twitter"></a><span>@RalphWe</span><br>Design my themes<span>#Bootstrap</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="t-l"><a href="#" class="cam fa fa-camera"></a><span>Ralphz</span></p>
+                        </div>
+                </div>                
+            </div>
+            <div class="order d-item p-x m-r clearfix">
+                <h2 class="f-left">Order Status</h2>
+                <div class="items clearfix">
+                    <div class="item-left f-left clearfix">
+                        <div class="order-left f-left">
+                            <a class="add">Add</a>
+                            <a href="#" class="fa fa-print"></a>                        
+                            <a href="#" class="fa fa-exclamation"></a>
+                        </div>
+                        <a href="#" class="f-left fa fa-trash"></a>
+                    </div>
+                    <div class="item-right f-right clearfix">
+                        <div class="f-left">
+                            <input type="text" class="text-2" name="text" placeholder="Search">
+                            <a class="fa fa-cloud"></a>
+                        </div>
+                        <div class="f-left list-dots list-dots-2">
+                            <div class="div-dot div-dot-2"></div>
+                            <div class="div-dot div-dot-2"></div>
+                            <div class="div-dot div-dot-2"></div>
+                        </div>
+                        </div>
+                    </div>
+                    <table class="users w-100 clearfix">
+                        <tr>
+                            <th>Invoice</th>
+                            <th>User</th>
+                            <th>Order date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Tracking Number</th>
+                        </tr>
+                        <tr class="field grey-r">
+                            <td class="invoice"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a class="status a-button paid">ss</a></td>
+                            <td></td>
+                        </tr>
+                        <tr class="field">
+                            <td class="invoice"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a class="status a-button ship"></a></td>
+                            <td></td>
+                        </tr>
+                        <tr class="field grey-r">
+                            <td class="invoice"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a class="status a-button ship"></a></td>
+                            <td></td>
+                        </tr>
+                        <tr class="field">
+                            <td class="invoice"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a class="status a-button ship"></a></td>
+                            <td></td>
+                        </tr>
+                        <tr class="field grey-r">
+                            <td class="invoice"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a class="status a-button paid"></a></td>
+                            <td>-</td>
+                        </tr>
+                        <tr class="field">
+                            <td class="invoice"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a class="status a-button refund"></a></td>
+                            <td>-</td>
+                        </tr>
+                        <tr class="field grey-r tr-last">
+                            <td class="td-last invoice"></td>
+                            <td class="td-last"></td>
+                            <td class="td-last"></td>
+                            <td class="td-last"></td>
+                            <td class="td-last"><a class="status a-button unpaid"></a></td>
+                            <td class="td-last">-</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="footer clearfix">
+                        <p class="f-left m-0">&copy; 2018 Your Company</p>
+                        <p class="f-right m-0">14GB of <span>512GB</span> Free.</p>
+                    </div>
+            </div>
+        </div>        
+    </div>
+    <script type="text/javascript" src="data.json"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

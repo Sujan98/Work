@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTL Order visibility</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet " href="assets/css/custom.css ">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <div class="fixed-top">
+        <!-- nav header section -->
+
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="p-4">
+                    <h4 class="text-white">Collapsed content</h4>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+            </div>
+            <nav class="navbar navbar-light bg-white">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" alt="logo-century" class="img-fluid">
+                </a>
+                <ul class="header-right">
+                    <li>
+                        <p class="name mb-0">Jasmin Williams,</p>
+                    </li>
+                    <li class="ccm-dropdown">
+                        <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CCM
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Order Visibility -->
+
+        <div class="order-visibility w-100 px-4 py-3">
+            <ul class="p-0 m-0 w-100 clearfix">
+                <li class="text-left">
+                    <h1 class="order-title text-white m-0">Order Visibility</h1>
+                </li>
+                <li class="float-right">
+                    <form id="myform">
+                        <div class="pos-relative">
+                            <input type="text" class="custom-input-filed" placeholder="Search Order">
+                            <buton type="search" class="border-0 search-btn"></buton>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tab Section -->
+    </div>
+
+    <dic class="tab-section d-block p-4">
+        <div class="time-date">
+            <p>11-11-2019 05:06:54 PM</p>
+        </div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a id="all-tab" class="nav-link active" data-toggle="tab" href="#all">All Orders</a>
+            </li>
+            <li class="nav-item">
+                <a id="view-tab" class="nav-link" data-toggle="tab" href="#view">Order View</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="all" class="tab-pane active" style="background: #fff;">
+                <div id="all-orders" class="tab-content row m-0">
+
+                    <div class="col-9 p-0">
+                        <div class="navhead-right float-right clearfix">
+                            <div class="float-left rounded">
+                                <!-- <p class="m-0 d-inline">Thu,13 Nov&nbsp;&nbsp;-&nbsp;&nbsp;Fri, 14 Nov</p> -->
+                                <p class="m-0 d-inline">
+                                    <input class="date-input" type="text" id="datepicker-from" value="13/11/2019" disabled>
+                                </p>
+                                <p class="m-0 d-inline">&nbsp;-&nbsp;</p>
+                                <p class="m-0 d-inline">
+                                    <input class="date-input" type="text" id="datepicker-to" value="14/11/2019" disabled>
+                                </p>
+                                <!-- <image class="calendar-img d-arrow" src="assets/images/calendar.png" alt="calendar-img"></image> -->
+                            </div>
+                            <div class="float-left rounded">
+                                <p style="font-size: 12px;" class="m-0 d-inline">Service Delivery View</p>
+                                <image class="d-arrow" src="assets/images/drrow.png" alt="d-arrow"></image>
+                            </div>
+                            <div class="float-left m-0 rounded">
+                                <image class="filter d-arrow m-0" src="assets/images/filter.png" al="filter"></image>
+                            </div>
+                        </div>
+                        <div id="all" class="tab-pane p-0 active">
+                            <div class="all-orders">
+                                <div class="business-left">
+                                    <div class="d-inline">
+                                        <image class="bd d-arrow m-0" src="assets/images/bd_cal.png" al="bd"></image>
+                                        <h6 class="d-inline seven ml-2">
+                                            <strong>7</strong>
+                                        </h6>
+                                    </div>
+                                    <h6 class="d-inline ml-2 mb-0">
+                                        <strong>Business Days</strong>
+                                    </h6>
+                                </div>
+                                <div class="all-orders-head clearfix">
+                                    <div class="float-right sla breached-sla">
+                                        <span class="rounded d-inline-block"></span>
+                                        <p>SLA Breached</p>
+                                    </div>
+
+                                    <div class="float-right sla met-sla">
+                                        <span class="rounded d-inline-block"></span>
+                                        <p>SLA Met</p>
+                                    </div>
+                                    <div class="float-right p-0 sla within-sla">
+                                        <span class="rounded d-inline-block"></span>
+                                        <p>Within SLA</p>
+                                    </div>
+                                </div>
+                                <div class="sales-order-graph clearfix">
+                                    <div style="padding-bottom: 35px; padding-top: 0px;" class="business-days clearfix">
+                                        <div class="graph-entry float-left">
+                                            &nbsp;
+                                        </div>
+                                        <div class="graph-entry float-left">
+                                            &nbsp;
+                                        </div>
+                                        <div class="graph-entry entry-active float-left">
+                                            <h6>Sales Order</h6>
+                                            <div class="entry-data rounded clearfix">
+                                                <div class="data-col float-left col-3 t-c">
+                                                    <p>150</p>
+                                                </div>
+                                                <div class="data-col float-left col-3 t-c">
+                                                    <p>20</p>
+                                                </div>
+                                                <div class="data-col float-left col-3 t-c">
+                                                    <p>100</p>
+                                                </div>
+                                                <div class="data-col float-left col-3 t-c">
+                                                    <p>30</p>
+                                                </div>
+                                                <div class="entry-foot d-inline">
+                                                    <span>4 Business Days</span>
+                                                </div>
+                                                <div class="graph-line"></div>
+                                            </div>
+                                        </div>
+                                        <div class="graph-entry float-left">
+                                            &nbsp;
+                                        </div>
+                                        <div class="graph-entry float-left">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+
+                                    <div style="padding-top: 0px;" class="business-days border-left border-secondary clearfix">
+                                        <div class="graph-entry float-left">
+                                            &nbsp;
+                                        </div>
+                                        <div class="graph-entry float-left">
+                                            &nbsp;
+                                        </div>
+                                        <div class="graph-entry entry-active float-left">
+                                            <h6>Order Entry</h6>
+                                            <div class="entry-data rounded clearfix">
+                                                <div class="data-col float-left t-c">
+                                                    <p>100</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>10</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>70</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>20</p>
+                                                </div>
+                                                <div class="entry-foot d-inline">
+                                                    <span>1 Business Day</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="graph-entry float-left">
+                                            &nbsp;
+                                        </div>
+                                        <div class="graph-entry float-left">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                    <div class="business-days border-left border-secondary clearfix">
+                                        <div class="graph-connect clearfix">
+                                            <div style="border-left: 1px solid black" class="float-left connect">
+                                                &nbsp;
+                                            </div>
+                                            <div class="float-left connect">
+                                                &nbsp;
+                                            </div>
+                                            <div style="position: relative" class="float-left connect">
+                                                &nbsp;
+                                                <div class="v-line"></div>
+                                            </div>
+                                            <div class="float-left connect">
+                                                &nbsp;
+                                            </div>
+                                        </div>
+                                        <div class="graph-connect graph-connect-bottom clearfix">
+                                            <div style="border-left: 1px solid black" class="float-left connect">
+                                                &nbsp;
+                                            </div>
+                                            <div class="float-left connect">
+                                                &nbsp;
+                                            </div>
+                                            <div style="position: relative" class="float-left connect">
+                                                &nbsp;
+                                                <div class="v-line"></div>
+                                            </div>
+                                            <div class="float-left connect">
+                                                &nbsp;
+                                            </div>
+                                        </div>
+                                        <div class="graph-entry entry-active float-left">
+                                            <h6>National Provisioning</h6>
+                                            <div class="entry-data rounded clearfix">
+                                                <div class="data-col float-left t-c">
+                                                    <p>70</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>20</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>20</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>30</p>
+                                                </div>
+                                                <div class="entry-foot d-inline">
+                                                    <span>1 Business Days</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="graph-entry entry-active float-left">
+                                            <h6>Local Provisioning</h6>
+                                            <div class="entry-data rounded clearfix">
+                                                <div class="data-col float-left t-c">
+                                                    <p>70</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>40</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>20</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>10</p>
+                                                </div>
+                                                <div class="entry-foot d-inline">
+                                                    <span>3 Business Days</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="graph-entry entry-active float-left">
+                                            <h6>CPE Ordering</h6>
+                                            <div class="entry-data rounded clearfix">
+                                                <div class="data-col float-left t-c">
+                                                    <p>70</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>10</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>10</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>50</p>
+                                                </div>
+                                                <div class="entry-foot d-inline">
+                                                    <span>3 Business Days</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="graph-entry entry-active float-left">
+                                            <h6>Network Implementaion</h6>
+                                            <div class="entry-data rounded clearfix">
+                                                <div class="data-col float-left t-c">
+                                                    <p>70</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>10</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>50</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>10</p>
+                                                </div>
+                                                <div class="entry-foot d-inline">
+                                                    <span>20 Business Day</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="graph-entry entry-active p-0 float-left">
+                                            <h6>IP Engineering</h6>
+                                            <div class="entry-data rounded clearfix">
+                                                <div class="data-col float-left t-c">
+                                                    <p>100</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>10</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>70</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>20</p>
+                                                </div>
+                                                <div class="entry-foot d-inline">
+                                                    <span>1 Business Days</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="business-days border-left border-secondary clearfix">
+                                        <div class="graph-entry float-left">
+                                            &nbsp;
+                                        </div>
+                                        <div class="graph-entry float-left">
+                                            &nbsp;
+                                        </div>
+                                        <div class="graph-entry entry-active float-left">
+                                            <h6>Field Services</h6>
+                                            <div class="entry-data rounded clearfix">
+                                                <div class="data-col float-left t-c">
+                                                    <p>120</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>20</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>70</p>
+                                                </div>
+                                                <div class="data-col float-left t-c">
+                                                    <p>30</p>
+                                                </div>
+                                                <div class="entry-foot d-inline">
+                                                    <span>1 Business Day</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="graph-entry float-left">
+                                            &nbsp;
+                                        </div>
+                                        <div class="graph-entry float-left">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="sales">
+                            <div class="sales-head clearfix">
+                                <div class="float-left p-0">
+                                    <h6 class="d-inline-block m-0">Sales Orders</h6>
+                                    <img class="d-arrow" src="assets/images/d_arrow.png" alt="d-arrow">
+                                </div>
+                                <div class="float-left">
+                                    <h6 class="d-inline-block m-0">All</h6>
+                                    <img class="d-arrow" src="assets/images/d_arrow.png" alt="d-arrow">
+                                </div>
+                                <div class="float-right">
+                                    <h6 class="d-inline-block m-0">Total</h6>
+                                    <span class="table-data">150</span>
+                                </div>
+                            </div>
+                            <table class="sales-table m-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">sales order</th>
+                                        <th scope="col">eng order</th>
+                                        <th scope="col">eng cat</th>
+                                        <th scope="col">eng action</th>
+                                        <th scope="col">location type</th>
+                                        <th scope="col">project</th>
+                                        <th scope="col">proj managed</th>
+                                        <th scope="col">customer</th>
+                                        <th scope="col">icsc code</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="sales-no" scope="row">
+                                            <span class="s-no">179566564</span>
+                                        </th>
+                                        <td>176476561</td>
+                                        <td>edl</td>
+                                        <td>ins</td>
+                                        <td>nearnet</td>
+                                        <td>gpon</td>
+                                        <td style="text-transform: inherit!important;">Proj_Managed</td>
+                                        <td>super energy inc</td>
+                                        <td>ms02</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="sales-no" scope="row">
+                                            <span class="s-no">1799912919</span>
+                                        </th>
+                                        <td>176526024</td>
+                                        <td>ela</td>
+                                        <td>ns</td>
+                                        <td>nearnet</td>
+                                        <td>ela_mtu</td>
+                                        <td style="text-transform: inherit!important;">Non_Proj_Managed</td>
+                                        <td>americn eagle manufacturing</td>
+                                        <td>nc01</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="sales-no" scope="row">
+                                            <span class="s-no">180040755</span>
+                                        </th>
+                                        <td>176525775</td>
+                                        <td>ela</td>
+                                        <td>ins</td>
+                                        <td>nearnet</td>
+                                        <td>ela_mtu</td>
+                                        <td style="text-transform: inherit!important;">Non_Proj_Managed</td>
+                                        <td>lca-vision inc</td>
+                                        <td>tw01</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="sales-no" scope="row">
+                                            <span class="s-no">180048502</span>
+                                        </th>
+                                        <td>176577820</td>
+                                        <td>edl</td>
+                                        <td>ins</td>
+                                        <td>onnet</td>
+                                        <td>gpon</td>
+                                        <td style="text-transform: inherit!important;">Non_Proj_Managed</td>
+                                        <td>via tv, llc</td>
+                                        <td>ms02</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="sales-no" scope="row">
+                                            <span class="s-no">179566564</span>
+                                        </th>
+                                        <td>176476561</td>
+                                        <td>edl</td>
+                                        <td>ins</td>
+                                        <td>nearnet</td>
+                                        <td>gpon</td>
+                                        <td style="text-transform: inherit!important;">Proj_Managed</td>
+                                        <td>super energy inc</td>
+                                        <td>ms02</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="sales-no" scope="row">
+                                            <span class="s-no">1799912919</span>
+                                        </th>
+                                        <td>176526024</td>
+                                        <td>ela</td>
+                                        <td>ns</td>
+                                        <td>nearnet</td>
+                                        <td>ela_mtu</td>
+                                        <td style="text-transform: inherit!important;">Non_Proj_Managed</td>
+                                        <td>americn eagle manufacturing</td>
+                                        <td>nc01</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="sales-no" scope="row">
+                                            <span class="s-no">180040755</span>
+                                        </th>
+                                        <td>176525775</td>
+                                        <td>ela</td>
+                                        <td>ins</td>
+                                        <td>nearnet</td>
+                                        <td>ela_mtu</td>
+                                        <td style="text-transform: inherit!important;">Non_Proj_Managed</td>
+                                        <td>lca-vision inc</td>
+                                        <td>tw01</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="sales-no" scope="row">
+                                            <span class="s-no">180048502</span>
+                                        </th>
+                                        <td>176577820</td>
+                                        <td>edl</td>
+                                        <td>ins</td>
+                                        <td>onnet</td>
+                                        <td>gpon</td>
+                                        <td style="text-transform: inherit!important;">Non_Proj_Managed</td>
+                                        <td>via tv, llc</td>
+                                        <td>ms02</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="sales-no" scope="row">
+                                            <span class="s-no">180048502</span>
+                                        </th>
+                                        <td>176577820</td>
+                                        <td>edl</td>
+                                        <td>ins</td>
+                                        <td>onnet</td>
+                                        <td>gpon</td>
+                                        <td style="text-transform: inherit!important;">Non_Proj_Managed</td>
+                                        <td>via tv, llc</td>
+                                        <td>ms02</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="sales-no" scope="row">
+                                            <span class="s-no">180048502</span>
+                                        </th>
+                                        <td>176577820</td>
+                                        <td>edl</td>
+                                        <td>ins</td>
+                                        <td>onnet</td>
+                                        <td>gpon</td>
+                                        <td style="text-transform: inherit!important;">Non_Proj_Managed</td>
+                                        <td>via tv, llc</td>
+                                        <td>ms02</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-foot clearfix">
+                            <div class="float-right">
+                                <img class="d-arrow d-left" src="assets/images/arrow-point-to-left.png" alt="d-arrow">
+                                <img class="d-arrow d-right" src="assets/images/arrow-point-to-right.png" alt="d-arrow">
+                            </div>
+                            <p class="float-right m-0">
+                                Rows pre Page:
+                                <span>10
+                                    <img style="width: 8px;" class="d-arrow" src="assets/images/sort-down.png" alt="d-arrow">
+                                </span>
+                                <span>1-10 </span>
+                                of
+                                <span class="table-data">150</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div style="background-color: #F5F5F5;" class="col-3 p-0">
+                        <div class="detail-section">
+                            <!-- <p style="background-color: transparent;" class="t-r m-0">11-11-2019 05:06:54 pm
+                                            </p> -->
+                            <div class="detail-main">
+                                <p class="m-0 p-2">
+                                    <strong>Recurring Revenue</strong>
+                                </p>
+                                <div class="revenue clearfix">
+                                    <div style="height: 50px;" class="float-left border-right">
+                                        <h3 class="m-0">
+                                            <strong>$100</strong>
+                                        </h3>
+                                        <p style="background-color: transparent;" class="t-g p-0">
+                                            <strong>Monthly</strong>
+                                        </p>
+                                    </div>
+                                    <div class="float-left">
+                                        <h3 class="m-0">
+                                            <strong>$8000</strong>
+                                        </h3>
+                                        <p style="background-color: transparent;" class="t-g p-0">
+                                            <strong>Net</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="m-0 p-2">
+                                    <strong>Sales Orders</strong>
+                                </p>
+                                <div id="barchart">
+                                    <!--Barchart-->
+                                </div>
+                                <div class="detail_list">
+                                    <div class="detail-list-head border-bottom c-p clearfix" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <p class="d-inline p-0">
+                                            <strong>ELA Orders</strong>
+                                        </p>
+                                        <img style="vertical-align: middle;padding-top: 10px;" class="d-arrow m-0 float-right" src="assets/images/drrow.png" alt="down_arrow">
+                                    </div>
+                                    <div class="drop_list">
+                                        <ul class="m-0">
+                                            <li>"Lorem ipsum dolor sit amet, consectetur.</li>
+                                            <li>sed do eiusmod tempor incididunt ut labore.</li>
+                                            <li>adipiscing elit quis nostrud.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="detail_list">
+                                    <div class="detail-list-head border-bottom c-p clearfix" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <p class="d-inline p-0">
+                                            <strong>ELA Orders</strong>
+                                        </p>
+                                        <img style="vertical-align: middle;padding-top: 10px;" class="d-arrow m-0 float-right" src="assets/images/drrow.png" alt="down_arrow">
+                                    </div>
+                                    <div class="drop_list">
+                                        <ul class="m-0">
+                                            <li>"Lorem ipsum dolor sit amet, consectetur.</li>
+                                            <li>sed do eiusmod tempor incididunt ut labore.</li>
+                                            <li>adipiscing elit quis nostrud.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="detail_list">
+                                    <div class="detail-list-head border-bottom c-p clearfix" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <p class="d-inline p-0">
+                                            <strong>EVC Orders</strong>
+                                        </p>
+                                        <img style="vertical-align: middle;padding-top: 10px;" class="d-arrow m-0 float-right" src="assets/images/drrow.png" alt="down_arrow">
+                                    </div>
+                                    <div class="drop_list">
+                                        <ul class="m-0">
+                                            <li>"Lorem ipsum dolor sit amet, consectetur.</li>
+                                            <li>sed do eiusmod tempor incididunt ut labore.</li>
+                                            <li>adipiscing elit quis nostrud.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="detail_list">
+                                    <div class="detail-list-head border-bottom c-p clearfix" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <p class="d-inline p-0">
+                                            <strong>CMI Orders</strong>
+                                        </p>
+                                        <img style="vertical-align: middle;padding-top: 10px;" class="d-arrow m-0 float-right" src="assets/images/drrow.png" alt="down_arrow">
+                                    </div>
+                                    <div class="drop_list">
+                                        <ul class="m-0">
+                                            <li>"Lorem ipsum dolor sit amet, consectetur.</li>
+                                            <li>sed do eiusmod tempor incididunt ut labore.</li>
+                                            <li>adipiscing elit quis nostrud.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="view" class="tab-pane fade" style="background: #F5F5F5;">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 border-top">
+                        <!-- <div class="time-date">
+                                    <p>11-11-2019 05:06:54 PM</p>
+                                </div> -->
+                        <div class="order-id">
+                            <p class="m-0 id-number">179566564</p>
+                        </div>
+
+                        <!-- Progressbar -->
+                        <ul id="progressbar">
+                            <li class="active color-li" data-toggle="tooltip" data-placement="top" title="Tracking No: 181235631  Shipping Address: 740S WINDERMERE ST LITTLETON, CO-80120">
+                                <p class="date-active">11/14/2019</p>
+                                <p class="text-progress">Order Entry</p>
+                            </li>
+                            <li class="color-li active" data-toggle="tooltip" data-placement="top" title="Tracking No: 181235631  Shipping Address: 740S WINDERMERE ST LITTLETON, CO-80120">
+                                <p class="date-active">11/14/2019</p>
+                                <p class="text-progress">VLAN/Port Assignment</p>
+                            </li>
+                            <li class="color-li active" data-toggle="tooltip" data-placement="top" title="Tracking No: 181235631  Shipping Address: 740S WINDERMERE ST LITTLETON, CO-80120">
+                                <p class="date-active">11/14/2019</p>
+                                <p class="text-progress">ASR Sent</p>
+                            </li>
+                            <li class="color-li active" data-toggle="tooltip" data-placement="top" title="Tracking No: 181235631  Shipping Address: 740S WINDERMERE ST LITTLETON, CO-80120">
+                                <p class="date-active">11/14/2019</p>
+                                <p class="text-progress">FOC Received</p>
+                            </li>
+                            <li class="color-li received" data-toggle="tooltip" data-placement="top" title="Tracking No: 181235631  Shipping Address: 740S WINDERMERE ST LITTLETON, CO-80120">
+                                <p class="date-active">11/16/2019</p>
+                                <p class="text-progress">DLR Received</p>
+                            </li>
+                            <li class="color-li shipped" data-toggle="tooltip" data-placement="top" title="Tracking No: 181235631  Shipping Address: 740S WINDERMERE ST LITTLETON, CO-80120">
+                                <p class="date-active">11/16/2019</p>
+                                <p class="text-active">CPE Shipped</p>
+                            </li>
+                            <li class="color-li disable-li" data-toggle="tooltip" data-placement="top" title="Tracking No: 181235631  Shipping Address: 740S WINDERMERE ST LITTLETON, CO-80120">
+                                <p class="date-inactive">11/16/2019</p>
+                                <p class="text-progress">CPE Delivered</p>
+                            </li>
+                            <li class="color-li disable-li" data-toggle="tooltip" data-placement="top" title="Tracking No: 181235631  Shipping Address: 740S WINDERMERE ST LITTLETON, CO-80120">
+                                <p class="date-inactive">11/16/2019</p>
+                                <p class="text-progress">Loop Accepted</p>
+                            </li>
+                            <li class="color-li disable-li" data-toggle="tooltip" data-placement="top" title="Tracking No: 181235631  Shipping Address: 740S WINDERMERE ST LITTLETON, CO-80120">
+                                <p class="date-inactive">11/17/2019</p>
+                                <p class="text-progress">Loop Complete Network Ready</p>
+                            </li>
+                        </ul>
+
+                        <!-- Accordion Section -->
+                        <div id="accordion" class="mt-4">
+                            <div class="cards">
+                                <a class="card-link section-title clearfix" data-toggle="collapse" href="#collapseOne">
+                                    <div class="clearfix">
+                                        <h1 class="section-title border-0 m-0 p-0 float-left">
+                                            Order Details
+                                        </h1>
+                                        <div class="float-right">
+                                            <p class="m-0 overview">Overview
+                                                <img src="assets/images/drrow.png" class="img-fluid" alt="down-arrow">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+
+                                </div>
+                            </div>
+
+                            <!-- cards-section -->
+
+                            <div class="accordion-scroll">
+                                <ul class="m-0 p-0 cards-list w-100 clearfix">
+                                    <li>
+                                        <div class="card-1 clearfix">
+                                            <div class="section-subtitle clearfix">
+                                                <h1 class="section-subtitle border-0 m-0 p-0 float-left">
+                                                    Order Summary
+                                                </h1>
+                                                <div class="float-right">
+                                                    <div class="mt--5">
+                                                        <button type="button" class="bg-transparent border-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <img src="assets/images/more.png" alt="more-ico" class="img-fluid pb-2">
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1178px, 393px, 0px);">
+                                                            <button class="dropdown-item" type="button">Action</button>
+                                                            <button class="dropdown-item" type="button">Another action</button>
+                                                            <button class="dropdown-item" type="button">Something else here</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="w-100 table-top">
+                                                <table class="info-table" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Sales Order</td>
+                                                            <td>179566564</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Order Request Product</td>
+                                                            <td> Fiber*Voice &amp; Date</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Customer Name</td>
+                                                            <td>ACME inc</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Service Location</td>
+                                                            <td>7000 S WINDERMERE ST LITTLETON, CO-80120</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Bandwidth</td>
+                                                            <td>100 MBPS</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="show-more text-right">
+                                                <a href="#" class="show">Show More</a>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <!--  -->
+
+                                    <li>
+                                        <div class="card-1">
+                                            <div class="section-subtitle clearfix">
+                                                <h1 class="section-subtitle border-0 m-0 p-0 float-left">
+                                                    Cause of holdup
+                                                </h1>
+                                                <div class="float-right">
+                                                    <div class="">
+                                                        <button type="button" class="bg-transparent border-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <img src="assets/images/more.png" alt="more-ico" class="img-fluid pb-2">
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1178px, 393px, 0px);">
+                                                            <button class="dropdown-item" type="button">Action</button>
+                                                            <button class="dropdown-item" type="button">Another action</button>
+                                                            <button class="dropdown-item" type="button">Something else here</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="w-100 table-top">
+                                                <table class="info-table" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Sales Order</td>
+                                                            <td>179566564</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Order Request Product</td>
+                                                            <td> Fiber*Voice &amp; Date</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Customer Name</td>
+                                                            <td>ACME inc</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Service Location</td>
+                                                            <td>7000 S WINDERMERE ST LITTLETON, CO-80120</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Bandwidth</td>
+                                                            <td>100 MBPS</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="show-more text-right">
+                                                <a href="#" class="show">Show More</a>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <!--  -->
+
+                                    <li>
+                                        <div class="card-1">
+                                            <div class="section-subtitle clearfix">
+                                                <h1 class="section-subtitle border-0 m-0 p-0 float-left">
+                                                    Holdup Comments
+                                                </h1>
+                                                <div class="float-right">
+                                                    <div class="">
+                                                        <button type="button" class="bg-transparent border-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <img src="assets/images/more.png" alt="more-ico" class="img-fluid pb-2">
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1178px, 393px, 0px);">
+                                                            <button class="dropdown-item" type="button">Action</button>
+                                                            <button class="dropdown-item" type="button">Another action</button>
+                                                            <button class="dropdown-item" type="button">Something else here</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="w-100 table-top">
+                                                <table class="info-table" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Sales Order</td>
+                                                            <td>179566564</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Order Request Product</td>
+                                                            <td> Fiber*Voice &amp; Date</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Customer Name</td>
+                                                            <td>ACME inc</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Service Location</td>
+                                                            <td>7000 S WINDERMERE ST LITTLETON, CO-80120</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Bandwidth</td>
+                                                            <td>100 MBPS</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="show-more text-right">
+                                                <a href="#" class="show">Show More</a>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <!--  -->
+
+                                    <li>
+                                        <div class="card-1">
+                                            <div class="section-subtitle clearfix">
+                                                <h1 class="section-subtitle border-0 m-0 p-0 float-left">
+                                                    CORE Information
+                                                </h1>
+                                                <div class="float-right">
+                                                    <div class="">
+                                                        <button type="button" class="bg-transparent border-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <img src="assets/images/more.png" alt="more-ico" class="img-fluid pb-2">
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1178px, 393px, 0px);">
+                                                            <button class="dropdown-item" type="button">Action</button>
+                                                            <button class="dropdown-item" type="button">Another action</button>
+                                                            <button class="dropdown-item" type="button">Something else here</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="w-100 table-top">
+                                                <table class="info-table" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Sales Order</td>
+                                                            <td>179566564</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Order Request Product</td>
+                                                            <td> Fiber*Voice &amp; Date</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Customer Name</td>
+                                                            <td>ACME inc</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Service Location</td>
+                                                            <td>7000 S WINDERMERE ST LITTLETON, CO-80120</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Bandwidth</td>
+                                                            <td>100 MBPS</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="show-more text-right">
+                                                <a href="#" class="show">Show More</a>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <!--  -->
+                                    <li>
+                                        <div class="card-1">
+                                            <div class="section-subtitle clearfix">
+                                                <h1 class="section-subtitle border-0 m-0 p-0 float-left">
+                                                    Email History
+                                                </h1>
+                                                <div class="float-right">
+                                                    <div class="">
+                                                        <button type="button" class="bg-transparent border-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <img src="assets/images/more.png" alt="more-ico" class="img-fluid pb-2">
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1178px, 393px, 0px);">
+                                                            <button class="dropdown-item" type="button">Action</button>
+                                                            <button class="dropdown-item" type="button">Another action</button>
+                                                            <button class="dropdown-item" type="button">Something else here</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="w-100 table-top">
+                                                <table class="info-table" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Sales Order</td>
+                                                            <td>179566564</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Order Request Product</td>
+                                                            <td> Fiber*Voice &amp; Date</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Customer Name</td>
+                                                            <td>ACME inc</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Service Location</td>
+                                                            <td>7000 S WINDERMERE ST LITTLETON, CO-80120</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Bandwidth</td>
+                                                            <td>100 MBPS</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="show-more text-right">
+                                                <a href="#" class="show">Show More</a>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <!--  -->
+                                    <li>
+                                        <div class="card-1">
+                                            <div class="add-items">
+                                                <a href="#" class="add text-center">
+                                                    <img src="assets/images/add-plus.png" class="img-fluid" alt="add">
+                                                    <br> ADD WIDGET
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 part-2">
+                        <!-- <div class="time-date">
+                        <p>11-11-2019 05:06:54 PM</p>
+                    </div> -->
+                        <div class="day-clock text-center">
+                            <img src="assets/images/day_clo.png" class="img-fluid" alt="dayclock">
+                            <div class="days-number text-center">
+                                <p class="m-0 count-no">7</p>
+                                <p class="m-0">DAYS</p>
+                            </div>
+                        </div>
+                        <ul class="mt-3 p-0" id="progressbar-2">
+                            <li>
+                                <p class="m-0 text-clr">
+                                    Committed
+                                </p>
+                                <p class="m-0 text-clr1">
+                                    7 days
+                                </p>
+                            </li>
+                            <li>
+                                <p class="m-0 text-clr">
+                                    Actual
+                                </p>
+                                <p class="m-0 text-clr1">
+                                    15 days
+                                </p>
+                            </li>
+                            <li>
+                                <p class="m-0 text-clr">
+                                    Predicted
+                                </p>
+                                <p class="m-0 text-clr1">
+                                    20 days
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="list-details m-0 p-0">
+                            <li class="">
+                                <p class="m-0">
+                                    Customer Requested Due Date
+                                </p>
+                                <p class="m-0">
+                                    November 20,2019
+                                </p>
+                            </li>
+                            <li class="">
+                                <p class="m-0">
+                                    Customer Commit Due Date
+                                </p>
+                                <p class="m-0">
+                                    February 12,2020
+                                </p>
+                            </li>
+                            <li class="">
+                                <p class="m-0">
+                                    Site Survey
+                                </p>
+                                <p class="m-0 site-survay">
+                                    DSR516299
+                                </p>
+                            </li>
+                            <li class="">
+                                <p class="m-0">
+                                    Firm Order Confirmation Date
+                                </p>
+                                <p class="m-0">
+                                    November 20,2019
+                                </p>
+                            </li>
+                            <li class="">
+                                <p class="m-0">
+                                    Last Communication With Customer
+                                </p>
+                                <p class="m-0">
+                                    November 20,2019
+                                </p>
+                            </li>
+                            <li class="">
+                                <p class="m-0">
+                                    Affiliate
+                                </p>
+                                <p class="m-0">
+                                    Orange-TW-Telecom
+                                </p>
+                            </li>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+        <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+
+</body>
+
+</html>
