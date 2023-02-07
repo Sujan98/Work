@@ -1,0 +1,308 @@
+#login-body {
+    background-color: #0E0E0E;
+}
+.login-main {    
+    background-image: url("../images/login/login-bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.login-left-main {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100vh;
+}
+/* .login-main-left {
+    width: 58%;
+    padding: 346px 0px;
+    position: relative;
+    z-index: 1;
+} */
+.dot {
+    height: 11px;
+    width: 11px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.603);
+    border-radius: 50%;
+    margin: 0px 4px;
+    display: inline-block;
+    margin-top: 50px;
+}
+.dot-active {
+    background-color: #018390!important;
+    border: none!important;
+}
+.description {
+    color: white;
+    font-weight: 550;
+    font-size: 33px;
+    line-height: 2.6rem;
+    display: none;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 49%;
+    transform: translateY(-50%);
+}
+.active-description {
+    display: block!important;
+}
+.login-form {    
+    padding: 50px 110px;
+    background-color: white;
+    position: absolute;
+    right: 95px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.login-form h1 {
+    margin: 50px 0px 40px 0px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+.form-logo {
+    width: 215px;
+}
+.username,.password {
+    color: grey!important;
+    margin: 20px 0px;    
+    width: 300px;
+    border-bottom: 0.5px solid rgba(12, 9, 9, 0.924);
+}
+.password {
+    margin-bottom: 10px;
+}
+.input {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    padding: 6px;    
+    vertical-align: middle;
+    outline: none;
+}
+input:-internal-autofill-selected {
+    background-color: white!important;
+}
+.input-logo {
+    width: 20px;
+}
+.input::-webkit-input-placeholder {
+    font-size: 13px!important;
+}
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    padding-top: 2px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: grey;
+}
+/* Hide the browser's default checkbox */
+.container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 15px;
+width: 15px;
+border: 1px solid grey;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+background-color: #ccc;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+left: 4px;
+top: 1px;
+width: 5px;
+height: 10px;
+border: solid black;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.btn {
+    background-color: #018390;
+    color: white;
+    width: 300px;
+    margin: 80px 0px 20px 0px;
+    font-size: 12px;
+}
+.sign-in {    
+    font-size: 12px;
+    font-weight: 550;
+}
+.sign-in a {
+    text-decoration: none;
+    color: #018390!important;
+}
+.dots {
+    position: absolute;
+    bottom: 155px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.copyr {
+    position: absolute;
+    bottom: 5px;
+    right: 30px;
+    color: rgba(255, 255, 255, 0.438);
+    font-size: 11px;
+    z-index: 1;
+}
+.btn-primary:hover {
+    background-color: #00E676;
+    border-color: #00E676;
+}
+.t-u {
+    text-transform: uppercase;
+}
+.t-g {
+    color: #999999;
+}
+.t-w {
+    color: white;
+}
+.c-p {
+    cursor: pointer;
+}
+.border-b {
+    border-bottom: 1px solid #CDCDCD;
+}
+.t-l {
+    text-align: left!important;
+}
+.t-c {
+    text-align: center!important;
+}
+.t-r {
+    text-align: right;
+}
+.p-0 {
+    padding: 0px;
+}
+.m-0 {
+    margin: 0px!important;
+}
+.f-left{
+    float: left!important;
+}
+.w-100 {
+    width: 100%!important;
+}
+@media only screen and (max-width: 1150px) {
+    .login-form {
+        padding: 50px 80px;
+        right: 35px;
+    }
+    }
+.particle-network-animation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	background-color: #000000;
+  
+  &::before {
+    z-index: -2;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // background-image: url(http://web.frfr.me/dev/world-map-optimized.jpg);
+    background-image: url(https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=786a67dca1d8791d181bfd90b16240d9);
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.2;
+  }
+}
+.glow {
+  z-index: -1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-image: radial-gradient(circle closest-side, #000000, transparent);
+}
+$duration: 25s;
+.glow-1 {
+  width: 150vw;
+  height: 150vh;
+  margin-top: -75vh;
+  margin-left: -75vw;
+  animation: glow-1-move $duration linear infinite both;
+}
+@keyframes glow-1-move {
+  from {
+    transform: translate(-100%, 100%);
+  }
+  to {
+    transform: translate(100%, -100%);
+  }
+}
+.glow-2 {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -50vh;
+  margin-left: -50vw;
+  animation: glow-2-move $duration linear $duration / 3 infinite both;
+}
+@keyframes glow-2-move {
+  from {
+    transform: translate(-100%, 0%);
+  }
+  to {
+    transform: translate(100%, 100%);
+  }
+}
+.glow-3 {
+  width: 120vw;
+  height: 120vh;
+  margin-top: -60vh;
+  margin-left: -60vw;
+  animation: glow-3-move $duration linear $duration / 3 * 2 infinite both;
+}
+@keyframes glow-3-move {
+  from {
+    transform: translate(100%, 100%);
+  }
+  to {
+    transform: translate(0%, -100%);
+  }
+}

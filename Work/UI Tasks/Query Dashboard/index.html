@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
+        crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="svg.css"> -->
+</head>
+
+<body>
+    <nav class="p-0 header navbar navbar-expand-lg main-nav">
+        <div id="navbar-brand" class="c-p nav-title">
+            <img id="head-logo" src="assets/images/grid/Logo-innerpages.png" alt="logo">
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="ul" class="navbar-nav ul">
+                <li style="padding: 6px 10px;" class="nav-item">John Smith</li>
+                <li class="nav-item">
+                    <img id="john-logo" src="assets/images/home/images.jpg" alt="logo">
+                </li>
+                <li class="nav-item">
+                    <img id="settings-logo" src="assets/images/home/settings.png" alt="logo">
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="side-list">
+        <div class="home-item t-c side-item rounded-top border-b green-active">
+            <img id="side-logo" src="assets/images/home/home-selection.png" alt="logo">
+            <h3 class="m-0 t-c">Home</h3>
+        </div>
+        <div class="fav-item t-c side-item border-b">
+            <img id="side-logo" src="assets/images/home/user-favourites-grey.png" alt="logo">
+            <h3 class="m-0 t-c">Favourites</h3>
+        </div>
+        <div class="user-item t-c side-item border-b">
+            <img id="side-logo" src="assets/images/home/user-template-grey.png" alt="logo">
+            <h3 class="m-0 t-c">User
+                <br>Templates</h3>
+        </div>
+        <div class="cart-item t-c side-item border-b">
+            <img id="side-logo" src="assets/images/home/user-cart-grey.png" alt="logo">
+            <h3 class="m-0 t-c">User Cart</h3>
+        </div>
+        <div class="force-item t-c side-item border-b">
+            <img id="side-logo" src="assets/images/home/force-directed-graph-grey.png" alt="logo">
+            <h3 class="m-0 t-c">Force Directed
+                <br>Graph
+            </h3>
+        </div>
+        <div class="hier-item t-c side-item border-b">
+            <img id="side-logo" src="assets/images/home/hirearchy-graph-grey.png" alt="logo">
+            <h3 class="m-0 t-c">Hirearchy
+                <br>Graph</h3>
+        </div>
+        <div class="query-item t-c side-item border-b">
+            <img id="side-logo" src="assets/images/home/query-to-table-grey.png" alt="logo">
+            <h3 class="m-0 t-c">Query To
+                <br>Table</h3>
+        </div>
+        <div class="wilcard-item t-c side-item border-b">
+            <img id="side-logo" src="assets/images/home/wild-card-search-grey.png" alt="logo">
+            <h3 class="m-0 t-c">Wilcard
+                <br>Search</h3>
+        </div>
+        <div style="padding: 35px 8px;" class="more-item t-c side-item rounded-bottom">
+            <img id="side-logo" src="assets/images/home/more-grey.png" alt="logo">
+        </div>
+    </div>
+    <div class="main clearfix">
+        <div class="main-left f-left">
+            <h3 class="main-head t-u">Query Dashboard</h3>
+            <nav class="head-nav">
+                <div style="border-bottom: 0px;" class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a style="margin-left: 0px;padding: .7rem 1.5rem;" class="head-tab t-active tab-itm nav-item nav-link active t-u" id="nav-home-tab"
+                        data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">All</a>
+
+                    <a class="tab-one head-tab tab-itm nav-item nav-link t-u" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                        aria-controls="nav-profile" aria-selected="false">154385 equip_vrtx
+                        <div class="close-tab float-right">
+                            <img id="equip-logo" src="assets/images/grid/close-popup.png" alt="q-logo">
+                        </div>
+                    </a>
+
+
+
+                    <a class="tab-two head-tab tab-itm nav-item nav-link t-u" id="nav-contact-tab" data-toggle="tab" href="tab-2 #nav-contact"
+                        role="tab" aria-controls="nav-contact" aria-selected="false">6546751 equip_vrtx
+                        <div class="close-tab float-right">
+                            <img id="equip-logo" src="assets/images/grid/close-popup.png" alt="q-logo">
+                        </div>
+                    </a>
+
+
+                    <a class="tab-three head-tab tab-itm nav-item nav-link t-u" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                        aria-controls="nav-contact" aria-selected="false">917831 equip_vrtx
+                        <div class="close-tab float-right">
+                            <img id="equip-logo" src="assets/images/grid/close-popup.png" alt="q-logo">
+                        </div>
+                    </a>
+
+                </div>
+            </nav>
+        </div>
+        <div class="main-right float-right">
+            <nav>
+                <ul class="nav right-list">
+                    <li style="margin: 0px 25px;">
+                        <img style="padding: 8px 0px;" id="side-logo" src="assets/images/home/search.png" alt="logo">
+                    </li>
+                    <li style="margin-right: 65px!important;">
+                        <a class="grid-view rounded tab-itm nav-item nav-link t-u grid-t" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                            role="tab" aria-controls="nav-profile" aria-selected="false">grid view</a>
+                    </li>
+                    <div class="query-slide rounded-left clearfix">
+                        <div class="qslide-head clearfix">
+                            <h4 class="float-left t-u m-0">query</h4>
+                            <div class="close-slide float-right c-p">
+                                <img id="equip-logo" src="assets/images/grid/close-popup.png" alt="modal-logo">
+                            </div>
+                        </div>
+                        <div class="qslide-main">
+                            <ul class="qslide-list clearfix m-0 p-0">
+                                <li class="run qslide-li qslide-open clearfix m-0">
+                                    <div class="list-head border-bottom clearfix c-p">
+                                        <h2 class="float-left m-0">
+                                            <strong>Run Query</strong>
+                                        </h2>
+                                        <div class="run-down float-right up-list">
+                                            <img id="equip-logo" src="assets/images/grid/drop-down.png" alt="q-logo">
+                                        </div>
+                                    </div>
+                                    <form class="run-form qslide-form">
+                                        <label class="q-label label clearfix" for="description">Description
+                                            <span class="t-r t-u">clear</span>
+                                        </label>
+                                        <textarea style="resize: none;" id="description" class="qslide-desc description rounded email border-0" name="description">Text Query</textarea>
+                                        </textarea>
+                                        <button type="button" class="get submit t-u btn btn-secondary" data-dismiss="modal">get data</button>
+                                    </form>
+                                </li>
+                                <li class="build qslide-li clearfix">
+                                    <div style="padding: 17px 30px;" class="list-head clearfix c-p">
+                                        <h2 class="float-left m-0">
+                                            <strong>Build Query</strong>
+                                        </h2>
+                                        <div class="build-down float-right">
+                                            <img id="equip-logo" src="assets/images/grid/drop-down.png" alt="q-logo">
+                                        </div>
+                                    </div>
+                                    <div class="build-main clearfix">
+                                        <ul class="build-tab detail-tab nav nav-tabs">
+                                            <li class="nav-item m-0">
+                                                <a class="build-a build-active d-nav nav-link active" href="#">Force Directed Graph</a>
+                                            </li>
+                                            <li class="nav-item m-0">
+                                                <a class="build-a d-nav nav-link" href="#">Hierarchy Graph</a>
+                                            </li>
+                                        </ul>
+                                        <div class="build-form clearfix">
+                                            <form>
+                                                <div class="clearfix">
+                                                    <div class="binput build-input float-left clearfix">
+                                                        <label class="label" for="email">Layers</label>
+                                                        <input type="text" id="email" class="rounded email border-0" name="email" value="Layer 2" placeholder="Email">
+                                                        <div class="float-right">
+                                                            <img id="equip-logo" src="assets/images/grid/drop-down.png" alt="q-logo">
+                                                        </div>
+                                                    </div>
+                                                    <div class="binput build-input m-0 float-left clearfix">
+                                                        <label class="label" for="email">Directions</label>
+                                                        <input type="text" id="email" class="rounded email border-0" name="email" value="Both" placeholder="Email">
+                                                        <div class="float-right">
+                                                            <img id="equip-logo" src="assets/images/grid/drop-down.png" alt="q-logo">
+                                                        </div>
+                                                    </div>
+                                                    <div class="build-input m-0 float-left clearfix">
+                                                        <label class="label" for="email">Property</label>
+                                                        <input type="text" id="email" class="rounded email border-0" name="email" value="EQUIP_VRTX" placeholder="Email">
+                                                        <div class="float-right">
+                                                            <img id="equip-logo" src="assets/images/grid/drop-down.png" alt="q-logo">
+                                                        </div>
+                                                    </div>
+                                                    <div class="build-input m-0 float-left clearfix">
+                                                        <label class="label" for="email">Relationships</label>
+                                                        <input type="text" id="email" class="rounded email border-0" name="email" value="Equals" placeholder="Email">
+                                                        <div class="float-right">
+                                                            <img id="equip-logo" src="assets/images/grid/drop-down.png" alt="q-logo">
+                                                        </div>
+                                                    </div>
+                                                    <div class="build-input m-0 float-left clearfix">
+                                                        <label class="label" for="email">Propert Value</label>
+                                                        <input type="text" id="email" class="rounded email border-0" name="email" value="54781246" placeholder="Email">
+                                                        <div class="float-right">
+                                                            <img id="equip-logo" src="assets/images/grid/drop-down.png" alt="q-logo">
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer build-footer border-0">
+                                                        <button style="font-size: 13px;" type="button" class="submit t-u btn btn-secondary" data-dismiss="modal">build and run</button>
+                                                        <button style="font-size: 13px;margin-left: 0px;" type="button" class="build-btn btn t-u btn-primary">build query</button>
+                                                        <span class="t-u">
+                                                            <a href="">reset</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="qslide-li clearfix">
+                                    <div class="list-head border-bottom clearfix">
+                                        <h2 class="float-left m-0">
+                                            <strong>Query History</strong>
+                                        </h2>
+                                        <div class="float-right">
+                                            <img id="equip-logo" src="assets/images/grid/drop-down.png" alt="q-logo">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <li class="query-t c-p rounded-left">
+                            <img id="side-logo" src="assets/images/home/query.png" alt="logo">
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="map">
+        <div id="split-container">
+
+            <div id="graph-container">
+                <span class="net-rack net-item rack-active shelf rack5472 float-left rounded">
+                    <img id="equip-logo" src="assets/images/home/rack.png" alt="logo">
+                    <span style="font-size: 12px;">54781256 EQUIP..</span>
+                </span>
+                <span class="e-one net-shelf net-item shelf shelf154 float-left rounded">
+                    <img id="equip-logo" src="assets/images/home/shelf.png" alt="logo">
+                    <span style="font-size: 12px;">154385 EQUIP..</span>
+                </span>
+                <span class="e-one net-shelf net-item shelf shelf1542 float-left rounded">
+                    <img id="equip-logo" src="assets/images/home/shelf.png" alt="logo">
+                    <span style="font-size: 12px;">154385 EQUIP..</span>
+                </span>
+                <span class="e-one net-shelf net-item shelf shelf1546 float-left rounded">
+                    <img id="equip-logo" src="assets/images/home/shelf.png" alt="logo">
+                    <span style="font-size: 12px;">154385 EQUIP..</span>
+                </span>
+                <span class="e-two net-crd net-item crds card1 float-left rounded">
+                    <img id="equip-logo" src="assets/images/home/card copy 2.png" alt="logo">
+                    <span style="font-size: 12px;">6546751 EQUIP..</span>
+                </span>
+                <span class="e-two net-crd net-item crds card2 float-left rounded">
+                    <img id="equip-logo" src="assets/images/home/card copy 2.png" alt="logo">
+                    <span style="font-size: 12px;">6546751 EQUIP..</span>
+                </span>
+                <span class="e-two net-crd net-item crds card3 float-left rounded">
+                    <img id="equip-logo" src="assets/images/home/card copy 2.png" alt="logo">
+                    <span style="font-size: 12px;">6546751 EQUIP..</span>
+                </span>
+                <span class="e-two net-crd net-item crds card4 float-left rounded">
+                    <img id="equip-logo" src="assets/images/home/card copy 2.png" alt="logo">
+                    <span style="font-size: 12px;">6546751 EQUIP..</span>
+                </span>
+                <span class="e-three net-fc net-item facility float-left rounded">
+                    <img id="equip-logo" src="assets/images/home/facility-circuit.png" alt="logo">
+                    <span style="font-size: 12px;">917831 CIRCUIT..</span>
+                </span>
+                <span class="e-three net-product net-item product2 float-left rounded">
+                    <img id="equip-logo" src="assets/images/home/product-circuit.png" alt="logo">
+                    <span style="font-size: 12px;">917831 CIRCUIT..</span>
+                </span>
+                <span class="e-three net-product net-item product3 float-left rounded">
+                    <img id="equip-logo" src="assets/images/home/product-circuit.png" alt="logo">
+                    <span style="font-size: 12px;">917831 CIRCUIT..</span>
+                </span>
+            </div>
+            <!-- <line class="link" x1="422.094264191787" y1="269.4480341551788" x2="599.2657037372016" y2="345.41141931636594"></line> -->
+            <div class="query-main">
+                <div class="query-list rounded">
+                    <div class="query-list-head clearfix">
+                        <h2 class="t-u float-left">
+                            <strong>query list</strong>
+                        </h2>
+                        <div class="head-list float-right">
+                            <img id="equip-logo" src="assets/images/grid/search-table.png" alt="t-logo">
+                            <img id="equip-logo" src="assets/images/grid/copy-grid.png" alt="t-logo">
+                            <img id="equip-logo" src="assets/images/grid/print-grid.png" alt="t-logo">
+                            <img id="equip-logo" src="assets/images/grid/export-grid.png" alt="t-logo">
+                            <img id="equip-logo" src="assets/images/grid/column-visiblity.png" alt="t-logo">
+                        </div>
+                    </div>
+                    <table class="table-responsive-xl query-table m-0 table">
+                        <thead class="d-block">
+                            <tr>
+                                <th scope="col">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div c-g">
+                                        Property Id
+                                        <img class="up" id="equip-logo" src="assets/images/grid/sorting.png" alt="t-logo">
+                                        <img id="equip-logo" src="assets/images/grid/column-filter.png" alt="t-logo">
+                                    </div>
+                                </th>
+                                <th class="qtype c-p" scope="col">
+                                    <div class="q-drop">
+                                        <div class="check-div p-0 c-g">
+                                            Query Type
+                                            <img class="up" id="equip-logo" src="assets/images/grid/sorting.png" alt="t-logo">
+                                            <img id="equip-logo" src="assets/images/grid/column-filter.png" alt="t-logo">
+                                        </div>
+                                    </div>
+                                    <div class="qtype-list rounded">
+
+                                        <p>Query Type</p>
+                                        <div class="q-div border-bottom clearfix">
+                                            <input class=" float-left" type id="q-input" name="qtype" placeholder="ALL">
+                                            <span class="q-list-down c-p float-right">
+                                                <img id="equip-logo" src="assets/images/grid/drop-down.png" alt="q-logo">
+                                            </span>
+                                            <div class="q-list">
+                                                <ul class="list-group">
+                                                    <li class="lg-item c-p list-group-item">ALL</li>
+                                                    <li class="lg-item c-p list-group-item">Force Directed Graph</li>
+                                                    <li class="lg-item c-p list-group-item">Hierarchy Graph</li>
+                                                    <li class="lg-item c-p list-group-item">Wild Card Search</li>
+                                                    <li class="lg-item c-p list-group-item">Query to Table</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <button class="clear btn btn-danger t-u">clear</button>
+                                        <button class="apply btn btn-success t-u">apply</button>
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="check-div p-0 c-g">
+                                        <span>Re-run Count</span>
+                                        <img class="up" id="equip-logo" src="assets/images/grid/sorting.png" alt="t-logo">
+                                        <img id="equip-logo" src="assets/images/grid/column-filter.png" alt="t-logo">
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="check-div p-0 c-g">
+                                        Created On
+                                        <img class="up" id="equip-logo" src="assets/images/grid/sorting.png" alt="t-logo">
+                                        <img id="equip-logo" src="assets/images/grid/column-filter.png" alt="t-logo">
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="check-div p-0 c-g">
+                                        Description
+                                        <img class="up" id="equip-logo" src="assets/images/grid/sorting.png" alt="t-logo">
+                                        <img id="equip-logo" src="assets/images/grid/column-filter.png" alt="t-logo">
+                                    </div>
+                                </th>
+                                <th class="t-last" scope="col">
+                                    <div class="check-div p-0 c-g">
+                                        Action
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody d-block">
+                            <tr class="tr-active">
+                                <th class="light-bg" scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        54781256 EQUIP_VRTX
+                                    </div>
+                                </th>
+                                <td class="light-bg thead-light t-p-right">
+                                    <div class="check-div p-0 c-v">
+                                        <strong>Force Directed Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        2
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        09-21-2019 00:00:00
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from developer
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        5783512
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-v">
+                                        <strong>Force Directed Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        20
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        09-12-2019 00:50:00
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        CLMSTXXAA for testing purpose
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        PRTG1023
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-v">
+                                        <strong>Force Directed Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        24
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        09-02-2019 02:00:35
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from developer
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        5769456
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-v">
+                                        <strong>Force Directed Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        3
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        03-21-2019 01:00:10
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        this is for testing purpose
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        363843
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-v">
+                                        <strong>Force Directed Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        8
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        08-21-2019 11:00:00
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        hold the circuits info
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        FYTNC01J
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-v">
+                                        <strong>Force Directed Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        5
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        06-05-2019 00:34:01
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from development
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        14944759
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-pink">
+                                        <strong>Hirearchy Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        14
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        09-20-2019 00:30:00
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        CLMSTXXAA for testing purpose
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        PRTGI012
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-pink">
+                                        <strong>Hirearchy Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        5
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        09-01-2019 10:10:00
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from development
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        5783613
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-pink">
+                                        <strong>Hirearchy Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        8
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        02-02-2019 00:02:40
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from developer
+                                    </div>
+                                </td>
+                                <td class="t-last light-bg ">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        PRTGI012
+                                    </div>
+                                </th>
+                                <td class="t-p-right light-bg ">
+                                    <div class="check-div p-0 c-pink">
+                                        <strong>Hirearchy Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        5
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        09-01-2019 00:30:00
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from development
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        5783613
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-pink">
+                                        <strong>Hirearchy Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        07
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        02-02-2019 00:02:40
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from developer
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        5783613
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-pink">
+                                        <strong>Hirearchy Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        8
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        09-20-2019 00:02:40
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from developer
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg" scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        54781256 EQUIP_VRTX
+                                    </div>
+                                </th>
+                                <td class="light-bg thead-light t-p-right">
+                                    <div class="check-div p-0 c-v">
+                                        <strong>Force Directed Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        2
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        09-21-2019 00:00:00
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from developer
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        5783512
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-v">
+                                        <strong>Force Directed Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        20
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        09-12-2019 00:50:00
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        CLMSTXXAA for testing purpose
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        PRTG1023
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-v">
+                                        <strong>Force Directed Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        24
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        09-02-2019 02:00:35
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from developer
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        5769456
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-v">
+                                        <strong>Force Directed Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        3
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        03-21-2019 01:00:10
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        this is for testing purpose
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        363843
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-v">
+                                        <strong>Force Directed Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        8
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        08-21-2019 11:00:00
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        hold the circuits info
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        FYTNC01J
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-v">
+                                        <strong>Force Directed Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        5
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        06-05-2019 00:34:01
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from development
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        14944759
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-pink">
+                                        <strong>Hirearchy Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        14
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        09-20-2019 00:30:00
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        CLMSTXXAA for testing purpose
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        PRTGI012
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-pink">
+                                        <strong>Hirearchy Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        5
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        09-01-2019 10:10:00
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from development
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        5783613
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-pink">
+                                        <strong>Hirearchy Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        8
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        02-02-2019 00:02:40
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from developer
+                                    </div>
+                                </td>
+                                <td class="t-last light-bg ">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        PRTGI012
+                                    </div>
+                                </th>
+                                <td class="t-p-right light-bg ">
+                                    <div class="check-div p-0 c-pink">
+                                        <strong>Hirearchy Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        5
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        09-01-2019 00:30:00
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from development
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        5783613
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-pink">
+                                        <strong>Hirearchy Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        07
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        02-02-2019 00:02:40
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from developer
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="light-bg " scope="row">
+                                    <label style="width: 25px;" class="container m-0 p-0">
+                                        <input type="checkbox">
+                                        <span class="checkmark rounded"></span>
+                                    </label>
+                                    <div class="check-div">
+                                        5783613
+                                    </div>
+                                </th>
+                                <td class="light-bg t-p-right">
+                                    <div class="check-div p-0 c-pink">
+                                        <strong>Hirearchy Graph</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        8
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        09-20-2019 00:02:40
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="check-div p-0">
+                                        test from developer
+                                    </div>
+                                </td>
+                                <td class="light-bg t-last">
+                                    <img id="equip-logo" src="assets/images/grid/rerun.png" alt="t-logo">
+                                    <img data-toggle="modal" data-target="#exampleModal" class="mail" id="equip-logo" src="assets/images/grid/mail.png" alt="t-logo">
+                                    <img id="equip-logo" src="assets/images/grid/view-query.png" alt="t-logo">
+                                    <img class="m-0" id="equip-logo" src="assets/images/grid/delete.png" alt="t-logo">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header border-0 clearfix">
+                                    <img id="mail-logo" src="assets/images/grid/mail-popup.png" alt="modal-logo">
+                                    <h5 class="modal-title t-u" id="exampleModalLabel">
+                                        <strong>mail address
+                                        </strong>
+                                    </h5>
+
+
+                                    <span type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <img id="equip-logo" src="assets/images/grid/close-popup.png" alt="modal-logo">
+                                    </span>
+                                </div>
+                                <div class="modal-body border-0">
+                                    <form>
+                                        <label class="label" for="email">Email</label>
+                                        <input type="text" id="email" class="rounded email border-0" name="email" value="Christopher3@gmail.com. JackFernandes4@gmail.com"
+                                            placeholder="Email">
+                                        <label class="label clearfix" for="description">Description
+                                            <span class="t-r t-u">clear</span>
+                                        </label>
+                                        <input type="text" id="description" class="description rounded email border-0" name="description" value="testing from developer"
+                                            placeholder="Description">
+                                    </form>
+                                </div>
+                                <div class="modal-footer border-0">
+                                    <button type="button" class="submit t-u btn btn-secondary" data-dismiss="modal">submit</button>
+                                    <button type="button" class="cancel-btn btn t-u btn-primary">cancel</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-footr clearfix">
+                        <div class="footr-left float-right">
+                            <ul class="clearfix p-0">
+                                <li style="margin-left: 0px;" class="float-left">
+                                    <img style="width: 10px;" id="equip-logo" src="assets/images/grid/first.png" alt="t-logo">
+                                </li>
+                                <li class="float-left">
+                                    <img style="width: 8px;" id="equip-logo" src="assets/images/grid/previous.png" alt="t-logo">
+                                </li>
+                                <li class="footr-active float-left">
+                                    1
+                                </li>
+                                <li class="float-left">
+                                    2
+                                </li>
+                                <li class="float-left">
+                                    3
+                                </li>
+                                <li class="float-left">
+                                    4
+                                </li>
+                                <li class="float-left">
+                                    5
+                                </li>
+                                <li style="margin-left: 0px;letter-spacing: 3px;" class="float-left">
+                                    ....
+                                </li>
+                                <li style="margin-left: 0px;" class="float-left">
+                                    <img style="width: 8px;" id="equip-logo" src="assets/images/grid/next.png" alt="t-logo">
+                                </li>
+                                <li style="margin-left: 0px;" class="float-left">
+                                    <img style="width: 10px;" id="equip-logo" src="assets/images/grid/last.png" alt="t-logo">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footr-right float-right">
+                            1 - 20 of 60 Items
+                        </div>
+                        <div class="footr-right float-right">
+                            Rows per page: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20&nbsp;&nbsp;
+                            <img class="d-inline" style="width: 11px;" id="equip-logo" src="assets/images/grid/drop-down.png" alt="t-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="copyr">Copyright &copy; Network 360. All rights Reserved</p>
+        </div>
+        <div class="card equipments" style="width: 20rem;">
+            <div class="card-body">
+                <h5 class="t-u border-b card-title">
+                    <strong>Equipments</strong>
+                </h5>
+                <div class="equip-items clearfix">
+                    <div class="clearfix">
+                        <div class="equip-item float-left clearfix">
+                            <span class="rack float-left">
+                                <img id="equip-logo" src="assets/images/home/shelf.png" alt="logo">
+                            </span>
+                            <div class="float-left">
+                                <h5 style="display: inline-block" class="m-0 p-0">
+                                    <strong>2</strong>
+                                </h5>
+                                <p class="m-0">Racks</p>
+                            </div>
+                        </div>
+                        <div class="equip-item float-left clearfix">
+                            <span class="shelf float-left">
+                                <img id="equip-logo" src="assets/images/home/rack.png" alt="logo">
+                            </span>
+                            <div class="float-left">
+                                <h5 style="display: inline-block" class="m-0 p-0">
+                                    <strong>7</strong>
+                                </h5>
+                                <br>
+                                <p class="m-0">Shelfs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equip-item float-left clearfix">
+                        <span class="crds rounded float-left">
+                            <img id="equip-logo" src="assets/images/home/card copy 2.png" alt="logo">
+                        </span>
+                        <div class="float-left">
+                            <h5 style="display: inline-block" class="m-0 p-0">
+                                <strong>5</strong>
+                            </h5>
+                            <br>
+                            <p class="m-0">Cards</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="t-u border-b card-title">
+                    <strong>Circuits</strong>
+                </h5>
+                <div class="equip-items clearfix">
+                    <div class="equip-item float-left clearfix">
+                        <span class="facility float-left">
+                            <img id="equip-logo" src="assets/images/home/facility-circuit.png" alt="logo">
+                        </span>
+                        <div class="float-left">
+                            <h5 style="display: inline-block" class="m-0 p-0">
+                                <strong>5</strong>
+                            </h5>
+                            <p class="m-0">Facility Circuit</p>
+                        </div>
+                    </div>
+                    <div class="equip-item float-left clearfix">
+                        <span class="product float-left">
+                            <img id="equip-logo" src="assets/images/home/Product-circuit.png" alt="logo">
+                        </span>
+                        <div class="product p-0 float-left">
+                            <h5 style="display: inline-block" class="m-0 p-0">
+                                <strong>7</strong>
+                            </h5>
+                            <br>
+                            <p class="m-0">Product Circuit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-details">
+            <div class="detail-head clearfix">
+                <span style="margin: 3px 0px" class=" shelf float-left">
+                    <img id="equip-logo" src="assets/images/home/rack.png" alt="logo">
+                </span>
+                <h1 class="float-left m-0 t-u detail-item-head">54781256 equip_vrtx</h1>
+                <span style="padding: 5px 0px;" class="float-right">
+                    <img class="close-icon float-right c-p" src="assets/images/home/close.png" alt="close">
+                </span>
+            </div>
+            <div class="query clearfix">
+                <div style="margin: 5px 0px;" class="clearfix w-100">
+                    <p class="f-left m-0">Query</p>
+                    <div class=" float-right">
+                        <img id="copy-icon" src="assets/images/home/copy.png" alt="copy">
+                    </div>
+                </div>
+                <div style="background-color: white;" class="rounded">
+                    <p class="query-desc">Lorem ipsum dolor sit & amet, consectetur adipiscing elit.Lorem ipsum dolor sit & amet, consectetur adipiscing
+                        elit.Lorem ipsum dolor sit & amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="query-items clearfix">
+                    <div class="float-left">
+                        <h3 class="m-0">
+                            <strong>9</strong>
+                        </h3>
+                        <p class="t-u">nodes</p>
+                    </div>
+                    <div class="float-left">
+                        <h3 class="m-0">
+                            <strong>8</strong>
+                        </h3>
+                        <p class="t-u">edges</p>
+                    </div>
+                    <div class="float-left">
+                        <h3 class="m-0">
+                            <strong>8</strong>
+                        </h3>
+                        <p class="t-u">equipments</p>
+                    </div>
+                    <div class="float-left">
+                        <h3 class="m-0">
+                            <strong>1</strong>
+                        </h3>
+                        <p class="t-u">circuit(s)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-list clearfix">
+                <p class="list-head t-u">
+                    <strong>54781256 equip_vrtx</strong>
+                </p>
+                <ul class="node-tab detail-tab nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="d-nav nav-link active" href="#">Nodes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-nav nav-link" href="#">Edges</a>
+                    </li>
+                </ul>
+                <ul class="details m-0 clearfix">
+                    <li class="clearfix">
+                        <span class="float-left">
+                            label
+                        </span>
+                        <span class="detail-value float-left">
+                            <strong>Equip_Vrtx</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left">
+                            type
+                        </span>
+                        <span class="detail-value">
+                            <strong>Vertex</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left t-u">
+                            location2_category
+                        </span>
+                        <span class="detail-value">
+                            <strong>NON SWITCHING</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left t-u">
+                            location2_OPERATING_COMPANY
+                        </span>
+                        <span class="detail-value">
+                            <strong>AMERITECHINDIANA</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left t-u">
+                            TRANS_RATE_UNIT_OF_MEASURE
+                        </span>
+                        <span class="detail-value">
+                            <strong>MB/S</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left t-u">
+                            RATE_CODE
+                        </span>
+                        <span class="detail-value">
+                            <strong>DS3</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left t-u">
+                            PLATFORM
+                        </span>
+                        <span class="detail-value">
+                            <strong>Not Set</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left t-u">
+                            service type category
+                        </span>
+                        <span class="detail-value">
+                            <strong>LTSDTTRKPRD</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left t-u">
+                            location2_type
+                        </span>
+                        <span class="detail-value">
+                            <strong>End Office - Electronic Digital</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left">
+                            label
+                        </span>
+                        <span class="detail-value float-left">
+                            <strong>Equip_Vrtx</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left">
+                            type
+                        </span>
+                        <span class="detail-value">
+                            <strong>Vertex</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left t-u">
+                            location2_category
+                        </span>
+                        <span class="detail-value">
+                            <strong>NON SWITCHING</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left t-u">
+                            location2_OPERATING_COMPANY
+                        </span>
+                        <span class="detail-value">
+                            <strong>AMERITECHINDIANA</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left t-u">
+                            TRANS_RATE_UNIT_OF_MEASURE
+                        </span>
+                        <span class="detail-value">
+                            <strong>MB/S</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left t-u">
+                            RATE_CODE
+                        </span>
+                        <span class="detail-value">
+                            <strong>DS3</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left t-u">
+                            PLATFORM
+                        </span>
+                        <span class="detail-value">
+                            <strong>Not Set</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left t-u">
+                            service type category
+                        </span>
+                        <span class="detail-value">
+                            <strong>LTSDTTRKPRD</strong>
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="float-left t-u">
+                            location2_type
+                        </span>
+                        <span class="detail-value">
+                            <strong>End Office - Electronic Digital</strong>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="assets/jquery/jquery-1.10.2.min.js"></script>
+    <script src="assets/jquery/jquery.browser.min.js"></script>
+    <script src="assets/d3/d3.v3.min.js"></script>
+    <script src="assets/js/colorbrewer.js"></script>
+    <script src="assets/lib/geometry.js"></script>
+    <script src="assets/js/script.js"></script> -->
+    <script src="assets/js/index.js"></script>
+
+</body>
+
+</html>
