@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EduHealth</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <img src="assets/images/EduHealth-new-sm.png" class="logo-img" alt="logo-img">
+        <a class="close-a" class="close-page" href="#"><img src="assets/images/noun_Close_1808841.png" class="close-img" alt="close-img"></a>
+        <div class="form-div">
+            <form class="signin-form needs-validation" id="main-form" novalidate>
+                <h2>Sign in</h2>
+                <div class="form-group">
+                  <label for="inputemail">Email</label>
+                  <input type="email" class="form-control emailone" id="inputemail" required>
+                  <!-- <small class="error-msg" id="text-bottom" class="form-text text-left mt-2">
+                    Enter a valid password 
+                  </small> -->
+                  <div class="invalid-feedback email-feedback">
+                    Enter a Valid Email
+                  </div>
+                </div>
+                <div style="position: relative;margin-bottom: 0.5rem;" class="form-group">
+                    <label for="inputpass">Password</label>
+                    <input type="password" class="form-control" id="inputpass" pattern=".{8,}" title="Eight or more characters" oninvalid="displayerror(this)" required>
+                    <img src="assets/images/Path-462.png" onclick="togglePassword()" class="pass-img" alt="pass-img">
+                    <div class="invalid-feedback">
+                        Enter a Valid Password (Max 8 characters)
+                      </div>
+                </div>
+                <small id="text-bottom" class="form-text m-0 text-right">
+                    <a class="sign-txt text-right" href="forgot_mail.html">Forgot Password?</a>
+                  </small>
+                <button type="submit" class="btn submit-button signin-submit-btn btn-primary">Submit</button>
+                <small id="text-bottom" class="form-text text-center mt-2">
+                    Don't have an account?  <a class="sign-txt" href="signup.html">Sign up</a>
+                  </small>
+              </form>
+        </div>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script>
+            function togglePassword() {
+              var x = document.getElementById("inputpass");
+              var img = document.getElementsByClassName("pass-img")[0];
+              if (x.type === "password") {
+                x.type = "text";
+                img.src = 'assets/images/visibility_off-24px(1).png';
+              } else {
+                x.type = "password";
+                img.src = 'assets/images/Path-462.png';
+              }
+            }
+            function displayerror(ev) {
+                console.log(ev.parentElement)
+            }
+            </script>
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                  'use strict';
+                  window.addEventListener('load', function() {
+                      
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                      form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        else {
+                          let val = document.getElementsByClassName("emailone")[0].value;
+                          var re = /\S+@\S+\.\S+/;
+                          if(re.test(val) == false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                            document.getElementsByClassName("email-feedback")[0].style.display = "block";
+                          }
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+                </script>
+    </body>
+</html>

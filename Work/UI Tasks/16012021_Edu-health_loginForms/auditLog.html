@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EduHealth</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="assets/css/styleTwo.css">
+        <link rel="stylesheet" type="text/css" href="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.css">
+        <link rel="stylesheet" type="text/css" href="https://jonthornton.github.io/jquery-timepicker/lib/bootstrap-datepicker.css">
+    </head>
+    <body class="audit-body">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="assets/images/edu-top-logo (2).png" class="logo-img audit-logo-img" alt="logo-img"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li style="margin: 0px 10px;" class="nav-item dropdown">
+              <a onclick="onNotify(this)" style="cursor: pointer;" class="nav-link notify-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img style="width: 20px;cursor: pointer;" src="assets/images/Group 1108@2x.png" class="grp-img mx-2" alt="notif-img"></a>
+              <div class="dropdown-menu notify-dropdown dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <div class="top-div">
+                  <h5 class="mb-1 font-weight-bold">Notifications</h5>
+                  <p class="text-muted m-0"><small>New</small></p>
+                </div>
+                <a class="dropdown-item new-item" href="#"><img src="assets/images/Group 1110.png" class="grp-img mx-2" alt="notif-prof-img"><span class="notify-span"><span>Jenifer Francis</span> Added New Health Form in the Student Profile<br><p class="text-muted m-0"><small>2 mins ago</small></p></a>
+                <a class="dropdown-item new-item" href="#"><img src="assets/images/Group 1855.png" class="grp-img mx-2" alt="notif-prof-img"><span class="notify-span"><span>Ambel Mathew</span> Almost Completed the Corona Test Task for today<br><p class="text-muted m-0"><small>3 hours ago</small></p></a>
+                <div class="top-div pt-1">
+                  <p class="text-muted m-0"><small>Earlier</small></p>
+                </div>
+                <a class="dropdown-item" href="#"><img src="assets/images/Group 1856.png" class="grp-img mx-2" alt="notif-prof-img"><span class="notify-span"><span>Jordan Ramsey</span> Added New Health Form in the Student Profile<br><p class="text-muted m-0"><small>16 November, 2020</small></p></a>
+                <a class="dropdown-item" href="#"><img src="assets/images/Group 1857.png" class="grp-img mx-2" alt="notif-prof-img"><span class="notify-span"><span>Stefen</span> Did Scoliosis test for grade 3 students in <span>Colorado Spring School</span><br><p class="text-muted m-0"><small>10 October, 2020</small></p></a>
+                <div class="top-div pt-1">
+                  <p class="text-center py-1 view-text m-0">View All</p>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <img src="assets/images/Group 1110.png" class="grp-img mx-2" alt="prof-img">
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a style="cursor: pointer;" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/next(-1.png" class="grp-img2" alt="down-img"></a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Log out</a>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+      <div style="margin-bottom: 5rem;" class="main-div">
+        <div class="main-top position-relative">
+          <h2 class="head-txt mt-5 mb-3 position-relative">&nbsp;<span>Manage Audit Log</span><img src="assets/images/Group 1755.png" class="grp-img3 audit" alt="title-img"></h2>
+          <div class="input-group audit-input-div flex-nowrap">
+            
+            <input type="number" id="auditInput" placeholder="Search By Student Number" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+            <div class="input-group-prepend">
+                <button id="audit-srch" type="button" class="btn btn-secondary">Search</button>
+              </div>
+          </div>
+          <h5>Filter</h5>
+          
+          <select class="audit-top-select mr-4">
+            <option value="School">School Name</option>
+            <option value="Name">Name</option>
+            <option value="Date">Date</option>
+          </select>
+          <input id="datepicker" type="text" class="form-control audit-top-select calendar mr-4" placeholder="From Date"> 
+          <input id="datepicker-2" type="text" class="form-control audit-top-select calendar" placeholder="To Date"> 
+          <!-- <div class="audit-edit-top d-inline-block">
+            <a style="right: 50px;" href="auditLog.html" class="reset-btn audit-top-right">Excel UpLoad<img style="width:15px" src="assets/images/export.png" class="export-img mx-2" alt="export-logo-img"></a>
+            <a href="auditLog.html" class="reset-btn audit-top-right">Edit</a>
+          </div> -->
+        </div>
+        <div class="audit-wrap mt-4">
+            <table id="audit-main-table" class="table audit-table table-striped mb-0">
+            <thead class="p-thead">
+                <tr>
+                    <th style="width: 15%;" scope="col">User Name</th>
+                    <th style="width: 15%;" scope="col">Date & Time</th>
+                    <th style="width: 10%;" scope="col">Event Type</th>
+                    <th style="width: 15%;" class="th-first" scope="col">Student Number</th>
+                    <th style="width: 15%;" scope="col">File Name</th>
+                    <th style="width: 30%;" scope="col">School Name</th>
+                </tr>
+            </thead>
+            <tbody class='p-tbody'>
+                <tr>
+                    <td>Leon Sharp</td>
+                    <td>12.10.2020 3:00 pm</td>
+                    <td>Print</td>
+                    <th class="td-first" scope="row">834723</th>
+                    <td>Student Details</td>
+                    <td>ADAK SCHOOL</td>
+                </tr>
+                <tr>
+                    <td>Shawn Cobb</td>
+                    <td>12.10.2020 3:00 pm</td>
+                    <td>Export</td>
+                    <th class="td-first" scope="row">234232</th>
+                    <td>Student Health Information</td>
+                    <td>ALIACHAK SCHOOL</td>
+                </tr>
+                <tr>
+                    <td>Sylvester Martinez</td>
+                    <td>12.10.2020 3:00 pm</td>
+                    <td>View</td>
+                    <th class="td-first" scope="row">--</th>
+                    <td>Student Information</td>
+                    <td>ARLICAQ SCHOOL</td>
+                </tr>
+                <tr>
+                    <td>Walter Burton</td>
+                    <td>12.10.2020 3:00 pm</td>
+                    <td>Print</td>
+                    <th class="td-first" scope="row">--</th>
+                    <td>Student Details</td>
+                    <td>ADAK SCHOOL</td>
+                </tr>
+                <tr>
+                    <td>Leon Sharp</td>
+                    <td>12.10.2020 3:00 pm</td>
+                    <td>Print</td>
+                    <th class="td-first" scope="row">834723</th>
+                    <td>Student Details</td>
+                    <td>ADAK SCHOOL</td>
+                </tr>
+                <tr>
+                    <td>Diana Nunez</td>
+                    <td>12.10.2020 3:00 pm</td>
+                    <td>Export</td>
+                    <th class="td-first" scope="row">234232</th>
+                    <td>Export Report Of Student</td>
+                    <td>ALIACHAK SCHOOL</td>
+                </tr>
+                <tr>
+                    <td>Gail Swanson</td>
+                    <td>12.10.2020 3:00 pm</td>
+                    <td>View</td>
+                    <th class="td-first" scope="row">--</th>
+                    <td>Student Information</td>
+                    <td>ARLICAQ SCHOOL</td>
+                </tr>
+                <tr>
+                    <td>Elijah Gregory</td>
+                    <td>12.10.2020 3:00 pm</td>
+                    <td>Print</td>
+                    <th class="td-first" scope="row">32546901</th>
+                    <td>Export Report Of Student</td>
+                    <td>ADAK SCHOOL</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+      </div>
+      <div class="audit-footer">
+        <div style="height:90px;background-size: cover;" class="main-footer position-relative m-5">
+            <img src="assets/images/20112020_eduhealth_logo.png" class="logo-img" alt="footer-logo-img">
+            <p style="top: 2.5rem;font-size: 11px;">&#169; 2020 EduHealth, All rights reserved</p>
+          </div>
+      </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script type="text/javascript" src="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.js"></script>
+        <script type="text/javascript" src="https://jonthornton.github.io/jquery-timepicker/lib/bootstrap-datepicker.js"></script>
+        <script>
+            // var hasVScroll = document.body.scrollHeight > document.body.clientHeight;
+            // console.log(document.body.scrollHeight, document.body.clientHeight);
+            if (!($(document).height() > $(window).height())) { 
+                $(".audit-footer").addClass("audit-stick");
+            } 
+            $( function() {
+            $( "#datepicker" ).datepicker();
+          } );
+          $( function() {
+            $( "#datepicker-2" ).datepicker();
+          } );
+          $(document).ready(function(){
+            $("#audit-srch").on("click", function() {
+                var value = $("#auditInput").val().toLowerCase();
+                $("#audit-main-table .p-tbody tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+                $(".audit-footer").removeClass("audit-stick");
+                if (!($(document).height() > $(window).height())) { 
+                    $(".audit-footer").addClass("audit-stick");
+                } 
+            });
+        });
+          $("input").click(function() {
+            if($(this).prop("checked")) {
+              $(this).prop("checked", false);
+            }
+            else {
+              $(this).prop("checked", true);
+            }
+          });
+          $("td, th").click(function() {
+            if($(this).find("input").prop("checked")) {
+              $(this).find("input").prop("checked", false);
+            }
+            else {
+              $(this).find("input").prop("checked", true);
+            }
+
+            if($(this).find("input").hasClass("all-input")) {
+              if($(this).find("input").attr("id") == "all-inputs") {
+                if($(this).find("input").prop("checked")) {
+                  $('.p-thead').find("input").each(function(index, item) {
+                  $(this).prop("checked", true );
+                });
+                $('.p-tbody').find("input").each(function(index, item) {
+                  $(this).prop("checked", true );
+                });
+                }
+                else {
+                  $('.p-thead').find("input").each(function(index, item) {
+                    $(this).prop("checked", false);
+                  });
+                  $('.p-tbody').find("input").each(function(index, item) {
+                    $(this).prop("checked", false);
+                  });
+                }
+              }
+              let ind = $(this).find("input").parent().index();
+            let check = $(this).find("input").prop("checked");
+            $('.p-tbody').find("input").each(function(index, item) {
+              if($(this).parent().index() == ind) {
+                if(check) {
+                  $(this).prop("checked", true );
+                  let rowcheck = true;
+                  $(this).parent().siblings().each(function(index, item) {
+                    if(!$(this).find("input").prop("checked")) {
+                      if(!$(this).hasClass("td-first")) {
+                        rowcheck = false
+                      }
+                    }
+                  });
+                  if(rowcheck) {
+                    $(this).parent().parent().find("input:first").prop("checked", true );
+                  }
+                }
+                else {
+                  $(this).prop("checked", false);
+                }
+                
+              }
+            });
+          }
+
+            if($(this).find("input").prop("checked") == false) {
+              let ind = $(this).index();
+              let check = $(this).find("input").prop("checked");
+              if($(this).hasClass("td-first")) {
+                $(this).siblings().each(function(index, item) {
+                  $(this).find("input").prop("checked", false );
+                });
+                $('.p-thead').find("input").each(function(index, item) {
+                  if($(this).attr("id") != "all-inputs") {
+                    $(this).prop("checked", false);
+                  }
+                });
+              }
+              $('.p-thead').find("input").each(function(index, item) {
+              if($(this).parent().index() == ind) {
+                if(check) {
+                  $(this).prop("checked", true );
+                }
+                else {
+                  if($(this).attr("id") != "all-inputs") {
+                    $(this).prop("checked", false);
+                  }
+                }                
+              }
+            });
+            }
+            else {
+              let ind = $(this).index();
+              let check = true
+              allcheck = true;
+              if($(this).hasClass("td-first")) {
+                $(this).siblings().each(function(index, item) {
+                  $(this).find("input").prop("checked", true );
+                  let ind2 = $(this).index();
+                  check2 = true;
+                  $('.p-tbody').find("input").each(function(index, item) {
+                    if($(this).parent().index() == ind2) {
+                      if($(this).prop("checked") == false) {
+                        check = false
+                      }
+                    }
+                  });
+                  $('.p-thead').find("input").each(function(index, item) {
+                  if($(this).parent().index() == ind2) {
+                      if(check) {
+                        $(this).prop("checked", true );
+                      }
+                    }
+                  });
+                });
+              }
+              else {
+                let rowcheck = true;
+                $(this).siblings().each(function(index, item) {
+                  if(!$(this).find("input").prop("checked")) {
+                    if(!$(this).hasClass("td-first")) {
+                      rowcheck = false
+                    }
+                  }
+                });
+                if(rowcheck) {
+                  $(this).parent().find("input:first").prop("checked", true );
+                }
+              }
+              $('.p-tbody').find("input").each(function(index, item) {
+              if($(this).parent().index() == ind) {
+                if($(this).prop("checked") == false) {
+                  check = false
+                }
+              }
+            });
+            $('.p-thead').find("input").each(function(index, item) {
+              if($(this).parent().index() == ind) {
+                if(check) {
+                  $(this).prop("checked", true );
+                }
+              }
+            });
+            $('.p-tbody').find("input").each(function(index, item) {
+                if($(this).prop("checked") == false) {
+                  allcheck = false
+                }
+            });
+            if(allcheck) {
+              $("#all-inputs").prop("checked", true);
+            }
+            }
+            
+          });
+          function onNotify(e) {
+            e.getElementsByClassName("grp-img")[0].src = "assets/images/noun_notification_3376247@2x.png"
+            e.getElementsByClassName("grp-img")[0].style.width = "16px";
+          }
+          function onNewUser() {
+            var value = document.getElementById("new-input").value;
+            $('#new-option').remove();
+            $("#new-select").append("<option value=" + value + ">" + value + "</option>");
+            $("#new-select").append("<option id='new-option' value='new'>+ New User</option>");
+            $("#new-select").val(value);
+            $('#exampleModal').modal('hide'); 
+          }
+          $('select').on('change', function() {
+              if(this.value == "new") {
+                $('#exampleModal').modal('show'); 
+              }
+            });
+        </script>
+    </body>
+</html>

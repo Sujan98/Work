@@ -1,0 +1,261 @@
+body {
+    padding: 0px 4% 0px 6%;
+}
+.logo-img {
+    position: absolute;
+    width: 9%;
+    top: 2%;
+    left: 4%;
+}
+.close-a {
+    text-align: right;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    z-index: 10;
+}
+.close-a img {
+    width: 55%;
+}
+.form-div {
+    background-image: url(../images/Group\ 1758.png);
+    background-repeat: no-repeat;
+    background-size: 54%;
+    background-position: left;
+    background-position-y: 42%;
+    height: 100vh;
+    position: relative;
+}
+.form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
+    color: initial;
+}
+.pass-img {
+    position: absolute;
+    width: 14px;
+    right: 12px;
+    top:  40px;
+    cursor: pointer;
+}
+#main-form {
+    background: #BFE6EA;
+    width: 38%;
+    height: 660px;
+    padding: 20px 30px 30px 30px;
+    border-radius: 15px;
+    position: absolute;
+    right: 0;
+    top: 51%;
+    transform: translateY(-50%);
+}
+.signin-form {
+    padding: 10% 30px 25px 30px!important;
+}
+.form-control:focus {
+    box-shadow: none!important;
+}
+#main-form h2 {
+    font-weight: 450;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #003246!important;
+}
+.forgot-txt {
+    color: #02161f;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+}
+.error-msg {
+    color: red;
+    position: absolute;
+    padding: 3px;
+}
+label {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: .3rem;
+}
+.form-group {
+    margin-bottom: 0.8rem;
+}
+#radio-div {
+    margin-bottom: 1.5rem;
+}
+.form-control {
+    font-size: 14px;
+}
+.form-check-inline {
+    width: 20%;
+    font-weight: 500;
+}
+.form-check-inline .form-check-input {
+    margin-right: 10px;
+}
+label {
+    font-size: 12px;
+}
+.submit-button {
+    background-color: #003246!important;
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+.submit-button:hover {
+    background-color: #003246;
+}
+.signin-submit-btn {
+    margin-top: 55px;
+}
+.sign-txt {
+    font-weight: 500;
+    color: #003246;
+}
+#text-bottom {
+    font-weight: 450;
+}
+.radio-lab {
+    margin-bottom: 0.8rem;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -5px;
+    left: -1px;
+    position: relative;
+    background-color: #BFE6EA;
+    content: '';
+    cursor: pointer;
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #003246;
+}
+
+input[type='radio']:checked:after {
+    width: 13px;
+    height: 13px;
+    border-radius: 15px;
+    top: -5px;
+    left: -1px;
+    position: relative;
+    background-color: #003246;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid #BFE6EA;
+    box-shadow: 0 0 0 1px #003246;
+}
+
+@media only screen and (max-width: 1450px) {
+    .close-a img {
+        width: 44%;
+        vertical-align: initial;
+    }
+    .close-a {
+        top: 1%;
+    }
+    #main-form {
+        height: 584px;
+        padding: 18px 30px 30px 30px;
+        top: 51.5%;
+    }
+    #main-form h2 {
+        margin-bottom: 16px;
+        font-size: 28px;
+    }
+    label {
+        font-size: 10px;
+        margin-bottom: .3rem;
+    }
+    .form-control {
+        font-size: 12px;
+    }
+    .form-group {
+        margin-bottom: 0.5rem;
+    }
+    #radio-div {
+        margin-bottom: 1rem;
+    }
+    .submit-button {
+        font-size: 12px;
+    }
+    #text-bottom {
+        font-size: 12px;
+    }
+  }
+
+@media only screen and (max-width: 1070px) {
+    #main-form {
+        width: 42%;
+    }
+  }
+  @media only screen and (max-width: 993px) {
+    body {
+        padding: 0px 3% 0px 3%;
+    }
+    .logo-img {
+        width: 12%;
+    }
+    .form-div {
+        background-size: 53%;
+    }
+    #main-form {
+        width: 45%;
+    }
+    .form-check-inline {
+        width: 18%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .form-div {
+        min-height: 100vh;
+        background-image: none;
+        margin: 60px 0px;
+    }
+    #main-form {
+        width: 60%!important;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .close-a {
+        top: 5%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    #main-form {
+        height: 660px;
+    }
+    #main-form {
+        width: 70%!important;
+    }
+    .form-div {
+        margin: 80px 0px;
+    }
+    .logo-img {
+        width: 14%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #main-form {
+        width: 80%!important;
+    }
+    .logo-img {
+        width: 18%;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    #main-form {
+        width: 90%!important;
+        padding: 20px!important;
+    }
+    .logo-img {
+        width: 23%;
+    }
+  }
+
+ 
